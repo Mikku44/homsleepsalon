@@ -5,11 +5,23 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+
+:root{ 
+  --primary-color : #FFFA9F;
+}
+
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+}
+
+.box-container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
 }
