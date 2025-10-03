@@ -1,50 +1,53 @@
-import { BASE_URL, SLIDE_UP } from '~/constant/app'
-import type { Route } from './+types/home'
-import { motion } from 'motion/react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
+import { MENU, PROMOTIONS } from '~/constant/app'
 
-export function meta ({}: Route.MetaArgs) {
-  return [
-    {
-      title:
-        'Homsleepsalon | Head Spa & Relaxation Sukhumvit 22 & Sathorn  Rama3'
-    },
-    {
-      name: 'description',
-      content:
-        'Homsleepsalon สุขุมวิท 22 บริการ Head Spa เวียดนาม สปาหู สปาหน้า และทำเล็บ ในบรรยากาศผ่อนคลายใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์'
-    },
-    {
-      name: 'keywords',
-      content:
-        'Homsleepsalon, Head Spa, สปาหู, สปาหน้า, สุขุมวิท 22 , สาธร รามา3, สปากรุงเทพ'
-    },
-    {
-      property: 'og:title',
-      content:
-        'Homsleepsalon | Head Spa & Relaxation Sukhumvit 22 & Sathorn  Rama3'
-    },
-    {
-      property: 'og:description',
-      content:
-        'สัมผัสการผ่อนคลายด้วย Head Spa เวียดนาม และบริการสปาหลากหลายที่ Homsleepsalon สุขุมวิท 22, สาธร รามา3'
-    },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: `${BASE_URL}` },
-    { property: 'og:image', content: `${BASE_URL}/logo.png` },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'Homsleepsalon Head Spa & Relaxation' }
-  ]
-}
-
-export default function Home () {
+export default function Footer () {
+  const { t } = useTranslation()
   return (
-    <main className=' w-full  '>
-      <div className='max-h-screen overflow-hidden relative'>
-        {/* Social */}
-        <div className='w-full absolute right-0 bottom-0 text-sm mb-5  z-30'>
-          <div className='box-container w-full flex gap-3 justify-end'>
+    <footer className='w-full bg-[#140024] text-white'>
+      <section className='box-container py-10 grid md:grid-cols-5 gap-5'>
+        {/* logo */}
+        <div className='col-span-2'>
+          <h3 className='text-xl font-bold mb-5'>Homsleepsalon</h3>
+          <p className='text-sm text-gray-200 mb-5 max-w-[300px]'>
+            Head Spa & Ear Cleaning Natural and vegan products BTS PhromPhong
+            Sukhumvit22 & Sathorn rama 3
+          </p>
+        </div>
+
+        
+        {/* col 2 */}
+        <div className=' text-sm mc-hd'>
+          <h3 className='font-bold mb-2'>Promotions</h3>
+          {/* social */}
+          <div className='flex gap-2 flex-col nav-item'>
+            {PROMOTIONS.map(promotion => (
+              <Link className='nav-lnk w-fit mb-1' key={promotion.label} to={promotion.href}>
+                {t(promotion.label)}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* col 3 */}
+        <div className=' text-sm mc-hd'>
+          <h3 className='font-bold mb-2'>Quick Link</h3>
+          {/* social */}
+          <div className='flex gap-2 flex-col nav-item'>
+            {MENU.map(menu => (
+              <Link className='nav-lnk w-fit mb-1' key={menu.label} to={menu.href}>
+                {t(menu.label)}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* col 4 */}
+        <div className=' text-sm'>
+          <h3 className='font-bold mb-1'>Stay in Touch</h3>
+          {/* social */}
+          <div className='flex gap-2'>
             <Link
               target='_blank'
               rel='noreferal'
@@ -161,80 +164,19 @@ export default function Home () {
             </Link>
           </div>
         </div>
-        {/* text hero */}
-        <div className='w-full h-full absolute z-10 flex justify-center flex-col'>
-          <div className='box-container w-full'>
-            <motion.h1
-              {...SLIDE_UP}
-              className='md:text-6xl text-2xl text-[var(--primary-color)]  max-w-[300px] font-thin merriweather'
-            >
-              Homsleepsalon
-            </motion.h1>
-            <motion.h3
-              {...SLIDE_UP}
-              className='md:text-3xl  text-white  md:max-w-[300px] max-w-[200px] font-thin duration-200'
-            >
-              {' '}
-              Head Spa & Relaxation in Sukhumvit 22 & Sathorn rama 3
-            </motion.h3>
-          </div>
+      </section>
+
+      <div className='box-container mc-hd flex md:flex-row flex-col gap-3 justify-between text-sm py-2 text-gray-300'>
+        <div className=''>
+          Copyright 2025 Homsleepsalon. All rights reserved.
         </div>
-        <img src='/images/hom4/hom4 (11).jpg' loading='lazy' alt='spa' />
-        <div className='w-full h-full bg-gradient-to-t from-black to-black/10 absolute top-0'>
-          {' '}
+
+        {/* terms */}
+        <div className='flex items-center gap-5 nav-item'>
+          <Link className='nav-lnk' to='/#'>Privacy</Link>
+          <Link className='nav-lnk' to='/#'>Terms</Link>
         </div>
       </div>
-
-      {/* What is homsleesalon */}
-
-      <section className='md:h-screen h-[500px] overflow-hidden bg-[#FFF5DF] flex justify-between items-center'>
-        <div className='box-container-md w-full flex md:flex-row flex-col gap-5 justify-between items-center'>
-          <div className=''>
-            <h2 className='header-1 font-bold'>What is Homsleepsalon?</h2>
-            <h2 className='text-md max-w-[350px] '>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate delectus accusamus, saepe tempore quos assumenda nam
-              similique quisquam perspiciatis impedit.
-            </h2>
-          </div>
-          {/*  */}
-          <div className='md:w-[300px] w-full md:h-auto h-[150px] md:rounded-full overflow-hidden'>
-            <img
-              src='/images/hom4/hom4 (26).jpg'
-              className='h-full w-full object-cover'
-              alt='homesleep bed'
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* about therapy */}
-
-      <section
-        className='md:h-screen h-[500px] overflow-hidden 
-       bg-[var(--secondary-color)] text-white flex justify-between items-center'
-      >
-        <div className='box-container-md w-full flex md:flex-row-reverse text-right flex-col gap-5 justify-between items-center'>
-          <div className=''>
-            <h2 className='header-1 font-bold max-w-[350px]'>
-              Serenity Through Vietnamese Head & Face Therapy
-            </h2>
-            <h2 className='text-md max-w-[350px] '>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate delectus accusamus, saepe tempore quos assumenda nam
-              similique quisquam perspiciatis impedit.
-            </h2>
-          </div>
-          {/*  */}
-          <div className='md:w-[300px] w-full md:h-auto h-[150px] md:rounded-full overflow-hidden'>
-            <img
-              src='/images/hom4/hom4 (26).jpg'
-              className='h-full w-full object-cover'
-              alt='homesleep bed'
-            />
-          </div>
-        </div>
-      </section>
-    </main>
+    </footer>
   )
 }

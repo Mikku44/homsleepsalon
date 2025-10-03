@@ -8,6 +8,7 @@
 
 :root{ 
   --primary-color : #FFFA9F;
+  --secondary-color : #3F2723;
 }
 
 html,
@@ -15,8 +16,13 @@ body {
 
 }
 
+
 .box-container {
   @apply max-w-7xl mx-auto px-4;
+}
+
+.box-container-md {
+  @apply md:max-w-7xl md:mx-auto px-4;
 }
 
 .merriweather {
@@ -62,4 +68,8 @@ body {
 }
 .mc-hd .nav-item .nav-lnk:hover {
   color: white;
+}
+
+.header-1 {
+  @apply md:text-4xl text-2xl;
 }

@@ -15,21 +15,30 @@ export const SLIDE_UP = {
 
 export const MENU = [
   {
-    href: "/aboutus", label: "About us",
+    href: "/aboutus", label: "aboutus",
   },
   {
-    href: "/booking", label: "Booking",
+    href: "/booking", label: "booking",
   },
   {
-    href: "/promotion", label: "Promotion",
+    href: "/promotion", label: "promotion",
   },
   {
-    href: "/products", label: "Products",
+    href: "/products", label: "products",
   },
   {
-    href: "/gallery", label: "Gallery",
+    href: "/gallery", label: "gallery",
   },
 ]
+
+export const PROMOTIONS = [
+  {
+    href: "/promotion?#", label: "Promotion 1",
+  },
+
+]
+
+
 export const listOfLang = [
   { label: "ไทย", value: "th-TH", flag: "TH" },
   { label: "English", value: "en-US", flag: "US" },
