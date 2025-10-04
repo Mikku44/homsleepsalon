@@ -15,6 +15,9 @@ export const SLIDE_UP = {
 
 export const MENU = [
   {
+    href: "/", label: "home",
+  },
+  {
     href: "/aboutus", label: "aboutus",
   },
   {

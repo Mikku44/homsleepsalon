@@ -12,7 +12,7 @@ export function meta ({}: Route.MetaArgs) {
     {
       name: 'description',
       content:
-        'Homsleepsalon สุขุมวิท 22 บริการ Head Spa เวียดนาม สปาหู สปาหน้า และทำเล็บ ในบรรยากาศผ่อนคลายใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์'
+        'Homsleepsalon สุขุมวิท 22 & สาธร รามา3 บริการ Head Spa เวียดนาม สปาหู สปาหน้า และทำเล็บ ในบรรยากาศผ่อนคลายใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์'
     },
     {
       name: 'keywords',

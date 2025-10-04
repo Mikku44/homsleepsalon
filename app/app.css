@@ -6,15 +6,13 @@
 }
 
 
-:root{ 
-  --primary-color : #FFFA9F;
-  --secondary-color : #3F2723;
+:root {
+  --primary-color: #FFFA9F;
+  --secondary-color: #3F2723;
 }
 
 html,
-body {
-
-}
+body {}
 
 
 .box-container {
@@ -44,12 +42,14 @@ body {
   cursor: pointer;
   display: inline-block;
 }
+
 .mc-hd .nav-item .nav-lnk img {
   background-size: cover;
   position: relative;
   bottom: 5px;
 }
-.mc-hd .nav-item .nav-lnk::after  {
+
+.mc-hd .nav-item .nav-lnk::after {
   content: '';
   display: block;
   width: 100%;
@@ -62,14 +62,35 @@ body {
   transform-origin: right;
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+.mc-hd .nav-item .nav-lnk-active {
+  @apply border-b-2 border-[var(--primary-color)] py-[5px] text-[var(--primary-color)];
+}
+
 .mc-hd .nav-item .nav-lnk:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
+
 .mc-hd .nav-item .nav-lnk:hover {
   color: white;
+}
+
+.header-0 {
+  @apply md:text-5xl text-3xl;
 }
 
 .header-1 {
   @apply md:text-4xl text-2xl;
 }
+
+.PhotoView-Slider__Backdrop{
+  background-color: #00000059 !important;
+  @apply backdrop-blur-md;
+}
+
+.PhotoView-Slider__BannerWrap {
+  background-color: rgba(255, 255, 255, 0.251) !important;
+  @apply flex my-2 ml-5  rounded-xl max-w-[180px] border-white shadow px-2 backdrop-blur-md;
+}
+
