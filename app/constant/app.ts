@@ -41,6 +41,36 @@ export const PROMOTIONS = [
 
 ]
 
+export const HOME_PROMOTION = [
+  {
+    src: "/promotions/vietnam-banner.png",
+    href : "/promotion#",
+    alt: "HomeSleepSalon Vietnam spa promotion and special offers"
+  },
+  {
+    src: "/promotions/body-scrub.png",
+    href : "/promotion#",
+    alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
+  },
+  {
+    src: "/promotions/ear-aromatherapy.png",
+    href : "/promotion#",
+    alt: "HomeSleepSalon ear aromatherapy spa service"
+  },
+  {
+    src: "/promotions/face-spa.png",
+    href : "/promotion#",
+    alt: "HomeSleepSalon facial spa and skin care treatment"
+  },
+  {
+    src: "/promotions/foot-spa.png",
+    href : "/promotion#",
+    alt: "HomeSleepSalon foot spa and massage service"
+  },
+  
+];
+
+
 
 export const listOfLang = [
   { label: "ไทย", value: "th-TH", flag: "TH" },

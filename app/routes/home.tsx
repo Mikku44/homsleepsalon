@@ -1,7 +1,11 @@
-import { BASE_URL, SLIDE_UP } from '~/constant/app'
-import type { Route } from './+types/home'
-import { motion } from 'motion/react'
 import { Link } from 'react-router'
+import { motion } from 'motion/react'
+import type { Route } from './+types/home'
+import { useTranslation } from 'react-i18next'
+import AutoFadeImage from '~/components/AutoFadeImage'
+import PromotionCard from '~/components/PromotionCard'
+import HorizontalSwiper from '~/components/HorizontalSwiper'
+import { BASE_URL, HOME_PROMOTION, SLIDE_UP } from '~/constant/app'
 
 export function meta ({}: Route.MetaArgs) {
   return [
@@ -12,12 +16,12 @@ export function meta ({}: Route.MetaArgs) {
     {
       name: 'description',
       content:
-        'Homsleepsalon สุขุมวิท 22 & สาธร รามา3 บริการ Head Spa เวียดนาม สปาหู สปาหน้า และทำเล็บ ในบรรยากาศผ่อนคลายใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์'
+        'Homsleepsalon สุขุมวิท 22 & สาทร รามา3 บริการ Head Spa เวียดนาม สปาหู สปาหน้า และทำเล็บ ในบรรยากาศผ่อนคลายใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์'
     },
     {
       name: 'keywords',
       content:
-        'Homsleepsalon, Head Spa, สปาหู, สปาหน้า, สุขุมวิท 22 , สาธร รามา3, สปากรุงเทพ'
+        'Homsleepsalon, Head Spa, สปาหู, สปาหน้า, สุขุมวิท 22 , สาทร รามา3, สปากรุงเทพ'
     },
     {
       property: 'og:title',
@@ -27,7 +31,7 @@ export function meta ({}: Route.MetaArgs) {
     {
       property: 'og:description',
       content:
-        'สัมผัสการผ่อนคลายด้วย Head Spa เวียดนาม และบริการสปาหลากหลายที่ Homsleepsalon สุขุมวิท 22, สาธร รามา3'
+        'สัมผัสการผ่อนคลายด้วย Head Spa เวียดนาม และบริการสปาหลากหลายที่ Homsleepsalon สุขุมวิท 22, สาทร รามา3'
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: `${BASE_URL}` },
@@ -39,6 +43,8 @@ export function meta ({}: Route.MetaArgs) {
 }
 
 export default function Home () {
+  const { t } = useTranslation()
+
   return (
     <main className=' w-full  '>
       <div className='max-h-screen overflow-hidden relative'>
@@ -166,7 +172,7 @@ export default function Home () {
           <div className='box-container w-full'>
             <motion.h1
               {...SLIDE_UP}
-              className='md:text-6xl text-2xl text-[var(--primary-color)]  max-w-[300px] font-thin merriweather'
+              className='md:text-6xl text-4xl text-[var(--primary-color)]  max-w-[300px] font-thin merriweather'
             >
               Homsleepsalon
             </motion.h1>
@@ -179,26 +185,41 @@ export default function Home () {
             </motion.h3>
           </div>
         </div>
-        <img src='/images/hom4/hom4 (11).jpg' loading='lazy' alt='spa' />
-        <div className='w-full h-full bg-gradient-to-t from-black to-black/10 absolute top-0'>
+
+        <AutoFadeImage
+          images={[
+            '/images/hom4/hom4 (8).jpg',
+            '/images/hom4/hom4 (9).jpg',
+            '/images/hom4/hom4 (28).jpg',
+            '/images/hom4/hom4 (11).jpg',
+            '/images/hom3/hom3 (13).jpg',
+            '/images/hom3/hom3 (23).jpg',
+            '/images/hom2/hom2 (23).jpg',
+            '/images/hom1/hom1 (2).jpg',
+            '/images/544325_0.jpg'
+          ]}
+          interval={4000}
+          height={800}
+        />
+        <div className='w-full h-full bg-gradient-to-t from-black to-black/10 absolute z-[9] top-0'>
           {' '}
         </div>
       </div>
 
       {/* What is homsleesalon */}
-
-      <section className='md:h-screen h-[500px] overflow-hidden bg-[#FFF5DF] flex justify-between items-center'>
-        <div className='box-container-md w-full flex md:flex-row flex-col gap-5 justify-between items-center'>
-          <div className=''>
-            <h2 className='header-1 font-bold'>What is Homsleepsalon?</h2>
-            <h2 className='text-md max-w-[350px] '>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate delectus accusamus, saepe tempore quos assumenda nam
-              similique quisquam perspiciatis impedit.
-            </h2>
+      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[#FFF5DF] flex items-center py-10'>
+        <div className='box-container-md w-full grid md:grid-cols-2 gap-8 items-center'>
+          {/* Text */}
+          <div className='text-center md:text-left'>
+            <motion.h2  {...SLIDE_UP} className='header-1 mb-5 text-[var(--secondary-color)] font-bold'>
+              {t('homeTitle')}
+            </motion.h2>
+            <motion.p  {...SLIDE_UP} className='text-base text-[var(--secondary-color)] max-w-[400px] mx-auto md:mx-0'>
+              {t('homeDes')}
+            </motion.p>
           </div>
-          {/*  */}
-          <div className='md:w-[300px] w-full md:h-auto h-[150px] md:rounded-full overflow-hidden'>
+          {/* Image */}
+          <div className='w-full h-[250px] md:h-auto md:translate-y-[200px] md:rounded-full overflow-hidden'>
             <img
               src='/images/hom4/hom4 (26).jpg'
               className='h-full w-full object-cover'
@@ -208,32 +229,72 @@ export default function Home () {
         </div>
       </section>
 
-      {/* about therapy */}
-
-      <section
-        className='md:h-screen h-[500px] overflow-hidden 
-       bg-[var(--secondary-color)] text-white flex justify-between items-center'
-      >
-        <div className='box-container-md w-full flex md:flex-row-reverse text-right flex-col gap-5 justify-between items-center'>
-          <div className=''>
-            <h2 className='header-1 font-bold max-w-[350px]'>
-              Serenity Through Vietnamese Head & Face Therapy
-            </h2>
-            <h2 className='text-md max-w-[350px] '>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate delectus accusamus, saepe tempore quos assumenda nam
-              similique quisquam perspiciatis impedit.
-            </h2>
-          </div>
-          {/*  */}
-          <div className='md:w-[300px] w-full md:h-auto h-[150px] md:rounded-full overflow-hidden'>
+      {/* About therapy */}
+      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] text-white flex items-center py-10'>
+        <div className='box-container-md w-full grid md:grid-cols-2 gap-8 items-center'>
+          {/* Image */}
+          <div className='w-full h-[250px] md:h-auto md:translate-y-[200px] md:rounded-full overflow-hidden order-1 md:order-none'>
             <img
-              src='/images/hom4/hom4 (26).jpg'
+              src='/images/544315_0.jpg'
               className='h-full w-full object-cover'
               alt='homesleep bed'
             />
           </div>
+          {/* Text */}
+          <div className='text-center md:text-right md:justify-self-end'>
+            <motion.h2  {...SLIDE_UP} className='header-1 mb-5 font-bold max-w-[350px] mx-auto md:mx-0'>
+              {t('homeTitle2')}
+            </motion.h2>
+            <motion.p  {...SLIDE_UP} className='text-md max-w-[350px] mx-auto md:mx-0'>
+              {t('homeDes2')}
+            </motion.p>
+          </div>
         </div>
+      </section>
+
+      {/* Promotion */}
+
+      <section
+        className='md:h-screen  overflow-auto scroll-hidden h-auto bg-[#FFF5DF]
+        flex flex-col items-center justify-center py-10'
+      >
+        <div className='w-full box-container flex justify-between items-center'>
+          <h2 className='header-1 mb-5 font-bold max-w-[350px] text-[var(--secondary-color)]'>
+            {t('promotion')}
+          </h2>
+          {/*  */}
+
+          <Link to='/promotion' className='group text-sm animated-slide-bg hover:text-white px-3 '>
+            <span className="flex duration-200 items-center gap-2 font-bold">
+              {t("see more")}
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='24'
+                height='24'
+                className='size-[36px]'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M5 12h14m-4 4l4-4m-4-4l4 4'
+                />
+              </svg>
+            </span>
+          </Link>
+        </div>
+        {/* Carousel Promotion */}
+        <HorizontalSwiper className='scroll-hidden box-container-md w-full items-center'>
+          {HOME_PROMOTION?.map((item,index) => (
+              <PromotionCard key={item.alt+index} src={item.src}
+              href={item.href}
+              className='md:w-[350px] w-[150px]'
+              alt={`${item.alt} promotion`} />
+            ))}
+        </HorizontalSwiper>
       </section>
     </main>
   )

@@ -1,21 +1,26 @@
+import { en } from "./en";
+import { th } from "./th";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { en } from "./en";
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 
 const resources = {
-  en : en
+  en: en,
+  th : th
 };
 
 i18n
-  .use(initReactI18next) 
+  .use(LanguageDetector) 
+  .use(initReactI18next)
   .init({
     resources,
-    lng: "en",
-
-    interpolation: {
-      escapeValue: false 
+    fallbackLng: "en",
+    interpolation: { escapeValue: false },
+    detection: {
+      order: ["localStorage", "navigator"], // เช็คจาก localStorage ก่อน
+      caches: ["localStorage"],             // จดจำใน localStorage
     }
   });
 
-  export default i18n;
+export default i18n;
