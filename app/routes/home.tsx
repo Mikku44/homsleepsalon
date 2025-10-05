@@ -255,7 +255,7 @@ export default function Home () {
       {/* Promotion */}
 
       <section
-        className='md:h-screen  overflow-auto scroll-hidden h-auto bg-[#FFF5DF]
+        className='md:h-screen max-h-[600px] overflow-auto scroll-hidden h-auto bg-[#FFF5DF]
         flex flex-col items-center justify-center py-10'
       >
         <div className='w-full box-container flex justify-between items-center'>

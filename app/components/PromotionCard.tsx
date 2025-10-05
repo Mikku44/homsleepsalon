@@ -33,14 +33,14 @@ const PromotionCard: React.FC<PromotionCardProps> = ({
           from-[var(--primary-color)]/80 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-200'
         >
           <div
-            className='text-[var(--secondary-color)] text-xl px-4 capitalize 
+            className='text-[var(--secondary-color)] md:text-xl text-sm px-4 capitalize 
             duration-200
             group-hover:translate-y-0 translate-y-2'
           >
             Promotion
           </div>
           <div
-            className='text-[var(--secondary-color)] text-xl font-medium pb-5 px-4 capitalize 
+            className='text-[var(--secondary-color)] md:text-xl text-sm font-medium pb-5 px-4 capitalize 
             duration-200
             group-hover:translate-y-0 translate-y-2'
           >
