@@ -7,6 +7,7 @@ export const th = {
         "products": "ผลิตภัณฑ์",
         "gallery": "แกลเลอรี่",
         "reserve": "จองเลย",
+        "salonspace": "ประสบการณ์ภายในร้าน",
 
         "Book Your Reservation": "จองการสำรองของคุณ",
 

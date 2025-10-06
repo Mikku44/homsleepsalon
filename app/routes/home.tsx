@@ -2,10 +2,17 @@ import { Link } from 'react-router'
 import { motion } from 'motion/react'
 import type { Route } from './+types/home'
 import { useTranslation } from 'react-i18next'
+import 'react-photo-view/dist/react-photo-view.css'
 import AutoFadeImage from '~/components/AutoFadeImage'
 import PromotionCard from '~/components/PromotionCard'
+import { PhotoProvider, PhotoView } from 'react-photo-view'
 import HorizontalSwiper from '~/components/HorizontalSwiper'
-import { BASE_URL, HOME_PROMOTION, SLIDE_UP } from '~/constant/app'
+import {
+  BASE_URL,
+  HOME_GALLERY,
+  HOME_PROMOTION,
+  SLIDE_UP
+} from '~/constant/app'
 
 export function meta ({}: Route.MetaArgs) {
   return [
@@ -168,7 +175,7 @@ export default function Home () {
           </div>
         </div>
         {/* text hero */}
-        <div className='w-full h-full absolute z-10 flex justify-center flex-col'>
+        <div className='w-full h-full absolute z-10 flex md:justify-center justify-end pb-5 flex-col'>
           <div className='box-container w-full'>
             <motion.h1
               {...SLIDE_UP}
@@ -187,39 +194,52 @@ export default function Home () {
         </div>
 
         <AutoFadeImage
+          className='md:block hidden'
           images={[
-            '/images/hom4/hom4 (8).jpg',
-            '/images/hom4/hom4 (9).jpg',
-            '/images/hom4/hom4 (28).jpg',
-            '/images/hom4/hom4 (11).jpg',
-            '/images/hom3/hom3 (13).jpg',
-            '/images/hom3/hom3 (23).jpg',
-            '/images/hom2/hom2 (23).jpg',
-            '/images/hom1/hom1 (2).jpg',
-            '/images/544325_0.jpg'
+            '/images/hom2/hom2 (2).jpg',
+            '/images/hom3/hom3 (17).jpg',
+            '/images/hom3/hom3 (12).jpg',
+            '/images/hom2/hom2 (19).jpg'
           ]}
           interval={4000}
-          height={800}
+          height={700}
         />
-        <div className='w-full h-full bg-gradient-to-t from-black to-black/10 absolute z-[9] top-0'>
+        <AutoFadeImage
+          className='md:hidden'
+          images={[
+            '/images/544348_0.jpg',
+            '/images/544351_0.jpg',
+            '/images/hom1/hom1 (16).jpg',
+            '/images/hom3/hom3 (13).jpg'
+          ]}
+          interval={4000}
+          height={700}
+        />
+        <div className='w-full h-full bg-gradient-to-t from-black/40 to-black/10 absolute z-[9] top-0'>
           {' '}
         </div>
       </div>
 
       {/* What is homsleesalon */}
-      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[#FFF5DF] flex items-center py-10'>
+      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[#FFF5DF] flex items-center pt-10 md:py-10'>
         <div className='box-container-md w-full grid md:grid-cols-2 gap-8 items-center'>
           {/* Text */}
           <div className='text-center md:text-left'>
-            <motion.h2  {...SLIDE_UP} className='header-1 mb-5 text-[var(--secondary-color)] font-bold'>
+            <motion.h2
+              {...SLIDE_UP}
+              className='header-1 mb-5 text-[var(--secondary-color)] font-bold'
+            >
               {t('homeTitle')}
             </motion.h2>
-            <motion.p  {...SLIDE_UP} className='text-base text-[var(--secondary-color)] max-w-[400px] mx-auto md:mx-0'>
+            <motion.p
+              {...SLIDE_UP}
+              className='text-base text-[var(--secondary-color)] max-w-[400px] mx-auto md:mx-0'
+            >
               {t('homeDes')}
             </motion.p>
           </div>
           {/* Image */}
-          <div className='w-full h-[250px] md:h-auto md:translate-y-[200px] md:rounded-full overflow-hidden'>
+          <div className='w-full h-[450px] md:h-auto md:translate-y-[200px] rounded-t-full md:rounded-full overflow-hidden'>
             <img
               src='/images/hom4/hom4 (26).jpg'
               className='h-full w-full object-cover'
@@ -230,10 +250,13 @@ export default function Home () {
       </section>
 
       {/* About therapy */}
-      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] text-white flex items-center py-10'>
+      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] text-white flex items-center pt-10 md:py-10'>
         <div className='box-container-md w-full grid md:grid-cols-2 gap-8 items-center'>
           {/* Image */}
-          <div className='w-full h-[250px] md:h-auto md:translate-y-[200px] md:rounded-full overflow-hidden order-1 md:order-none'>
+          <div
+            className='w-full h-[450px] md:h-auto md:translate-y-[200px] rounded-t-full
+           md:rounded-full overflow-hidden order-1 md:order-none'
+          >
             <img
               src='/images/544315_0.jpg'
               className='h-full w-full object-cover'
@@ -242,20 +265,44 @@ export default function Home () {
           </div>
           {/* Text */}
           <div className='text-center md:text-right md:justify-self-end'>
-            <motion.h2  {...SLIDE_UP} className='header-1 mb-5 font-bold max-w-[350px] mx-auto md:mx-0'>
+            <motion.h2
+              {...SLIDE_UP}
+              className='header-1 mb-5 font-bold max-w-[350px] mx-auto md:mx-0'
+            >
               {t('homeTitle2')}
             </motion.h2>
-            <motion.p  {...SLIDE_UP} className='text-md max-w-[350px] mx-auto md:mx-0'>
+            <motion.p
+              {...SLIDE_UP}
+              className='text-md max-w-[350px] mx-auto md:mx-0'
+            >
               {t('homeDes2')}
             </motion.p>
           </div>
         </div>
       </section>
 
+      {/* Videos */}
+
+      <section className='py-10 bg-amber-50'>
+        <div className='box-container grid md:grid-cols-3 gap-4'>
+          {['1-eLOc2B9Kw', 'LfVYHlN5-0I', '8ezlnbREsCc'].map(video => (
+            <iframe
+              key={video}
+              width='auto'
+              height='auto'
+              className='w-full h-auto aspect-[9/16]'
+              src={`https://www.youtube.com/embed/${video}`}
+              title='Homsleepsalon hairwatch'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            ></iframe>
+          ))}
+        </div>
+      </section>
+
       {/* Promotion */}
 
       <section
-        className='md:h-screen max-h-[600px] overflow-auto scroll-hidden h-auto bg-[#FFF5DF]
+        className='md:h-screen  overflow-auto h-auto bg-[#FFF5DF]
         flex flex-col items-center justify-center py-10'
       >
         <div className='w-full box-container flex justify-between items-center'>
@@ -264,9 +311,12 @@ export default function Home () {
           </h2>
           {/*  */}
 
-          <Link to='/promotion' className='group text-sm animated-slide-bg hover:text-white px-3 '>
-            <span className="flex duration-200 items-center gap-2 font-bold">
-              {t("see more")}
+          <Link
+            to='/promotion'
+            className='group text-sm animated-slide-bg hover:text-white px-3 '
+          >
+            <span className='flex duration-200 items-center gap-2 font-bold'>
+              {t('see more')}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -277,9 +327,9 @@ export default function Home () {
                 <path
                   fill='none'
                   stroke='currentColor'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   d='M5 12h14m-4 4l4-4m-4-4l4 4'
                 />
               </svg>
@@ -287,14 +337,126 @@ export default function Home () {
           </Link>
         </div>
         {/* Carousel Promotion */}
-        <HorizontalSwiper className='scroll-hidden box-container-md w-full items-center'>
-          {HOME_PROMOTION?.map((item,index) => (
-              <PromotionCard key={item.alt+index} src={item.src}
+        <HorizontalSwiper className=' box-container-md w-full items-center'>
+          {HOME_PROMOTION?.map((item, index) => (
+            <PromotionCard
+              key={item.alt + index}
+              src={item.src}
               href={item.href}
-              className='md:w-[350px] w-[150px]'
-              alt={`${item.alt} promotion`} />
-            ))}
+              className='md:w-[350px] w-[250px]'
+              alt={`${item.alt} promotion`}
+            />
+          ))}
         </HorizontalSwiper>
+      </section>
+
+      {/* Hero Section */}
+
+      <section className='relative  h-[800px] w-full'>
+        <img
+          src='/images/hom4/hom4 (28).jpg'
+          className='w-full h-full object-cover'
+          alt='hero section'
+        />
+        <div className='w-full h-full flex items-center flex-col justify-center text-white bg-black/60 absolute z-[9] top-0'>
+          <motion.div {...SLIDE_UP} className=''>
+            <img
+              className='size-[64px] invert text-white'
+              src='/icons/spa-svgrepo-com.svg'
+              alt='spa icon'
+            />
+          </motion.div>
+          <motion.h2
+            {...SLIDE_UP}
+            className='header-1 mb-5 font-bold text-center max-w-[350px] mx-auto md:mx-0'
+          >
+            {t('homeTitle2')}
+          </motion.h2>
+        </div>
+      </section>
+
+      {/* Homsleep gallery */}
+
+      <section
+        className='md:h-screen  overflow-auto h-auto bg-[#FFF5DF]
+        flex flex-col items-center justify-center py-10'
+      >
+        <div className='w-full box-container flex justify-between items-center'>
+          <h2 className='header-1 mb-5 font-bold  text-[var(--secondary-color)]'>
+            {t('salonspace')}
+          </h2>
+          {/*  */}
+        </div>
+        {/* Carousel Gallery */}
+        <PhotoProvider>
+          <HorizontalSwiper className=' box-container-md w-full items-center'>
+            {HOME_GALLERY?.map((item, index) => (
+              <PhotoView key={index} src={item.src}>
+                <motion.div
+                  {...SLIDE_UP}
+                  className='w-full mb-2 h-[300px]  md:h-[500px] select-none overflow-hidden rounded-2xl'
+                >
+                  <img
+                    src={item.src}
+                    loading='lazy'
+                    alt={`homsleepsalon service ${index + 1}`}
+                    className=' w-full h-full break-inside-avoid object-cover cursor-pointer'
+                  />
+                </motion.div>
+              </PhotoView>
+            ))}
+          </HorizontalSwiper>
+        </PhotoProvider>
+      </section>
+
+      {/* call to action */}
+
+      <section className='h-[600px] flex items-center justify-center bg-[var(--tertiary-color)]'>
+        <div className='box-container w-full'>
+          <div className='w-full h-[550px] relative  overflow-hidden rounded-3xl '>
+            {/* Gradient overlay */}
+            <div className='w-full h-full bg-gradient-to-t flex md:flex-row flex-col justify-center
+             md:justify-around items-center from-black/90 to-black/10 absolute z-[9] top-0 left-0'>
+              <motion.h2
+                {...SLIDE_UP}
+                className='header-1 mb-5 font-bold text-center max-w-[350px] text-white mx-auto md:mx-0'
+              >
+                {t('homCTA')}
+              </motion.h2>
+
+              <Link
+                to='/reserve'
+                className='font-medium group h-[40px] px-5 bg-[var(--primary-color)] 
+            text-black/80 flex gap-2 items-center justify-center'
+              >
+                <div className="">{t('reserve')}</div>
+                 <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='24'
+                height='24'
+                className='size-[24px] group-hover:translate-x-1 duration-150'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  fill='none'
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M5 12h14m-4 4l4-4m-4-4l4 4'
+                />
+              </svg>
+              </Link>
+            </div>
+            {/* Image */}
+            <img
+              src='/images/544341_0.jpg'
+              loading='lazy'
+              alt='homsleepsalon reverve spa'
+              className='w-full h-full object-cover object-center'
+            />
+          </div>
+        </div>
       </section>
     </main>
   )

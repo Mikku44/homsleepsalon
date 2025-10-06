@@ -70,6 +70,20 @@ export const HOME_PROMOTION = [
   
 ];
 
+export const HOME_GALLERY = [
+  {src : "/images/hom4/hom4 (1).jpg"},
+  {src : "/images/hom4/hom4 (2).jpg"},
+  {src : "/images/hom4/hom4 (3).jpg"},
+  {src : "/images/hom4/hom4 (4).jpg"},
+  {src : "/images/hom4/hom4 (5).jpg"},
+  {src : "/images/hom4/hom4 (6).jpg"},
+  {src : "/images/hom4/hom4 (7).jpg"},
+  {src : "/images/hom4/hom4 (8).jpg"},
+  {src : "/images/hom4/hom4 (9).jpg"},
+  {src : "/images/hom4/hom4 (26).jpg"},
+  {src : "/images/hom4/hom4 (20).jpg"},
+]
+
 
 
 export const listOfLang = [

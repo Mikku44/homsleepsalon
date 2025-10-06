@@ -8,6 +8,8 @@ export const en = {
         "products": "Products",
         "gallery": "Gallery",
         "reserve": "Reserve",
+        "salonspace": "SALON EXPERIENCE",
+        "homCTA" : "Book Your Hom Sleep Experience",
         "see more" : "See more",
 
         "Book Your Reservation": "Book Your Reservation",
