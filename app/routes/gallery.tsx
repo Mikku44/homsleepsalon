@@ -40,19 +40,7 @@ export default function Gallery () {
         className='md:h-screen h-[500px] overflow-hidden 
        bg-amber-100 flex justify-center items-center relative'
       >
-        {/* image */}
-        {/* <div className='md:w-[250px] md:block hidden absolute left-10 md:h-auto  overflow-hidden'>
-          <img
-            src='/icons/star-geometry.svg'
-            className='size-[80px] absolute z-10'
-            alt='star-geometry'
-          />
-          <img
-            src='/images/hom4/hom4 (26).jpg'
-            className='h-full w-full object-cover rounded-t-full'
-            alt='homesleep bed'
-          />
-        </div> */}
+        
 
         {/* text */}
         <div className='box-container-md w-full flex  text-right flex-col gap-5 justify-center items-center'>

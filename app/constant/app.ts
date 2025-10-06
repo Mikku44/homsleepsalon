@@ -32,6 +32,9 @@ export const MENU = [
   {
     href: "/gallery", label: "gallery",
   },
+  {
+    href: "/news", label: "news",
+  },
 ]
 
 export const PROMOTIONS = [
@@ -44,53 +47,91 @@ export const PROMOTIONS = [
 export const HOME_PROMOTION = [
   {
     src: "/promotions/vietnam-banner.png",
-    href : "/promotion#",
+    href: "/promotion#",
     alt: "HomeSleepSalon Vietnam spa promotion and special offers"
   },
   {
     src: "/promotions/body-scrub.png",
-    href : "/promotion#",
+    href: "/promotion#",
     alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
   },
   {
     src: "/promotions/ear-aromatherapy.png",
-    href : "/promotion#",
+    href: "/promotion#",
     alt: "HomeSleepSalon ear aromatherapy spa service"
   },
   {
     src: "/promotions/face-spa.png",
-    href : "/promotion#",
+    href: "/promotion#",
     alt: "HomeSleepSalon facial spa and skin care treatment"
   },
   {
     src: "/promotions/foot-spa.png",
-    href : "/promotion#",
+    href: "/promotion#",
     alt: "HomeSleepSalon foot spa and massage service"
   },
-  
+
 ];
 
 export const HOME_GALLERY = [
-  {src : "/images/hom4/hom4 (47).jpg"},
-  {src : "/images/hom4/hom4 (108).jpg"},
-  {src : "/images/hom4/hom4 (98).jpg"},
-  {src : "/images/hom4/hom4 (5).jpg"},
-  {src : "/images/hom4/hom4 (122).jpg"},
-  {src : "/images/hom4/hom4 (7).jpg"},
-  {src : "/images/hom4/hom4 (129).jpg"},
-  {src : "/images/hom4/hom4 (9).jpg"},
-  {src : "/images/hom4/hom4 (26).jpg"},
-  {src : "/images/hom4/hom4 (83).jpg"},
-  {src : "/images/hom4/hom4 (20).jpg"},
-  {src : "/images/hom4/hom4 (135).jpg"},
-  {src : "/images/hom4/hom4 (150).jpg"},
+  { src: "/images/hom4/hom4 (47).jpg" },
+  { src: "/images/hom4/hom4 (108).jpg" },
+  { src: "/images/hom4/hom4 (98).jpg" },
+  { src: "/images/hom4/hom4 (5).jpg" },
+  { src: "/images/hom4/hom4 (122).jpg" },
+  { src: "/images/hom4/hom4 (7).jpg" },
+  { src: "/images/hom4/hom4 (129).jpg" },
+  { src: "/images/hom4/hom4 (9).jpg" },
+  { src: "/images/hom4/hom4 (26).jpg" },
+  { src: "/images/hom4/hom4 (83).jpg" },
+  { src: "/images/hom4/hom4 (20).jpg" },
+  { src: "/images/hom4/hom4 (135).jpg" },
+  { src: "/images/hom4/hom4 (150).jpg" },
 ]
 
 export const SCRUB_GALLERY = [
-  {src : "/promotions/aromatic-jasmins-en.png"},
-  {src : "/promotions/aromatic-lavender-en.png"},
-  {src : "/promotions/aromatic-peppermint-en.png"},
-  {src : "/promotions/aromatic-tamarind-en.png"},
+  { src: "/promotions/aromatic-jasmins-en.png" },
+  { src: "/promotions/aromatic-lavender-en.png" },
+  { src: "/promotions/aromatic-peppermint-en.png" },
+  { src: "/promotions/aromatic-rose-en.png" },
+  { src: "/promotions/aromatic-tamarind-en.png" },
+
+
+]
+export const CREAM_GALLERY = [
+  { src: "/promotions/good-hair.png" },
+  { src: "/promotions/cream-treatment.png" },
+  { src: "/promotions/rice-milk.png" },
+  { src: "/promotions/rice-milk-1.png" },
+  { src: "/promotions/rice-milk-2.png" },
+
+]
+
+export const OIL_GALLERY = [
+  { src: "/promotions/lavender-004.png" },
+  { src: "/promotions/lavender-004-1.png" },
+  { src: "/promotions/lavender-004-2.png" },
+  { src: "/promotions/lavender-oil.png" },
+  { src: "/promotions/lavender-oil-1.png" },
+  { src: "/promotions/lavender-oil-2.png" },
+  { src: "/promotions/oil-peony.png" },
+  { src: "/promotions/oil-peony-1.png" },
+  { src: "/promotions/oil-peony-2.png" },
+  { src: "/promotions/pure-body.png" },
+  { src: "/promotions/pure-body-1.png" },
+  { src: "/promotions/pure-body-2.png" },
+]
+
+export const SHAMPO_GALLERY = [
+  { src: "/promotions/lemongrass-shampo.png" },
+  { src: "/promotions/lemongrass-shampo-1.png" },
+  { src: "/promotions/lemongrass-shampo-2.png" },
+  { src: "/promotions/moisturizing.png" },
+  { src: "/promotions/moisturizing-1.png" },
+  { src: "/promotions/moisturizing-2.png" },
+  { src: "/promotions/shampo-flowery.png" },
+  { src: "/promotions/shampo-flowery-1.png" },
+  { src: "/promotions/shampo-flowery-2.png" },
 
 
 ]

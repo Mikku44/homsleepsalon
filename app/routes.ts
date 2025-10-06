@@ -8,4 +8,5 @@ export default [
     route("/products","routes/product.tsx"),
     route("/gallery","routes/gallery.tsx"),
     route("/reserve","routes/reserve.tsx"),
+    route("/news","routes/news.tsx"),
 ] satisfies RouteConfig;
