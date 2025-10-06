@@ -71,17 +71,28 @@ export const HOME_PROMOTION = [
 ];
 
 export const HOME_GALLERY = [
-  {src : "/images/hom4/hom4 (1).jpg"},
-  {src : "/images/hom4/hom4 (2).jpg"},
-  {src : "/images/hom4/hom4 (3).jpg"},
-  {src : "/images/hom4/hom4 (4).jpg"},
+  {src : "/images/hom4/hom4 (47).jpg"},
+  {src : "/images/hom4/hom4 (108).jpg"},
+  {src : "/images/hom4/hom4 (98).jpg"},
   {src : "/images/hom4/hom4 (5).jpg"},
-  {src : "/images/hom4/hom4 (6).jpg"},
+  {src : "/images/hom4/hom4 (122).jpg"},
   {src : "/images/hom4/hom4 (7).jpg"},
-  {src : "/images/hom4/hom4 (8).jpg"},
+  {src : "/images/hom4/hom4 (129).jpg"},
   {src : "/images/hom4/hom4 (9).jpg"},
   {src : "/images/hom4/hom4 (26).jpg"},
+  {src : "/images/hom4/hom4 (83).jpg"},
   {src : "/images/hom4/hom4 (20).jpg"},
+  {src : "/images/hom4/hom4 (135).jpg"},
+  {src : "/images/hom4/hom4 (150).jpg"},
+]
+
+export const SCRUB_GALLERY = [
+  {src : "/promotions/aromatic-jasmins-en.png"},
+  {src : "/promotions/aromatic-lavender-en.png"},
+  {src : "/promotions/aromatic-peppermint-en.png"},
+  {src : "/promotions/aromatic-tamarind-en.png"},
+
+
 ]
 
 

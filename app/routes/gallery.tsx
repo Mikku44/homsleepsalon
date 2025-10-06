@@ -41,7 +41,7 @@ export default function Gallery () {
        bg-amber-100 flex justify-center items-center relative'
       >
         {/* image */}
-        <div className='md:w-[250px] md:block hidden absolute left-10 md:h-auto  overflow-hidden'>
+        {/* <div className='md:w-[250px] md:block hidden absolute left-10 md:h-auto  overflow-hidden'>
           <img
             src='/icons/star-geometry.svg'
             className='size-[80px] absolute z-10'
@@ -52,7 +52,7 @@ export default function Gallery () {
             className='h-full w-full object-cover rounded-t-full'
             alt='homesleep bed'
           />
-        </div>
+        </div> */}
 
         {/* text */}
         <div className='box-container-md w-full flex  text-right flex-col gap-5 justify-center items-center'>
