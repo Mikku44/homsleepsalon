@@ -13,7 +13,9 @@
 }
 
 html,
-body {}
+body {
+  scroll-behavior: smooth;
+}
 
 
 .scroll-hidden::-webkit-scrollbar {

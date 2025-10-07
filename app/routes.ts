@@ -9,4 +9,5 @@ export default [
     route("/gallery","routes/gallery.tsx"),
     route("/reserve","routes/reserve.tsx"),
     route("/news","routes/news.tsx"),
+    route("/news/:id","routes/newsDetail.tsx"),
 ] satisfies RouteConfig;

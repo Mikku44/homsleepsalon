@@ -1,3 +1,5 @@
+import type { NewsArticle } from "~/types/types";
+
 export const BASE_URL = "https://homsleepsalon.vercel.app"
 
 export const SLIDE_UP = {
@@ -20,9 +22,9 @@ export const MENU = [
   {
     href: "/aboutus", label: "aboutus",
   },
-  {
-    href: "/booking", label: "booking",
-  },
+  // {
+  //   href: "/booking", label: "booking",
+  // },
   {
     href: "/promotion", label: "promotion",
   },
@@ -51,10 +53,11 @@ export const HOME_PROMOTION = [
     alt: "HomeSleepSalon Vietnam spa promotion and special offers"
   },
   {
-    src: "/promotions/body-scrub.png",
+    src: "/promotions/foot-spa.png",
     href: "/promotion#",
-    alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
+    alt: "HomeSleepSalon foot spa and massage service"
   },
+
   {
     src: "/promotions/ear-aromatherapy.png",
     href: "/promotion#",
@@ -65,10 +68,64 @@ export const HOME_PROMOTION = [
     href: "/promotion#",
     alt: "HomeSleepSalon facial spa and skin care treatment"
   },
+
+  {
+    src: "/promotions/body-scrub.png",
+    href: "/promotion#",
+    alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
+  },
+
+];
+export const ALL_PROMOTION = [
+  {
+    src: "/promotions/vietnam-banner.png",
+    href: "https://line.me/R/ti/p/@408onese?text=Vietnam spa promotion and special offers",
+    alt: "HomeSleepSalon Vietnam spa promotion and special offers"
+  },
   {
     src: "/promotions/foot-spa.png",
-    href: "/promotion#",
+    href: "https://line.me/R/ti/p/@408onese?text=foot spa and massage service",
     alt: "HomeSleepSalon foot spa and massage service"
+  },
+
+  {
+    src: "/promotions/relaxing-hair.jpg",
+    href: "https://line.me/R/ti/p/@408onese?text=relaxing hair",
+    alt: "HomeSleepSalon relaxing hair"
+  },
+  {
+    src: "/promotions/ear-aromatherapy.png",
+    href: "https://line.me/R/ti/p/@408onese?text=ear aromatherapy spa service",
+    alt: "HomeSleepSalon ear aromatherapy spa service"
+  },
+  {
+    src: "/promotions/face-spa.png",
+    href: "https://line.me/R/ti/p/@408onese?text=facial spa and skin care treatment",
+    alt: "HomeSleepSalon facial spa and skin care treatment"
+  },
+
+ 
+  {
+    src: "/promotions/nail.png",
+    href: "https://line.me/R/ti/p/@408onese?text=nail spa paraffin",
+    alt: "HomeSleepSalon nail spa paraffin"
+  },
+ {
+    src: "/promotions/body-scrub.png",
+    href: "https://line.me/R/ti/p/@408onese?text=body scrub and aroma therapy spa treatment",
+    alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
+  },
+  
+  {
+    src: "/promotions/vip-promo.png",
+    href: "https://line.me/R/ti/p/@408onese?text=VIP Private Spa Expirience",
+    alt: "HomeSleepSalon VIP Private Spa Expirience"
+  },
+  
+  {
+    src: "/promotions/voucher.jpg",
+    href: "https://line.me/R/ti/p/@408onese?text=voucher",
+    alt: "HomeSleepSalon voucher"
   },
 
 ];
@@ -87,6 +144,14 @@ export const HOME_GALLERY = [
   { src: "/images/hom4/hom4 (20).jpg" },
   { src: "/images/hom4/hom4 (135).jpg" },
   { src: "/images/hom4/hom4 (150).jpg" },
+]
+
+export const HOME_TIKTOK = [
+  { src: "/videos/homsleep1.mp4" },
+  { src: "/videos/homsleep3.mp4" },
+  { src: "/videos/homsleep4.mp4" },
+  { src: "/videos/homsleep5.mp4" },
+
 ]
 
 export const SCRUB_GALLERY = [
@@ -147,3 +212,14 @@ export const listOfLang = [
   { label: "Tiếng Việt", value: "vi-VN", flag: "VN" },
   { label: "العربية", value: "ar-SA", flag: "SA" },
 ];
+
+
+export const ARTICLES: NewsArticle[] = [{
+  id: '1',
+  title: 'New Spa Experience Now Available',
+  description: 'Discover our latest Vietnamese head spa service designed to help you unwind completely.',
+  imageUrl: '/images/hom1/hom1 (1).jpg',
+  date: '2025-10-07',
+  category: 'Promotion',
+  link: 'spa-experience',
+}]

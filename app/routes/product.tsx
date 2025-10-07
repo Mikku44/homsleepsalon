@@ -2,7 +2,6 @@ import { BASE_URL, CREAM_GALLERY, OIL_GALLERY, SCRUB_GALLERY, SHAMPO_GALLERY, SL
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import type { Route } from './+types/product'
-import ProductCard from '~/components/ProductCard'
 import 'react-photo-view/dist/react-photo-view.css'
 import { PhotoProvider, PhotoView } from 'react-photo-view'
 import HorizontalSwiper from '~/components/HorizontalSwiper'

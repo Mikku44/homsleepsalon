@@ -37,7 +37,7 @@ export default function Gallery () {
   return (
     <main>
       <section
-        className='md:h-screen h-[500px] overflow-hidden 
+        className=' h-[500px] overflow-hidden 
        bg-amber-100 flex justify-center items-center relative'
       >
         

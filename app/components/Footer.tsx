@@ -11,23 +11,25 @@ export default function Footer () {
         <div className='col-span-2'>
           <h3 className='text-xl font-bold mb-5'>Homsleepsalon</h3>
           <p className='text-sm text-gray-200 mb-5 max-w-[300px]'>
-            Head Spa & Ear Cleaning Natural and vegan products BTS PhromPhong
-            Sukhumvit22 & Sathorn rama 3
+            {t('aboutusDes')}
           </p>
         </div>
 
-        
         {/* col 2 */}
         <div className=' text-sm mc-hd'>
-          <h3 className='font-bold mb-2'>Promotions</h3>
-          {/* social */}
+          {/* <h3 className='font-bold mb-2'>{t('promotions')}</h3>
+          
           <div className='flex gap-2 flex-col nav-item'>
             {PROMOTIONS.map(promotion => (
-              <Link className='nav-lnk w-fit mb-1' key={promotion.label} to={promotion.href}>
+              <Link
+                className='nav-lnk w-fit mb-1'
+                key={promotion.label}
+                to={promotion.href}
+              >
                 {t(promotion.label)}
               </Link>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* col 3 */}
@@ -36,7 +38,11 @@ export default function Footer () {
           {/* social */}
           <div className='flex gap-2 flex-col nav-item'>
             {MENU.map(menu => (
-              <Link className='nav-lnk w-fit mb-1' key={menu.label} to={menu.href}>
+              <Link
+                className='nav-lnk w-fit mb-1'
+                key={menu.label}
+                to={menu.href}
+              >
                 {t(menu.label)}
               </Link>
             ))}
@@ -162,6 +168,25 @@ export default function Footer () {
                 />
               </svg>
             </Link>
+            <Link
+              target='_blank'
+              rel='noreferal'
+              to='tel:+66657479789'
+              className=' text-white social-icon'
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='24'
+                height='24'
+                className='md:size-[24px] size-[16px]'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  fill='currentColor'
+                  d='M5 9.86a18.47 18.47 0 0 0 9.566 9.292l.68.303a3.5 3.5 0 0 0 4.33-1.247l.889-1.324a1 1 0 0 0-.203-1.335l-3.012-2.43a1 1 0 0 0-1.431.183l-.932 1.257a12.14 12.14 0 0 1-5.51-5.511l1.256-.932a1 1 0 0 0 .183-1.431l-2.43-3.012a1 1 0 0 0-1.335-.203l-1.333.894a3.5 3.5 0 0 0-1.237 4.355z'
+                />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
@@ -172,10 +197,14 @@ export default function Footer () {
         </div>
 
         {/* terms */}
-        <div className='flex items-center gap-5 nav-item'>
-          <Link className='nav-lnk' to='/#'>Privacy</Link>
-          <Link className='nav-lnk' to='/#'>Terms</Link>
-        </div>
+        {/* <div className='flex items-center gap-5 nav-item'>
+          <Link className='nav-lnk' to='/#'>
+            Privacy
+          </Link>
+          <Link className='nav-lnk' to='/#'>
+            Terms
+          </Link>
+        </div> */}
       </div>
     </footer>
   )

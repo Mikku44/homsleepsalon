@@ -1,6 +1,7 @@
 
 export const en = {
     "translation": {
+        "lang": "en",
         "home": "Home",
         "aboutus": "About us",
         "booking": "Booking",
@@ -11,13 +12,27 @@ export const en = {
         "news": "News",
         "reserve": "Reserve",
         "shampo": "Shampo",
+        "homeVideo": "A Relaxing Experience You’ll Fall in Love With", //บรรยากาศแห่งการพักผ่อน ที่คุณต้องหลงรัก
+        "homeSec2": "Experience Ultimate Relaxation in Authentic Vietnamese Style", //ผ่อนคลายเหนือระดับ สไตล์เวียดนามแท้
         "massageoil": "Massage Oil",
         "hairconditional": "Hair Conditional",
         "bodyscrub": "Body Salt Scrub Aromatic",
         "productDes": "Premium hair care shampoo and body scrub designed to cleanse, refresh, and rejuvenate your hair and skin",
         "salonspace": "SALON EXPERIENCE",
-        "homCTA" : "Book Your Hom Sleep Experience",
-        "see more" : "See more",
+        "homCTA": "Book Your Hom Sleep Experience",
+        "aboutTitle": "About Home Sleep Salon",
+        "aboutusDes": "Head Spa & Ear Cleaning Natural and vegan products BTS PhromPhong Sukhumvit22 & Sathorn rama 3",
+        "promotionDes": "Relax, Refresh, and Enjoy Special Offers from HOM Sleep Salon",
+        "see more": "See more",
+        "newsDes": "Stay updated with the latest news, promotions, and relaxation tips from HOM Sleep Salon",
+
+
+        "aboutUSTitle": "What Home Sleep Salon Do?",
+        "aboutUSDes": `At HOM Sleep Salon, we believe true happiness begins with relaxation.
+        We invite you to experience authentic Vietnamese head spa therapy — a gentle blend of soothing massage techniques and calming aromas designed to release your daily tension.
+
+Every corner of our salon is crafted to feel like home — a warm and peaceful space where you can unwind, recharge, and simply breathe. Whether you come for a head spa, a relaxing wash, or a quiet moment away from the rush, our caring touch is here to comfort you.
+        `,
 
         "Book Your Reservation": "Book Your Reservation",
 

@@ -11,8 +11,10 @@ import {
   BASE_URL,
   HOME_GALLERY,
   HOME_PROMOTION,
+  HOME_TIKTOK,
   SLIDE_UP
 } from '~/constant/app'
+import TiktokVideo from '~/components/TiktokVideo'
 
 export function meta ({}: Route.MetaArgs) {
   return [
@@ -169,6 +171,25 @@ export default function Home () {
                 <path
                   fill='currentColor'
                   d='M16 0c-4.349 0-4.891.021-6.593.093c-1.709.084-2.865.349-3.885.745a7.85 7.85 0 0 0-2.833 1.849A7.8 7.8 0 0 0 .84 5.52C.444 6.54.179 7.696.095 9.405c-.077 1.703-.093 2.244-.093 6.593s.021 4.891.093 6.593c.084 1.704.349 2.865.745 3.885a7.85 7.85 0 0 0 1.849 2.833a7.8 7.8 0 0 0 2.833 1.849c1.02.391 2.181.661 3.885.745c1.703.077 2.244.093 6.593.093s4.891-.021 6.593-.093c1.704-.084 2.865-.355 3.885-.745a7.85 7.85 0 0 0 2.833-1.849a7.7 7.7 0 0 0 1.849-2.833c.391-1.02.661-2.181.745-3.885c.077-1.703.093-2.244.093-6.593s-.021-4.891-.093-6.593c-.084-1.704-.355-2.871-.745-3.885a7.85 7.85 0 0 0-1.849-2.833A7.7 7.7 0 0 0 26.478.838c-1.02-.396-2.181-.661-3.885-.745C20.89.016 20.349 0 16 0m0 2.88c4.271 0 4.781.021 6.469.093c1.557.073 2.405.333 2.968.553a5 5 0 0 1 1.844 1.197a4.9 4.9 0 0 1 1.192 1.839c.22.563.48 1.411.553 2.968c.072 1.688.093 2.199.093 6.469s-.021 4.781-.099 6.469c-.084 1.557-.344 2.405-.563 2.968c-.303.751-.641 1.276-1.199 1.844a5.05 5.05 0 0 1-1.844 1.192c-.556.22-1.416.48-2.979.553c-1.697.072-2.197.093-6.479.093s-4.781-.021-6.48-.099c-1.557-.084-2.416-.344-2.979-.563c-.76-.303-1.281-.641-1.839-1.199c-.563-.563-.921-1.099-1.197-1.844c-.224-.556-.48-1.416-.563-2.979c-.057-1.677-.084-2.197-.084-6.459c0-4.26.027-4.781.084-6.479c.083-1.563.339-2.421.563-2.979c.276-.761.635-1.281 1.197-1.844c.557-.557 1.079-.917 1.839-1.199c.563-.219 1.401-.479 2.964-.557c1.697-.061 2.197-.083 6.473-.083zm0 4.907A8.21 8.21 0 0 0 7.787 16A8.21 8.21 0 0 0 16 24.213A8.21 8.21 0 0 0 24.213 16A8.21 8.21 0 0 0 16 7.787m0 13.546c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333s5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333M26.464 7.459a1.923 1.923 0 0 1-1.923 1.921a1.919 1.919 0 1 1 0-3.838c1.057 0 1.923.86 1.923 1.917'
+                />
+              </svg>
+            </Link>
+            <Link
+              target='_blank'
+              rel='noreferal'
+              to='tel:+66657479789'
+              className=' text-white social-icon'
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='24'
+                height='24'
+                className='md:size-[24px] size-[16px]'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  fill='currentColor'
+                  d='M5 9.86a18.47 18.47 0 0 0 9.566 9.292l.68.303a3.5 3.5 0 0 0 4.33-1.247l.889-1.324a1 1 0 0 0-.203-1.335l-3.012-2.43a1 1 0 0 0-1.431.183l-.932 1.257a12.14 12.14 0 0 1-5.51-5.511l1.256-.932a1 1 0 0 0 .183-1.431l-2.43-3.012a1 1 0 0 0-1.335-.203l-1.333.894a3.5 3.5 0 0 0-1.237 4.355z'
                 />
               </svg>
             </Link>
@@ -409,14 +430,62 @@ export default function Home () {
         </PhotoProvider>
       </section>
 
+      {/* More Video */}
+
+      <section className='relative h-[600px] w-full'>
+        <img
+          src='/images/hom4/hom4 (202).jpg'
+          className='w-full h-full object-cover'
+          alt='hero section'
+        />
+        <div className='w-full h-full flex items-center flex-col justify-center text-white bg-black/60 absolute z-[9] top-0'>
+          <motion.div {...SLIDE_UP} className=''>
+            <img
+              className='size-[64px] invert text-white'
+              src='/icons/spa-svgrepo-com.svg'
+              alt='spa icon'
+            />
+          </motion.div>
+          <motion.h2
+            {...SLIDE_UP}
+            className='header-1 mb-5 font-bold text-center max-w-[400px] mx-auto md:mx-0'
+          >
+            {t('homeSec2')}
+          </motion.h2>
+        </div>
+      </section>
+
+      {/* Homsleep Tiktok */}
+
+      <section
+        className='md:h-screen  overflow-auto h-auto bg-[#FFF5DF]
+        flex flex-col items-center justify-center py-10'
+      >
+        {/* Carousel Tiktok */}
+
+        <HorizontalSwiper className=' box-container-md w-full items-center'>
+          {HOME_TIKTOK?.map((item, index) => (
+            <motion.div
+              {...SLIDE_UP}
+              key={index}
+              className='w-full mb-2 h-[400px]  md:h-[600px] select-none overflow-hidden rounded-2xl'
+            >
+              <TiktokVideo src={item.src} />
+            </motion.div>
+          ))}
+        </HorizontalSwiper>
+      </section>
+
       {/* call to action */}
 
       <section className='h-[600px] flex items-center justify-center bg-[var(--tertiary-color)]'>
         <div className='box-container w-full'>
           <div className='w-full h-[550px] relative  overflow-hidden rounded-3xl '>
             {/* Gradient overlay */}
-            <div className='w-full h-full bg-gradient-to-t flex md:flex-row flex-col justify-center
-             md:justify-around items-center from-black/90 to-black/10 absolute z-[9] top-0 left-0'>
+            <div
+              className='w-full h-full bg-gradient-to-t flex md:flex-row flex-col justify-center
+             md:justify-around items-center from-black/90 to-black/10 absolute z-[9] top-0 left-0'
+            >
               <motion.h2
                 {...SLIDE_UP}
                 className='header-1 mb-5 font-bold text-center max-w-[350px] text-white mx-auto md:mx-0'
@@ -429,23 +498,23 @@ export default function Home () {
                 className='font-medium group h-[40px] px-5 bg-[var(--primary-color)] 
             text-black/80 flex gap-2 items-center justify-center'
               >
-                <div className="">{t('reserve')}</div>
-                 <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                className='size-[24px] group-hover:translate-x-1 duration-150'
-                viewBox='0 0 24 24'
-              >
-                <path
-                  fill='none'
-                  stroke='currentColor'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='2'
-                  d='M5 12h14m-4 4l4-4m-4-4l4 4'
-                />
-              </svg>
+                <div className=''>{t('reserve')}</div>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  className='size-[24px] group-hover:translate-x-1 duration-150'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    fill='none'
+                    stroke='currentColor'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    d='M5 12h14m-4 4l4-4m-4-4l4 4'
+                  />
+                </svg>
               </Link>
             </div>
             {/* Image */}

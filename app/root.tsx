@@ -12,6 +12,8 @@ import './app.css'
 import Navigator from './components/navigator'
 import Footer from './components/Footer'
 import { ToasterProvider } from './components/Toast'
+import { useTranslation } from 'react-i18next'
+import FloatingSocialButtons from './components/FloatingButton'
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -39,22 +41,26 @@ export const links: Route.LinksFunction = () => [
 ]
 
 export function Layout ({ children }: { children: React.ReactNode }) {
+  const {t} = useTranslation();
   return (
-    <html lang='th'>
+    <html lang={t('lang')}>
       <head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <Meta />
         <Links />
+        
       </head>
       <body>
         <ToasterProvider>
         <Navigator />
+        <FloatingSocialButtons />
         {children}
         <Footer />
         <ScrollRestoration />
         <Scripts />
         </ToasterProvider>
+        
       </body>
     </html>
   )
