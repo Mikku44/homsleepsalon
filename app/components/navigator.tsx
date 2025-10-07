@@ -9,7 +9,7 @@ export default function Navigator () {
   const { t } = useTranslation();
    const location = useLocation()
   return (
-    <header className='fixed z-[99] w-full bg-black/20 backdrop-blur-sm'>
+    <header className='fixed  z-[99]  w-[95vw] mx-auto border-white/20 border left-[2vw] md:mt-5 mt-2 md:rounded-full bg-black/20 backdrop-blur-sm'>
       <nav className='box-container py-2 flex justify-between w-full'>
         {/* logo */}
         <div className='md:w-[60px] w-[40px]'>
