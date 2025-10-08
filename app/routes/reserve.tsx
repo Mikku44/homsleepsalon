@@ -67,7 +67,7 @@ export default function Reserve () {
   const onSubmit = async (data: ReserveFormData) => {
     try {
       await fetch(
-        'https://script.google.com/macros/s/AKfycby8d2SfxLps6Ux_EMMA0YZmlsxPFRHeaThk47fTyoFsdFcn9Rf3vmoS6qd2APr3SFHx/exec',
+        'https://script.google.com/macros/s/AKfycbx4f9KRNV7pPvg5G9quGIUx8SJVRJ9Jjo5WhDuzaTqBhffjH8UOVakCKgpZbRjvWcaL/exec',
         {
           method: 'POST',
           mode: 'no-cors',
