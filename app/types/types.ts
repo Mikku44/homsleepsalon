@@ -7,4 +7,5 @@ export interface NewsArticle {
   date?: string
   category?: string
   link?: string
+  tags? : string[]
 }

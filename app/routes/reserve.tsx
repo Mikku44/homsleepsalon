@@ -64,11 +64,28 @@ export default function Reserve () {
   }
   const [submitted, setSubmitted] = useState(false)
 
-  const onSubmit = (data: ReserveFormData) => {
-    toast('Success!', 'Your action was successful.')
-    console.log('Reserve Data:', data)
-    setSubmitted(true)
-    reset()
+  const onSubmit = async (data: ReserveFormData) => {
+    try {
+      await fetch(
+        'https://script.google.com/macros/s/AKfycby8d2SfxLps6Ux_EMMA0YZmlsxPFRHeaThk47fTyoFsdFcn9Rf3vmoS6qd2APr3SFHx/exec',
+        {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        }
+      )
+
+      toast('Success!', 'Your reservation has been sent.')
+      console.log('Reserve Data:', data)
+      setSubmitted(true)
+      reset()
+    } catch (error) {
+      toast('Error', 'Failed to send your reservation. Please try again.')
+      console.error('Error submitting to Google Sheets:', error)
+    }
   }
 
   return (
@@ -143,11 +160,11 @@ export default function Reserve () {
           <h2 className='text-2xl md:text-3xl font-semibold mb-6'>
             {t('Book Your Reservation')}
           </h2>
-          {submitted && (
+          {/* {submitted && (
             <p className='mb-6 text-green-600'>
               Thank you! Your reservation has been submitted.
             </p>
-          )}
+          )} */}
           <form
             onSubmit={handleSubmit(onSubmit)}
             className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl'
@@ -209,7 +226,7 @@ export default function Reserve () {
               )}
             </div>
             {/* Guests */}
-            <div className='flex flex-col'>
+            <div className='flex flex-col md:col-span-2'>
               <label className='font-medium mb-1'>Guests</label>
               <input
                 {...register('guests', { valueAsNumber: true })}
@@ -237,9 +254,10 @@ export default function Reserve () {
 
             {/* button */}
 
-            <div className='text-center w-full md:col-span-2'>{t("Other way")}</div>
+            <div className='text-center w-full md:col-span-2'>
+              {t('Other way')}
+            </div>
             <div className='flex gap-2  justify-center md:col-span-2'>
-            
               <Link
                 target='_blank'
                 rel='noreferal'
@@ -278,7 +296,7 @@ export default function Reserve () {
                   />
                 </svg>
               </Link>
-              
+
               <Link
                 target='_blank'
                 rel='noreferal'

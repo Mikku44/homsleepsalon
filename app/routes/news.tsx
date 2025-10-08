@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import NewsCard from '~/components/NewsCard'
-import {  ARTICLES } from '~/constant/app'
+import { ARTICLES } from '~/repositories/news'
+
 
 export function meta () {
   return [

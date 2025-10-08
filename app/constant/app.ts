@@ -1,5 +1,3 @@
-import type { NewsArticle } from "~/types/types";
-
 export const BASE_URL = "https://homsleepsalon.vercel.app"
 
 export const SLIDE_UP = {
@@ -214,12 +212,3 @@ export const listOfLang = [
 ];
 
 
-export const ARTICLES: NewsArticle[] = [{
-  id: '1',
-  title: 'New Spa Experience Now Available',
-  description: 'Discover our latest Vietnamese head spa service designed to help you unwind completely.',
-  imageUrl: '/images/hom1/hom1 (1).jpg',
-  date: '2025-10-07',
-  category: 'Promotion',
-  link: 'spa-experience',
-}]

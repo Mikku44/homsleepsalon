@@ -24,6 +24,9 @@ export const ja = {
         "promotionDes": "HOM Sleep Salonでリラックス、リフレッシュし、特別オファーをお楽しみください",
         "see more": "もっと見る",
         "Other way": "他の方法",
+         "serviceLocation": "サービス提供場所",
+        "getintouch": "お問い合わせ",
+        "getintouchDes": "お客様が心ゆくまでリラックスできるようサポートいたします。ご予約やご質問は、お気軽にお問い合わせください！",
         "newsDes": "HOM Sleep Salonからの最新ニュース、プロモーション、リラックスのヒントを入手してください",
         "aboutUSTitle": "Home Sleep Salonは何をしていますか？",
         "aboutUSDes": `HOM Sleep Salonでは、真の幸福はリラクゼーションから始まると信じています。

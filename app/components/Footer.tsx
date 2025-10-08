@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
-import { MENU, PROMOTIONS } from '~/constant/app'
+import { MENU } from '~/constant/app'
 
 export default function Footer () {
   const { t } = useTranslation()
@@ -53,7 +53,7 @@ export default function Footer () {
         <div className=' text-sm'>
           <h3 className='font-bold mb-1'>Stay in Touch</h3>
           {/* social */}
-          <div className='flex gap-2'>
+          <div className='flex gap-2 flex-wrap'>
             <Link
               target='_blank'
               rel='noreferal'

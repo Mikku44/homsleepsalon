@@ -24,6 +24,9 @@ export const vi = {
         "promotionDes": "Thư giãn, Tái tạo và Tận hưởng Ưu đãi Đặc biệt từ HOM Sleep Salon",
         "see more": "Xem thêm",
         "Other way": "Cách khác",
+         "serviceLocation": "Địa chỉ cửa hàng",
+        "getintouch": "Liên hệ với chúng tôi",
+        "getintouchDes": "Chúng tôi ở đây để giúp bạn thư giãn hoàn toàn. Hãy liên hệ với chúng tôi ngay hôm nay để đặt lịch hoặc hỏi bất kỳ câu hỏi nào!",
         "newsDes": "Cập nhật tin tức, khuyến mãi và mẹo thư giãn mới nhất từ HOM Sleep Salon",
         "aboutUSTitle": "Home Sleep Salon làm gì?",
         "aboutUSDes": `Tại HOM Sleep Salon, chúng tôi tin rằng hạnh phúc thực sự bắt đầu từ sự thư giãn.

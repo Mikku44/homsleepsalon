@@ -27,6 +27,9 @@ export const en = {
         "Other way": "Other way",
         "newsDes": "Stay updated with the latest news, promotions, and relaxation tips from HOM Sleep Salon",
 
+        "serviceLocation" : "Our Service Locations",
+        "getintouch" : "Get in touch",
+       "getintouchDes": "We’re here to help you unwind. Contact us today to schedule your visit or ask any questions!",
         "Reserve Now" : "Reserve Now",
         "aboutUSTitle": "What Home Sleep Salon Do?",
         "aboutUSDes": `At HOM Sleep Salon, we believe true happiness begins with relaxation.

@@ -24,6 +24,9 @@ export const zh = {
         "promotionDes": "在 HOM Sleep Salon 放松、焕新并享受特别优惠",
         "see more": "查看更多",
         "Other way": "其他方式",
+         "serviceLocation": "服务门店位置",
+        "getintouch": "联系我们",
+        "getintouchDes": "我们随时为您提供放松身心的服务。立即联系我们预约，或提出任何疑问！",
         "newsDes": "获取 HOM Sleep Salon 的最新新闻、促销和放松小贴士",
         "aboutUSTitle": "Home Sleep Salon 提供什么服务？",
         "aboutUSDes": `在 HOM Sleep Salon，我们相信真正的幸福始于放松。

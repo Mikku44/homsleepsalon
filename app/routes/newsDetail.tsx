@@ -1,20 +1,20 @@
 import { Link, useParams } from 'react-router'
-import { ARTICLES, BASE_URL } from '~/constant/app'
+import { BASE_URL } from '~/constant/app'
 import type { NewsArticle } from '~/types/types'
 import type { Route } from './+types/newsDetail'
+import { ARTICLES } from '~/repositories/news'
+import ReactMarkdown from 'react-markdown'
 
 export function meta ({ params }: Route.MetaArgs) {
   const id = params.id
   const article: NewsArticle | undefined = ARTICLES.find(a => a.link === id)
   return [
     {
-      title:
-        `Homsleepsalon | ${article?.title}`
+      title: `Homsleepsalon | ${article?.title}`
     },
     {
       name: 'description',
-      content:
-        `Homsleepsalon | ${article?.description}`
+      content: `Homsleepsalon | ${article?.description}`
     },
     {
       name: 'keywords',
@@ -23,13 +23,11 @@ export function meta ({ params }: Route.MetaArgs) {
     },
     {
       property: 'og:title',
-      content:
-        `Homsleepsalon | ${article?.title}`
+      content: `Homsleepsalon | ${article?.title}`
     },
     {
       property: 'og:description',
-      content:
-        `Homsleepsalon | ${article?.description}`
+      content: `Homsleepsalon | ${article?.description}`
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: `${BASE_URL}` },
@@ -57,7 +55,7 @@ export default function NewsDetail () {
   const { title, description, imageUrl, date, category } = article
 
   return (
-    <main className='max-w-4xl mx-auto px-4 py-10'>
+    <main className='max-w-4xl mx-auto px-4 py-10 md:pt-32 pt-20'>
       {/* Back button */}
       <div className='mb-6'>
         <Link
@@ -95,8 +93,27 @@ export default function NewsDetail () {
       </div>
 
       {/* Description / Content */}
-      <div className='prose prose-md max-w-full text-gray-700'>
+      {/* <div className='prose prose-md max-w-full text-gray-700'>
         <p>{article?.detail ?? description}</p>
+         
+      </div> */}
+
+      <article className='prose lg:prose-xl '>
+          <ReactMarkdown>{article?.detail ?? description}</ReactMarkdown>
+        </article>
+
+      {/* Tags */}
+      <div className='flex flex-wrap items-center gap-2 mt-4'>
+        {article?.tags?.map(tag => (
+          <span
+            key={tag}
+            className='px-3 py-1 text-sm font-medium bg-[var(--secondary-color)]
+             text-[var(--primary-color)] rounded-full
+              hover:text-white transition-colors duration-200'
+          >
+            #{tag}
+          </span>
+        ))}
       </div>
     </main>
   )

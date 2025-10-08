@@ -44,16 +44,10 @@ export default function Aboutus () {
         {/* Text Content */}
         <div className='relative z-10 w-full px-5 md:px-0'>
           <div className='box-container text-center md:text-left max-w-3xl mx-auto md:mx-0'>
-            <motion.h2
-              
-              className='md:text-6xl text-4xl text-[var(--primary-color)]  max-w-[450px] font-thin merriweather'
-            >
+            <motion.h2 className='md:text-6xl text-4xl text-[var(--primary-color)]  max-w-[450px] font-thin merriweather'>
               {t('aboutTitle')}
             </motion.h2>
-            <motion.p
-              
-              className='text-base sm:text-lg  mx-auto md:mx-0 leading-relaxed max-w-[600px]'
-            >
+            <motion.p className='text-base sm:text-lg  mx-auto md:mx-0 leading-relaxed max-w-[600px]'>
               {t('aboutusDes')}
             </motion.p>
           </div>
@@ -90,9 +84,11 @@ export default function Aboutus () {
       </section>
 
       {/* about us */}
-  
 
-       <section ref={scrollRef} className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[#FFF5DF] flex items-center pt-10 md:py-10'>
+      <section
+        ref={scrollRef}
+        className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[#FFF5DF] flex items-center pt-10 md:py-10'
+      >
         <div className='box-container-md w-full grid md:grid-cols-2 gap-8 items-center'>
           {/* Text */}
           <div className='text-center md:text-left'>
@@ -116,6 +112,66 @@ export default function Aboutus () {
               className='h-full w-full object-cover'
               alt='homesleep bed'
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Branches / Locations Section */}
+      <section className='py-16 bg-[#FFF5DF]'>
+        <div className='mx-auto flex flex-col gap-6'>
+          {/* Header */}
+          <motion.div {...SLIDE_UP} className='text-center'>
+            <h2 className='text-3xl md:text-4xl font-bold text-[var(--secondary-color)]'>
+              {t('getintouch')}
+            </h2>
+            <p className='mt-3 text-gray-700 max-w-md mx-auto'>
+              {t('getintouchDes')}
+            </p>
+          </motion.div>
+
+          {/* Branch Cards */}
+          <div className='grid gap-8 mt-10'>
+            {/* Sukhumvit 22 */}
+            <motion.div
+              {...SLIDE_UP}
+              className='flex flex-col overflow-hidden'
+            >
+              <div className='p-6 box-container'>
+                <h3 className='text-xl font-semibold text-[var(--secondary-color)] mb-2'>
+                  Sukhumvit 22
+                </h3>
+                <p className='text-gray-600 mb-4'>
+                  Conveniently located in the heart of Sukhumvit. Come relax
+                  with our signature treatments.
+                </p>
+              </div>
+              <iframe
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.814629147776!2d100.5656344!3d13.7296701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f00520c964f%3A0xd8a7b0dbff3225d3!2sHom%20Sleep%20Salon%20Sukhumvit%2022!5e0!3m2!1sth!2sth!4v1759912872377!5m2!1sth!2sth'
+                loading='lazy'
+                className='w-[90vw]  md:w-[70vw] mx-auto rounded-2xl h-64 md:h-80 border-t border-gray-200'
+              ></iframe>
+            </motion.div>
+
+            {/* Sathorn */}
+            <motion.div
+              {...SLIDE_UP}
+              className='flex flex-col overflow-hidden'
+            >
+              <div className='p-6 box-container'>
+                <h3 className='text-xl font-semibold text-[var(--secondary-color)] mb-2'>
+                  Sathorn
+                </h3>
+                <p className='text-gray-600 mb-4'>
+                  Our Sathorn branch offers a peaceful escape from the busy city
+                  life. Enjoy premium spa services here.
+                </p>
+              </div>
+              <iframe
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.1383965451146!2d100.53959141061674!3d13.71006659820289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f0009938ce3%3A0x89a18b5485f8e905!2sHom%20Sleep%20Salon%20Sathorn%20Rama3!5e0!3m2!1sth!2sth!4v1759912942510!5m2!1sth!2sth'
+                loading='lazy'
+                className='w-[90vw]  md:w-[70vw] mx-auto rounded-2xl h-64 md:h-80 border-t border-gray-200'
+              ></iframe>
+            </motion.div>
           </div>
         </div>
       </section>
