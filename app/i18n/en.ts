@@ -24,9 +24,10 @@ export const en = {
         "aboutusDes": "Head Spa & Ear Cleaning Natural and vegan products BTS PhromPhong Sukhumvit22 & Sathorn rama 3",
         "promotionDes": "Relax, Refresh, and Enjoy Special Offers from HOM Sleep Salon",
         "see more": "See more",
+        "Other way": "Other way",
         "newsDes": "Stay updated with the latest news, promotions, and relaxation tips from HOM Sleep Salon",
 
-
+        "Reserve Now" : "Reserve Now",
         "aboutUSTitle": "What Home Sleep Salon Do?",
         "aboutUSDes": `At HOM Sleep Salon, we believe true happiness begins with relaxation.
         We invite you to experience authentic Vietnamese head spa therapy — a gentle blend of soothing massage techniques and calming aromas designed to release your daily tension.

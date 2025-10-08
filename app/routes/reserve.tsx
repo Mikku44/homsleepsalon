@@ -231,13 +231,13 @@ export default function Reserve () {
                 disabled={isSubmitting}
                 className='w-full bg-[var(--primary-color)] text-black py-3 rounded font-medium hover:opacity-90 transition'
               >
-                {isSubmitting ? 'Submitting...' : 'Reserve Now'}
+                {isSubmitting ? 'Submitting...' : t('Reserve Now')}
               </button>
             </div>
 
             {/* button */}
 
-            <div className='text-center w-full md:col-span-2'>Other way</div>
+            <div className='text-center w-full md:col-span-2'>{t("Other way")}</div>
             <div className='flex gap-2  justify-center md:col-span-2'>
             
               <Link

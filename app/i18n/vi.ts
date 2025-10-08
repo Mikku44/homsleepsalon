@@ -1,0 +1,43 @@
+export const vi = {
+    "translation": {
+        "lang": "vi-VN",
+        "home": "Trang chủ",
+        "aboutus": "Về chúng tôi",
+        "booking": "Đặt lịch",
+        "promotion": "Khuyến mãi",
+        "products": "Sản phẩm",
+        "product": "Sản phẩm",
+        "gallery": "Bộ sưu tập",
+        "news": "Tin tức",
+        "reserve": "Đặt ngay",
+        "shampo": "Dầu gội",
+        "homeVideo": "Trải nghiệm thư giãn khiến bạn say mê",
+        "homeSec2": "Trải nghiệm thư giãn tuyệt đối theo phong cách Việt Nam đích thực",
+        "massageoil": "Dầu mát-xa",
+        "hairconditional": "Dầu xả",
+        "bodyscrub": "Muối tẩy tế bào chết body thơm",
+        "productDes": "Dầu gội chăm sóc tóc và muối tẩy tế bào chết body cao cấp được thiết kế để làm sạch, làm mới và trẻ hóa tóc và da của bạn",
+        "salonspace": "KHÔNG GIAN SALON",
+        "homCTA": "Đặt lịch Trải nghiệm Hom Sleep của bạn",
+        "aboutTitle": "Về Home Sleep Salon",
+        "aboutusDes": "Gội đầu dưỡng sinh & Lấy ráy tai Sản phẩm tự nhiên và thuần chay BTS PhromPhong Sukhumvit22 & Sathorn rama 3",
+        "promotionDes": "Thư giãn, Tái tạo và Tận hưởng Ưu đãi Đặc biệt từ HOM Sleep Salon",
+        "see more": "Xem thêm",
+        "Other way": "Cách khác",
+        "newsDes": "Cập nhật tin tức, khuyến mãi và mẹo thư giãn mới nhất từ HOM Sleep Salon",
+        "aboutUSTitle": "Home Sleep Salon làm gì?",
+        "aboutUSDes": `Tại HOM Sleep Salon, chúng tôi tin rằng hạnh phúc thực sự bắt đầu từ sự thư giãn.
+        Chúng tôi mời bạn trải nghiệm liệu pháp gội đầu dưỡng sinh Việt Nam đích thực — sự kết hợp nhẹ nhàng giữa các kỹ thuật mát-xa êm dịu và hương thơm thư thái được thiết kế để giải tỏa căng thẳng hàng ngày của bạn.
+
+Mọi góc nhỏ của salon đều được tạo ra để mang lại cảm giác như ở nhà — một không gian ấm áp và yên bình nơi bạn có thể thư giãn, nạp năng lượng và đơn giản là hít thở. Cho dù bạn đến để gội đầu dưỡng sinh, gội đầu thư giãn hay một khoảnh khắc yên tĩnh tránh xa sự vội vã, sự chăm sóc chu đáo của chúng tôi luôn sẵn sàng an ủi bạn.`,
+        "Book Your Reservation": "Đặt lịch của bạn",
+        "homeTitle": "Homsleepsalon là gì?",
+        "Reserve Now" : "Đặt lịch ngay",
+        "homeDes": `Tại Homsleepsalon, chúng tôi tin rằng sự thư giãn thực sự bắt đầu từ việc chăm sóc bản thân. Tại đây, bạn có thể trải nghiệm dịch vụ Gội đầu dưỡng sinh Việt Nam đặc trưng của chúng tôi, giúp giải tỏa căng thẳng và cải thiện giấc ngủ, cùng với dịch vụ spa tai, spa mặt và chăm sóc móng — tất cả đều được thực hiện với sự quan tâm và chú ý đến từng chi tiết.
+        Chúng tôi đã tạo ra một bầu không khí ấm cúng, giống như ở nhà, nơi bạn có thể thoát khỏi sự vội vã của thành phố, thư giãn và cảm thấy hoàn toàn thoải mái. Với các địa điểm ở Sukhumvit và Sathorn–Rama 3, bạn dễ dàng tìm thấy chúng tôi ngay tại trung tâm Bangkok. Dù bạn đến một mình hay cùng bạn bè, bạn sẽ luôn ra về với cảm giác tươi mới, được nạp lại năng lượng và mỉm cười.`,
+        "homeTitle2": "Trải nghiệm Gội đầu thư giãn phong cách Việt Nam",
+        "homeDes2": `Tận hưởng cảm giác thư thái của dịch vụ gội đầu thư giãn kiểu Việt Nam của chúng tôi — một nghi thức gội đầu dưỡng sinh độc đáo kết hợp mát-xa da đầu nhẹ nhàng, kỹ thuật làm dịu và chăm sóc bằng hương thơm để giải tỏa căng thẳng, làm mới tâm trí và mang lại cho bạn cảm giác thư giãn sâu sắc.`,
+        "galleryHeader": "Ghi lại mọi khoảnh khắc đẹp và thư giãn tại Homsleepsalon.",
+        "galleryDes": "Homsleepsalon mang đến trải nghiệm thư giãn cao cấp với mát-xa gội đầu dưỡng sinh, nuôi dưỡng tóc và trẻ hóa da mặt. Tận hưởng nghệ thuật mát-xa truyền thống Việt Nam đích thực được thực hiện bởi các chuyên viên trị liệu lành nghề, kết hợp với các công cụ tiên tiến từ Việt Nam và kỹ thuật chăm sóc da chống lão hóa — mang đến cho bạn sự thoải mái tối đa và vẻ đẹp trẻ trung, rạng rỡ ở cùng một nơi."
+    }
+}
