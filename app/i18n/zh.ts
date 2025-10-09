@@ -26,6 +26,7 @@ export const zh = {
         "Other way": "其他方式",
          "serviceLocation": "服务门店位置",
         "getintouch": "联系我们",
+        "contact": "联系",
         "getintouchDes": "我们随时为您提供放松身心的服务。立即联系我们预约，或提出任何疑问！",
         "newsDes": "获取 HOM Sleep Salon 的最新新闻、促销和放松小贴士",
         "aboutUSTitle": "Home Sleep Salon 提供什么服务？",

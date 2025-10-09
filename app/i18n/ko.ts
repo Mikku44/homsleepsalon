@@ -26,6 +26,7 @@ export const ko = {
         "Other way": "다른 방법",
          "serviceLocation": "서비스 지점 안내",
         "getintouch": "문의하기",
+        "contact": "문의하기",
         "getintouchDes": "편안하게 쉴 수 있도록 저희가 도와드리겠습니다. 지금 바로 연락하여 방문 일정을 예약하거나 궁금한 점을 문의하세요!",
         "newsDes": "HOM Sleep Salon의 최신 뉴스, 프로모션 및 휴식 팁을 확인하세요",
         "aboutUSTitle": "Home Sleep Salon은 무엇을 하나요?",

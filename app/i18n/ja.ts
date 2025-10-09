@@ -26,6 +26,7 @@ export const ja = {
         "Other way": "他の方法",
          "serviceLocation": "サービス提供場所",
         "getintouch": "お問い合わせ",
+         "contact": "お問い合わせ",
         "getintouchDes": "お客様が心ゆくまでリラックスできるようサポートいたします。ご予約やご質問は、お気軽にお問い合わせください！",
         "newsDes": "HOM Sleep Salonからの最新ニュース、プロモーション、リラックスのヒントを入手してください",
         "aboutUSTitle": "Home Sleep Salonは何をしていますか？",

@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function FloatingSocialButtons () {
   const [open, setOpen] = useState(false)
@@ -115,6 +116,7 @@ export default function FloatingSocialButtons () {
     }
   ]
 
+  const {t} = useTranslation();
   return (
     <div className='fixed bottom-5 right-5  z-50 flex flex-col items-center'>
       {/* Buttons */}
@@ -162,16 +164,17 @@ export default function FloatingSocialButtons () {
             <path d='M18 6L6 18M6 6l12 12' />
           </svg>
         ) : (
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='size-5'
-            viewBox='0 0 24 24'
-            fill='none'
-            stroke='currentColor'
-            strokeWidth='2'
-          >
-            <path d='M4 12h16M12 4v16' />
-          </svg>
+          // <svg
+          //   xmlns='http://www.w3.org/2000/svg'
+          //   className='size-5'
+          //   viewBox='0 0 24 24'
+          //   fill='none'
+          //   stroke='currentColor'
+          //   strokeWidth='2'
+          // >
+          //   <path d='M4 12h16M12 4v16' />
+          // </svg>
+          t("contact")
         )}
       </motion.button>
     </div>
