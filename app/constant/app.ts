@@ -81,6 +81,19 @@ export const HOME_PROMOTION = [
   },
 
 ];
+
+export const ALL_SHORTS = [
+  {
+    src : "eotEJOLbvi4",
+  },
+  {
+    src : "T-0Ci2-UDRw",
+  },
+  {
+    src : "miDmXFnDtAs",
+  },
+]
+
 export const ALL_PROMOTION = [
   {
     src: "/promotions/vietnam-banner.png",

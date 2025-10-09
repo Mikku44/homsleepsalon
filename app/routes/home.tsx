@@ -9,6 +9,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view'
 import HorizontalSwiper from '~/components/HorizontalSwiper'
 import {
   ALL_PROMOTION,
+  ALL_SHORTS,
   BASE_URL,
   HOME_GALLERY,
   HOME_PROMOTION,
@@ -477,6 +478,23 @@ export default function Home () {
           ))}
         </HorizontalSwiper>
       </section>
+
+      {/* shorts */}
+        <div className="bg-[var(--secondary-color)]">
+          <div className='box-container py-10  grid md:grid-cols-3 gap-4'>
+            {ALL_SHORTS?.map(video => (
+              <iframe
+                key={video.src}
+                width='auto'
+                height='auto'
+                className='w-full h-auto aspect-[9/16]'
+                src={`https://www.youtube.com/embed/${video.src}`}
+                title='Homsleepsalon hairwatch'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              ></iframe>
+            ))}
+          </div>
+        </div>
 
       {/* call to action */}
 
