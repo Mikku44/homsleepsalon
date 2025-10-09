@@ -8,6 +8,7 @@ import PromotionCard from '~/components/PromotionCard'
 import { PhotoProvider, PhotoView } from 'react-photo-view'
 import HorizontalSwiper from '~/components/HorizontalSwiper'
 import {
+  ALL_PROMOTION,
   BASE_URL,
   HOME_GALLERY,
   HOME_PROMOTION,
@@ -359,11 +360,12 @@ export default function Home () {
         </div>
         {/* Carousel Promotion */}
         <HorizontalSwiper className=' box-container-md w-full items-center'>
-          {HOME_PROMOTION?.map((item, index) => (
+          {ALL_PROMOTION?.map((item, index) => (
             <PromotionCard
               key={item.alt + index}
               src={item.src}
-              href={item.href}
+              href={item.line}
+              whatsApp={item.whatsapp}
               className='md:w-[350px] w-[250px]'
               alt={`${item.alt} promotion`}
             />

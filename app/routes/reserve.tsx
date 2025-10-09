@@ -78,6 +78,19 @@ export default function Reserve () {
         }
       )
 
+      const message = `
+      *New Reservation Request*
+      Name: ${data.name}
+      Phone: ${data.phone}
+      Date: ${data.date}
+      Time: ${data.time}
+      `.trim()
+
+      const encodedMessage = encodeURIComponent(message)
+      const phone = '66657479789'
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`
+      window.open(whatsappUrl, '_blank');
+
       toast('Success!', 'Your reservation has been sent.')
       console.log('Reserve Data:', data)
       setSubmitted(true)

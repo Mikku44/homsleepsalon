@@ -91,7 +91,8 @@ export default function Promotion () {
             <PromotionCard
               key={item.alt + index}
               src={item.src}
-              href={item.href}
+               href={item.line}
+              whatsApp={item.whatsapp}
               className='w-full'
               alt={`${item.alt} promotion`}
             />

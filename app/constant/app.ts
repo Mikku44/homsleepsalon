@@ -50,10 +50,10 @@ export const HOME_PROMOTION = [
     href: "/promotion#",
     alt: "HomeSleepSalon Vietnam spa promotion and special offers"
   },
-  {
-    src: "/promotions/foot-spa.png",
-    href: "/promotion#",
-    alt: "HomeSleepSalon foot spa and massage service"
+    {
+    src: "/promotions/relaxing-hair.jpg",
+    href: "https://line.me/R/ti/p/@408onese?text=relaxing hair",
+    alt: "HomeSleepSalon relaxing hair"
   },
 
   {
@@ -61,6 +61,7 @@ export const HOME_PROMOTION = [
     href: "/promotion#",
     alt: "HomeSleepSalon ear aromatherapy spa service"
   },
+  
   {
     src: "/promotions/face-spa.png",
     href: "/promotion#",
@@ -71,61 +72,70 @@ export const HOME_PROMOTION = [
     src: "/promotions/body-scrub.png",
     href: "/promotion#",
     alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
+  },
+
+  {
+    src: "/promotions/foot-spa.png",
+    href: "/promotion#",
+    alt: "HomeSleepSalon foot spa and massage service"
   },
 
 ];
 export const ALL_PROMOTION = [
   {
     src: "/promotions/vietnam-banner.png",
-    href: "https://line.me/R/ti/p/@408onese?text=Vietnam spa promotion and special offers",
+    line: "https://line.me/R/ti/p/@408onese?text=Vietnam%20spa%20promotion%20and%20special%20offers",
+    whatsapp: "https://wa.me/66657479789?text=Vietnam%20spa%20promotion%20and%20special%20offers",
     alt: "HomeSleepSalon Vietnam spa promotion and special offers"
   },
   {
-    src: "/promotions/foot-spa.png",
-    href: "https://line.me/R/ti/p/@408onese?text=foot spa and massage service",
-    alt: "HomeSleepSalon foot spa and massage service"
-  },
-
-  {
     src: "/promotions/relaxing-hair.jpg",
-    href: "https://line.me/R/ti/p/@408onese?text=relaxing hair",
+    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
     alt: "HomeSleepSalon relaxing hair"
   },
   {
     src: "/promotions/ear-aromatherapy.png",
-    href: "https://line.me/R/ti/p/@408onese?text=ear aromatherapy spa service",
+    line: "https://line.me/R/ti/p/@408onese?text=ear%20aromatherapy%20spa%20service",
+    whatsapp: "https://wa.me/66657479789?text=ear%20aromatherapy%20spa%20service",
     alt: "HomeSleepSalon ear aromatherapy spa service"
   },
   {
     src: "/promotions/face-spa.png",
-    href: "https://line.me/R/ti/p/@408onese?text=facial spa and skin care treatment",
+    line: "https://line.me/R/ti/p/@408onese?text=facial%20spa%20and%20skin%20care%20treatment",
+    whatsapp: "https://wa.me/66657479789?text=facial%20spa%20and%20skin%20care%20treatment",
     alt: "HomeSleepSalon facial spa and skin care treatment"
   },
-
- 
   {
     src: "/promotions/nail.png",
-    href: "https://line.me/R/ti/p/@408onese?text=nail spa paraffin",
+    line: "https://line.me/R/ti/p/@408onese?text=nail%20spa%20paraffin",
+    whatsapp: "https://wa.me/66657479789?text=nail%20spa%20paraffin",
     alt: "HomeSleepSalon nail spa paraffin"
   },
- {
+  {
     src: "/promotions/body-scrub.png",
-    href: "https://line.me/R/ti/p/@408onese?text=body scrub and aroma therapy spa treatment",
+    line: "https://line.me/R/ti/p/@408onese?text=body%20scrub%20and%20aroma%20therapy%20spa%20treatment",
+    whatsapp: "https://wa.me/66657479789?text=body%20scrub%20and%20aroma%20therapy%20spa%20treatment",
     alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
   },
-  
+  {
+    src: "/promotions/foot-spa.png",
+    line: "https://line.me/R/ti/p/@408onese?text=foot%20spa%20and%20massage%20service",
+    whatsapp: "https://wa.me/66657479789?text=foot%20spa%20and%20massage%20service",
+    alt: "HomeSleepSalon foot spa and massage service"
+  },
   {
     src: "/promotions/vip-promo.png",
-    href: "https://line.me/R/ti/p/@408onese?text=VIP Private Spa Expirience",
-    alt: "HomeSleepSalon VIP Private Spa Expirience"
+    line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
+    whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
+    alt: "HomeSleepSalon VIP Private Spa Experience"
   },
-  
   {
     src: "/promotions/voucher.jpg",
-    href: "https://line.me/R/ti/p/@408onese?text=voucher",
+    line: "https://line.me/R/ti/p/@408onese?text=voucher",
+    whatsapp: "https://wa.me/66657479789?text=voucher",
     alt: "HomeSleepSalon voucher"
   },
-
 ];
 
 export const HOME_GALLERY = [
