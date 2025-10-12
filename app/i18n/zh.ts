@@ -19,7 +19,7 @@ export const zh = {
         "productDes": "优质护发洗发水和身体磨砂膏，专为清洁、焕新和活化您的头发和皮肤而设计",
         "salonspace": "沙龙体验",
         "homCTA": "预订您的 HOM Sleep 体验",
-        "aboutTitle": "关于 Home Sleep Salon",
+        "aboutTitle": "关于 Hom Sleep Salon",
         "aboutusDes": "头皮水疗和采耳 天然和素食产品 BTS PhromPhong Sukhumvit22 & Sathorn rama 3",
         "promotionDes": "在 HOM Sleep Salon 放松、焕新并享受特别优惠",
         "see more": "查看更多",
@@ -29,7 +29,7 @@ export const zh = {
         "contact": "联系",
         "getintouchDes": "我们随时为您提供放松身心的服务。立即联系我们预约，或提出任何疑问！",
         "newsDes": "获取 HOM Sleep Salon 的最新新闻、促销和放松小贴士",
-        "aboutUSTitle": "Home Sleep Salon 提供什么服务？",
+        "aboutUSTitle": "Hom Sleep Salon 提供什么服务？",
         "aboutUSDes": `在 HOM Sleep Salon，我们相信真正的幸福始于放松。
         我们诚邀您体验正宗的越南头皮水疗 — 温和地融合了舒缓的按摩技巧和平静的香气，旨在释放您的日常紧张。
 

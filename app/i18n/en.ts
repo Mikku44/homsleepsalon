@@ -20,7 +20,7 @@ export const en = {
         "productDes": "Premium hair care shampoo and body scrub designed to cleanse, refresh, and rejuvenate your hair and skin",
         "salonspace": "SALON EXPERIENCE",
         "homCTA": "Book Your Hom Sleep Experience",
-        "aboutTitle": "About Home Sleep Salon",
+        "aboutTitle": "About Hom Sleep Salon",
         "aboutusDes": "Head Spa & Ear Cleaning Natural and vegan products BTS PhromPhong Sukhumvit22 & Sathorn rama 3",
         "promotionDes": "Relax, Refresh, and Enjoy Special Offers from HOM Sleep Salon",
         "see more": "See more",
@@ -31,7 +31,7 @@ export const en = {
         "getintouch" : "Get in touch",
        "getintouchDes": "We’re here to help you unwind. Contact us today to schedule your visit or ask any questions!",
         "Reserve Now" : "Reserve Now",
-        "aboutUSTitle": "What Home Sleep Salon Do?",
+        "aboutUSTitle": "What Hom Sleep Salon Do?",
         "aboutUSDes": `At HOM Sleep Salon, we believe true happiness begins with relaxation.
         We invite you to experience authentic Vietnamese head spa therapy — a gentle blend of soothing massage techniques and calming aromas designed to release your daily tension.
 

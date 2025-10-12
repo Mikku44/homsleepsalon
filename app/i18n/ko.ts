@@ -19,7 +19,7 @@ export const ko = {
         "productDes": "모발과 피부를 깨끗하게 하고, 상쾌하게 하며, 활력을 되찾아주기 위해 고안된 프리미엄 헤어 케어 샴푸 및 바디 스크럽",
         "salonspace": "살롱 경험",
         "homCTA": "Hom Sleep 경험 예약하기",
-        "aboutTitle": "Home Sleep Salon 소개",
+        "aboutTitle": "Hom Sleep Salon 소개",
         "aboutusDes": "헤드 스파 & 이어 클리닝 천연 및 비건 제품 BTS 프롬퐁 수쿰빗 22 & 사톤 라마 3",
         "promotionDes": "HOM Sleep Salon에서 휴식을 취하고, 활력을 되찾고, 특별 혜택을 즐기세요",
         "see more": "더 보기",
@@ -29,7 +29,7 @@ export const ko = {
         "contact": "문의하기",
         "getintouchDes": "편안하게 쉴 수 있도록 저희가 도와드리겠습니다. 지금 바로 연락하여 방문 일정을 예약하거나 궁금한 점을 문의하세요!",
         "newsDes": "HOM Sleep Salon의 최신 뉴스, 프로모션 및 휴식 팁을 확인하세요",
-        "aboutUSTitle": "Home Sleep Salon은 무엇을 하나요?",
+        "aboutUSTitle": "Hom Sleep Salon은 무엇을 하나요?",
         "aboutUSDes": `HOM Sleep Salon은 진정한 행복이 휴식에서 시작된다고 믿습니다.
         우리는 당신을 정통 베트남식 헤드 스파 테라피로 초대합니다. — 일상적인 긴장을 풀어주도록 고안된 부드러운 마사지 기술과 진정시키는 향기의 온화한 조화입니다.
 

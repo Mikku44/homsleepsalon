@@ -19,7 +19,7 @@ export const ja = {
         "productDes": "髪と肌を洗浄し、リフレッシュし、若返らせるために設計されたプレミアムヘアケアシャンプーとボディスクラブ",
         "salonspace": "サロン体験",
         "homCTA": "Hom Sleep 体験を予約する",
-        "aboutTitle": "Home Sleep Salonについて",
+        "aboutTitle": "Hom Sleep Salonについて",
         "aboutusDes": "ヘッドスパ＆耳掃除 自然派・ヴィーガン製品 BTSプロンポン スクンビット22 & サトーン・ラマ3",
         "promotionDes": "HOM Sleep Salonでリラックス、リフレッシュし、特別オファーをお楽しみください",
         "see more": "もっと見る",
@@ -29,7 +29,7 @@ export const ja = {
          "contact": "お問い合わせ",
         "getintouchDes": "お客様が心ゆくまでリラックスできるようサポートいたします。ご予約やご質問は、お気軽にお問い合わせください！",
         "newsDes": "HOM Sleep Salonからの最新ニュース、プロモーション、リラックスのヒントを入手してください",
-        "aboutUSTitle": "Home Sleep Salonは何をしていますか？",
+        "aboutUSTitle": "Hom Sleep Salonは何をしていますか？",
         "aboutUSDes": `HOM Sleep Salonでは、真の幸福はリラクゼーションから始まると信じています。
         私たちは、あなたを本場ベトナムのヘッドスパセラピーに招待します — 日常の緊張を解き放つために設計された、心地よいマッサージテクニックと穏やかな香りの優しいブレンドです。
       

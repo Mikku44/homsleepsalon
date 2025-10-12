@@ -19,7 +19,7 @@ export const vi = {
         "productDes": "Dầu gội chăm sóc tóc và muối tẩy tế bào chết body cao cấp được thiết kế để làm sạch, làm mới và trẻ hóa tóc và da của bạn",
         "salonspace": "KHÔNG GIAN SALON",
         "homCTA": "Đặt lịch Trải nghiệm Hom Sleep của bạn",
-        "aboutTitle": "Về Home Sleep Salon",
+        "aboutTitle": "Về Hom Sleep Salon",
         "aboutusDes": "Gội đầu dưỡng sinh & Lấy ráy tai Sản phẩm tự nhiên và thuần chay BTS PhromPhong Sukhumvit22 & Sathorn rama 3",
         "promotionDes": "Thư giãn, Tái tạo và Tận hưởng Ưu đãi Đặc biệt từ HOM Sleep Salon",
         "see more": "Xem thêm",
@@ -29,7 +29,7 @@ export const vi = {
         "getintouch": "Liên hệ với chúng tôi",
         "getintouchDes": "Chúng tôi ở đây để giúp bạn thư giãn hoàn toàn. Hãy liên hệ với chúng tôi ngay hôm nay để đặt lịch hoặc hỏi bất kỳ câu hỏi nào!",
         "newsDes": "Cập nhật tin tức, khuyến mãi và mẹo thư giãn mới nhất từ HOM Sleep Salon",
-        "aboutUSTitle": "Home Sleep Salon làm gì?",
+        "aboutUSTitle": "Hom Sleep Salon làm gì?",
         "aboutUSDes": `Tại HOM Sleep Salon, chúng tôi tin rằng hạnh phúc thực sự bắt đầu từ sự thư giãn.
         Chúng tôi mời bạn trải nghiệm liệu pháp gội đầu dưỡng sinh Việt Nam đích thực — sự kết hợp nhẹ nhàng giữa các kỹ thuật mát-xa êm dịu và hương thơm thư thái được thiết kế để giải tỏa căng thẳng hàng ngày của bạn.
 
