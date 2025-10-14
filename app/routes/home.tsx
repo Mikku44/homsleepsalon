@@ -12,7 +12,6 @@ import {
   ALL_SHORTS,
   BASE_URL,
   HOME_GALLERY,
-  HOME_PROMOTION,
   HOME_TIKTOK,
   SLIDE_UP
 } from '~/constant/app'
@@ -308,7 +307,7 @@ export default function Home () {
 
       <section className='py-10 bg-amber-50'>
         <div className='box-container grid md:grid-cols-3 gap-4'>
-          {['1-eLOc2B9Kw', 'LfVYHlN5-0I', '8ezlnbREsCc'].map(video => (
+          {['1-eLOc2B9Kw', 'LfVYHlN5-0I', '8ezlnbREsCc','2JnOAvIy7mg',"inluGzjnrbw"].map(video => (
             <iframe
               key={video}
               width='auto'
