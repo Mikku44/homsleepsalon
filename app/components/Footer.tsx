@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
 import { MENU } from '~/constant/app'
 
-export default function Footer () {
+export default function Footer() {
   const { t } = useTranslation()
   return (
     <footer className='w-full bg-[#140024] text-white'>
@@ -13,6 +13,12 @@ export default function Footer () {
           <p className='text-sm text-gray-200 mb-5 max-w-[300px]'>
             {t('aboutusDes')}
           </p>
+
+          <iframe
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.814629147776!2d100.5656344!3d13.7296701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f00520c964f%3A0xd8a7b0dbff3225d3!2sHom%20Sleep%20Salon%20Sukhumvit%2022!5e0!3m2!1sth!2sth!4v1759912872377!5m2!1sth!2sth'
+            loading='lazy'
+            className='w-full mx-auto rounded-2xl h-32 border-t border-gray-200'
+          ></iframe>
         </div>
 
         {/* col 2 */}
