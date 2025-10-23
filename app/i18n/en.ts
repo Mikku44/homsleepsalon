@@ -27,10 +27,10 @@ export const en = {
         "Other way": "Other way",
         "newsDes": "Stay updated with the latest news, promotions, and relaxation tips from HOM Sleep Salon",
 
-        "serviceLocation" : "Our Service Locations",
-        "getintouch" : "Get in touch",
-       "getintouchDes": "We’re here to help you unwind. Contact us today to schedule your visit or ask any questions!",
-        "Reserve Now" : "Reserve Now",
+        "serviceLocation": "Our Service Locations",
+        "getintouch": "Get in touch",
+        "getintouchDes": "We’re here to help you unwind. Contact us today to schedule your visit or ask any questions!",
+        "Reserve Now": "Reserve Now",
         "aboutUSTitle": "What Hom Sleep Salon Do?",
         "aboutUSDes": `At HOM Sleep Salon, we believe true happiness begins with relaxation.
         We invite you to experience authentic Vietnamese head spa therapy — a gentle blend of soothing massage techniques and calming aromas designed to release your daily tension.
@@ -48,5 +48,38 @@ Every corner of our salon is crafted to feel like home — a warm and peaceful s
 
         "galleryHeader": "Capturing every moment of beauty and relaxation at Homsleepsalon.",
         "galleryDes": "Homsleepsalon offers a premium relaxation experience with head spa massage, hair nourishment, and facial rejuvenation. Enjoy the authentic art of traditional Vietnamese massage performed by skilled therapists, combined with advanced tools from Vietnam and anti-aging skincare techniques—bringing you ultimate comfort and youthful, radiant beauty in one place."
-    }
+    
+ ,
+    "scrollDown": "Scroll down",
+    "bookReservation": "Book Your Reservation",
+    "reserveNow": "Reserve Now",
+    "submitting": "Submitting...",
+    "mapAlt": "Sukhumvit Branch Map",
+    "toastSuccessTitle": "Success!",
+    "toastSuccessMessage": "Your reservation has been sent.",
+    "toastErrorTitle": "Error",
+    "toastErrorMessage": "Failed to send your reservation. Please try again.",
+    "newRequest": "New Reservation Request",
+    "name": "Name",
+    "phone": "Phone",
+    "date": "Date",
+    "time": "Time",
+    "branch": "Branch",
+    "guests": "Guests",
+    "selectBranch": "Select Branch",
+    "placeholder_name": "Your Name",
+    "placeholder_phone": "0812345678",
+    "validation_name": "Please enter your name",
+    "validation_phone": "Please enter a valid phone number (e.g., 0812345678)",
+    "validation_date": "Please select a date",
+    "validation_time": "Please select a time",
+    "validation_branch": "Please select a branch",
+    "validation_guests_required": "Please enter the number of people",
+    "validation_guests_min": "Must be at least 1 person",
+    "validation_guests_max": "Too many people (max 10)",
+    "sukhumvit22": "Sukhumvit 22",
+    "sathornRama3": "Sathorn Rama 3"
+    },
+   
+
 }

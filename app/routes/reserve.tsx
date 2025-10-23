@@ -8,7 +8,7 @@ import { SLIDE_UP } from '~/constant/app'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router'
 
-export function meta () {
+export function meta() {
   return [
     {
       title:
@@ -24,19 +24,20 @@ export function meta () {
 
 // Zod schema
 const reserveSchema = z.object({
-  name: z.string().min(2, 'กรุณากรอกชื่อของคุณ'),
-  phone: z.string().regex(/^0\d{8,9}$/, 'กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง'),
-  date: z.string().nonempty('กรุณาเลือกวันที่'),
-  time: z.string().nonempty('กรุณาเลือกเวลา'),
+  name: z.string().min(2, 'validation_name'), // Simplified key
+  phone: z.string().regex(/^0\d{8,9}$/, 'validation_phone'), // Simplified key
+  date: z.string().nonempty('validation_date'), // Simplified key
+  time: z.string().nonempty('validation_time'), // Simplified key
+  branch: z.string().nonempty('validation_branch'), // Simplified key
   guests: z
-    .number({ invalid_type_error: 'กรุณากรอกจำนวนคน' })
-    .min(1, 'ต้องมีอย่างน้อย 1 คน')
-    .max(10, 'จำนวนคนเกินไป')
+    .number({ error: 'validation_guests_required' }) // Simplified key
+    .min(1, 'validation_guests_min') // Simplified key
+    .max(10, 'validation_guests_max') // Simplified key
 })
 
 type ReserveFormData = z.infer<typeof reserveSchema>
 
-export default function Reserve () {
+export default function Reserve() {
   const {
     register,
     handleSubmit,
@@ -57,7 +58,7 @@ export default function Reserve () {
   const scrollRef = useRef<HTMLDivElement>(null)
   const { t } = useTranslation()
 
-  function handleScroll () {
+  function handleScroll() {
     if (scrollRef?.current) {
       scrollRef.current.scrollIntoView()
     }
@@ -79,11 +80,12 @@ export default function Reserve () {
       )
 
       const message = `
-      *New Reservation Request*
-      Name: ${data.name}
-      Phone: ${data.phone}
-      Date: ${data.date}
-      Time: ${data.time}
+      *${t('newRequest')}*
+      ${t('name')}: ${data.name}
+      ${t('phone')}: ${data.phone}
+      ${t('date')}: ${data.date}
+      ${t('branch')}: ${data.branch}
+      ${t('time')}: ${data.time}
       `.trim()
 
       const encodedMessage = encodeURIComponent(message)
@@ -91,12 +93,12 @@ export default function Reserve () {
       const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`
       window.open(whatsappUrl, '_blank');
 
-      toast('Success!', 'Your reservation has been sent.')
+      toast(t('toastSuccessTitle'), t('toastSuccessMessage'))
       console.log('Reserve Data:', data)
       setSubmitted(true)
       reset()
     } catch (error) {
-      toast('Error', 'Failed to send your reservation. Please try again.')
+      toast(t('toastErrorTitle'), t('toastErrorMessage'))
       console.error('Error submitting to Google Sheets:', error)
     }
   }
@@ -106,7 +108,7 @@ export default function Reserve () {
       {/* hero */}
       <section
         className='relative flex items-center justify-center text-white bg-[var(--secondary-color)]
-       overflow-hidden min-h-[600px] md:h-[600px]'
+        overflow-hidden min-h-[600px] md:h-[600px]'
       >
         {/* Background image */}
         <div className='absolute inset-0'>
@@ -123,13 +125,13 @@ export default function Reserve () {
           <div className='box-container text-center md:text-left max-w-3xl mx-auto md:mx-0'>
             <motion.h2
               {...SLIDE_UP}
-              className='header-1 mb-5  font-bold text-3xl sm:text-4xl md:text-5xl'
+              className='header-1 mb-5 font-bold text-3xl sm:text-4xl md:text-5xl'
             >
               {t('reserve')}
             </motion.h2>
             <motion.p
               {...SLIDE_UP}
-              className='text-base sm:text-lg  mx-auto md:mx-0 leading-relaxed max-w-[600px]'
+              className='text-base sm:text-lg mx-auto md:mx-0 leading-relaxed max-w-[600px]'
             >
               {t('aboutusDes')}
             </motion.p>
@@ -140,7 +142,7 @@ export default function Reserve () {
         <div className='absolute bottom-5 w-full flex justify-center group'>
           <div className='flex flex-col items-center animate-bounce'>
             <div className='text-sm text-white opacity-0 group-hover:opacity-70 transition-opacity pb-2'>
-              Scroll down
+              {t('scrollDown')}
             </div>
             <button
               onClick={handleScroll}
@@ -171,48 +173,43 @@ export default function Reserve () {
       <div className='w-full flex justify-between md:flex-row flex-col'>
         <section className='box-container w-full flex items-center flex-col py-12'>
           <h2 className='text-2xl md:text-3xl font-semibold mb-6'>
-            {t('Book Your Reservation')}
+            {t('bookReservation')}
           </h2>
-          {/* {submitted && (
-            <p className='mb-6 text-green-600'>
-              Thank you! Your reservation has been submitted.
-            </p>
-          )} */}
           <form
             onSubmit={handleSubmit(onSubmit)}
             className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl'
           >
             {/* Name */}
             <div className='flex flex-col'>
-              <label className='font-medium mb-1'>Name</label>
+              <label className='font-medium mb-1'>{t('name')}</label>
               <input
                 {...register('name')}
-                placeholder='Your Name'
+                placeholder={t('placeholder_name')}
                 className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
               />
               {errors.name && (
                 <p className='text-red-500 text-sm mt-1'>
-                  {errors.name.message}
+                  {t(errors.name.message as string)}
                 </p>
               )}
             </div>
             {/* Phone */}
             <div className='flex flex-col'>
-              <label className='font-medium mb-1'>Phone</label>
+              <label className='font-medium mb-1'>{t('phone')}</label>
               <input
                 {...register('phone')}
-                placeholder='0812345678'
+                placeholder={t('placeholder_phone')}
                 className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
               />
               {errors.phone && (
                 <p className='text-red-500 text-sm mt-1'>
-                  {errors.phone.message}
+                  {t(errors.phone.message as string)}
                 </p>
               )}
             </div>
             {/* Date */}
-            <div className='flex flex-col'>
-              <label className='font-medium mb-1'>Date</label>
+            <div className='flex flex-col w-full'>
+              <label className='font-medium mb-1'>{t('date')}</label>
               <input
                 {...register('date')}
                 type='date'
@@ -220,13 +217,13 @@ export default function Reserve () {
               />
               {errors.date && (
                 <p className='text-red-500 text-sm mt-1'>
-                  {errors.date.message}
+                  {t(errors.date.message as string)}
                 </p>
               )}
             </div>
             {/* Time */}
-            <div className='flex flex-col'>
-              <label className='font-medium mb-1'>Time</label>
+            <div className='flex flex-col w-full'>
+              <label className='font-medium mb-1'>{t('time')}</label>
               <input
                 {...register('time')}
                 type='time'
@@ -234,13 +231,31 @@ export default function Reserve () {
               />
               {errors.time && (
                 <p className='text-red-500 text-sm mt-1'>
-                  {errors.time.message}
+                  {t(errors.time.message as string)}
                 </p>
               )}
             </div>
+            {/* Branch */}
+            <div className='flex flex-col md:col-span-2 w-full'>
+              <label className='font-medium mb-1'>{t('branch')}</label>
+              <select
+                {...register('branch')}
+                className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
+              >
+                <option value=''>-- {t('selectBranch')} --</option>
+                <option value='sukhumvit22'>{t('sukhumvit22')}</option>
+                <option value='sathorn-rama3'>{t('sathornRama3')}</option>
+              </select>
+              {errors.branch && (
+                <p className='text-red-500 text-sm mt-1'>
+                  {t(errors.branch.message as string)}
+                </p>
+              )}
+            </div>
+
             {/* Guests */}
             <div className='flex flex-col md:col-span-2'>
-              <label className='font-medium mb-1'>Guests</label>
+              <label className='font-medium mb-1'>{t('guests')}</label>
               <input
                 {...register('guests', { valueAsNumber: true })}
                 type='number'
@@ -250,7 +265,7 @@ export default function Reserve () {
               />
               {errors.guests && (
                 <p className='text-red-500 text-sm mt-1'>
-                  {errors.guests.message}
+                  {t(errors.guests.message as string)}
                 </p>
               )}
             </div>
@@ -261,7 +276,7 @@ export default function Reserve () {
                 disabled={isSubmitting}
                 className='w-full bg-[var(--primary-color)] text-black py-3 rounded font-medium hover:opacity-90 transition'
               >
-                {isSubmitting ? 'Submitting...' : t('Reserve Now')}
+                {isSubmitting ? t('submitting') : t('reserveNow')}
               </button>
             </div>
 
@@ -270,7 +285,7 @@ export default function Reserve () {
             <div className='text-center w-full md:col-span-2'>
               {t('Other way')}
             </div>
-            <div className='flex gap-2  justify-center md:col-span-2'>
+            <div className='flex gap-2 justify-center md:col-span-2'>
               <Link
                 target='_blank'
                 rel='noreferal'
@@ -334,7 +349,7 @@ export default function Reserve () {
         </section>
         {/* map */}
         <section>
-          <img src='/promotions/sukumvit-map.jpg' alt='sukumvit branch map' />
+          <img src='/promotions/sukumvit-map.jpg' alt={t('mapAlt')} />
         </section>
       </div>
     </main>
