@@ -53,9 +53,9 @@ export default function Promotion() {
         ctaText="recharge gift"
         ctaLink="/reserve"
       />
-    
 
-        <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] flex items-center pt-10 md:py-10'>
+
+      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] flex items-center pt-10 md:py-10'>
         <div className=' w-full grid md:grid-cols-2 gap-8 items-center pt-10'>
           {/* Text */}
           <div className='box-container'>
@@ -86,33 +86,35 @@ export default function Promotion() {
         </div>
       </section>
 
-      {/* Promotion */ }
+      {/* Promotion */}
 
-  <section
-    className=' overflow-auto  bg-[#FFF5DF]
+      <section
+        className=' overflow-auto  bg-[#FFF5DF]
         flex flex-col items-center justify-center py-10'
-  >
-    {/* Carousel Promotion */}
-    <div className='box-container w-full'>
-      <h2 className='header-1 mb-5 font-bold max-w-[350px] text-[var(--secondary-color)]'>
-        {t('promotion')}
-      </h2>
-    </div>
-    <div className='box-container w-full grid md:grid-cols-3 grid-cols-2 gap-3'>
-      {ALL_PROMOTION?.map((item, index) => (
-        <div className="basis-1/4">
-          <PromotionCard
-            key={item.alt + index}
-            src={item.src}
-            href={item.line}
-            whatsApp={item.whatsapp}
-            className='w-[300px]'
-            alt={`${item.alt} promotion`}
-          />
+      >
+        {/* Carousel Promotion */}
+        <div className='box-container w-full'>
+          <h2 className='header-1 mb-5 font-bold max-w-[350px] text-[var(--secondary-color)]'>
+            {t('promotion')}
+          </h2>
         </div>
-      ))}
-    </div>
-  </section>
+        <div className='box-container w-full grid md:grid-cols-3 grid-cols-2 gap-3'>
+          {ALL_PROMOTION?.map((item, index) => (
+
+            <div className="">
+              <PromotionCard
+                key={item.alt + index}
+                src={item.src}
+                href={item.line}
+                whatsApp={item.whatsapp}
+                className='w-full max-w-[500px]'
+                alt={`${item.alt} promotion`}
+              />
+            </div>
+
+          ))}
+        </div>
+      </section>
     </main >
   )
 }
