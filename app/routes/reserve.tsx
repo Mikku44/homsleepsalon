@@ -170,7 +170,7 @@ export default function Reserve() {
       </section>
 
       {/* Reserve Form Section */}
-      <div className='w-full flex justify-between md:flex-row flex-col'>
+      <div className='w-full flex justify-between  flex-col'>
         <section className='box-container w-full flex items-center flex-col py-12'>
           <h2 className='text-2xl md:text-3xl font-semibold mb-6'>
             {t('bookReservation')}
@@ -348,8 +348,14 @@ export default function Reserve() {
           </form>
         </section>
         {/* map */}
-        <section>
-          <img src='/promotions/sukumvit-map.jpg' alt={t('mapAlt')} />
+        <section className='grid grid-cols-2'>
+          <div className="font-medium">
+            <div className="text-xl ">Sukumvit Branch</div>
+            <img className='' src='/promotions/sukumvit-map.jpg' alt={t('mapAlt')} /></div>
+          <div className="">
+            <div className="text-xl ">Sathorn Branch</div>
+            <img className='' src='/promotions/sathon-map.jpg' alt={t('mapAlt')} />
+          </div>
         </section>
       </div>
     </main>

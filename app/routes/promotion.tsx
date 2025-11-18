@@ -3,9 +3,10 @@ import type { Route } from './+types/promotion'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import PromotionCard from '~/components/PromotionCard'
+import PromotionModal from '~/components/Promo'
 
 
-export function meta ({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
     {
       title: 'Homsleepsalon | Product'
@@ -38,12 +39,23 @@ export function meta ({}: Route.MetaArgs) {
   ]
 }
 
-export default function Promotion () {
+export default function Promotion() {
   const { t } = useTranslation()
+
+
 
   return (
     <main>
-      <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] flex items-center pt-10 md:py-10'>
+      <PromotionModal
+        title="Special Promotion!"
+        description="Get extra max 50% for your first top-up."
+        imageUrl="/promotions/recharge-gift.jpg"
+        ctaText="recharge gift"
+        ctaLink="/reserve"
+      />
+    
+
+        <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] flex items-center pt-10 md:py-10'>
         <div className=' w-full grid md:grid-cols-2 gap-8 items-center pt-10'>
           {/* Text */}
           <div className='box-container'>
@@ -74,31 +86,33 @@ export default function Promotion () {
         </div>
       </section>
 
-      {/* Promotion */}
+      {/* Promotion */ }
 
-      <section
-        className=' overflow-auto  bg-[#FFF5DF]
+  <section
+    className=' overflow-auto  bg-[#FFF5DF]
         flex flex-col items-center justify-center py-10'
-      >
-        {/* Carousel Promotion */}
-        <div className='box-container w-full'>
-          <h2 className='header-1 mb-5 font-bold max-w-[350px] text-[var(--secondary-color)]'>
-            {t('promotion')}
-          </h2>
+  >
+    {/* Carousel Promotion */}
+    <div className='box-container w-full'>
+      <h2 className='header-1 mb-5 font-bold max-w-[350px] text-[var(--secondary-color)]'>
+        {t('promotion')}
+      </h2>
+    </div>
+    <div className='box-container w-full grid md:grid-cols-3 grid-cols-2 gap-3'>
+      {ALL_PROMOTION?.map((item, index) => (
+        <div className="basis-1/4">
+          <PromotionCard
+            key={item.alt + index}
+            src={item.src}
+            href={item.line}
+            whatsApp={item.whatsapp}
+            className='w-[300px]'
+            alt={`${item.alt} promotion`}
+          />
         </div>
-        <div className='box-container grid md:grid-cols-3 grid-col-2 gap-3'>
-          {ALL_PROMOTION?.map((item, index) => (
-            <PromotionCard
-              key={item.alt + index}
-              src={item.src}
-               href={item.line}
-              whatsApp={item.whatsapp}
-              className='w-full'
-              alt={`${item.alt} promotion`}
-            />
-          ))}
-        </div>
-      </section>
-    </main>
+      ))}
+    </div>
+  </section>
+    </main >
   )
 }

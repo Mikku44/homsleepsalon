@@ -108,6 +108,42 @@ export const ALL_PROMOTION = [
     alt: "HomeSleepSalon relaxing hair"
   },
   {
+    src: "/promotions/15steps.jpg",
+    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+    alt: "HomeSleepSalon 15 Steps Hair wash"
+  },
+  {
+    src: "/promotions/17steps.jpg",
+    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+    alt: "HomeSleepSalon 17 Steps Hair wash"
+  },
+  {
+    src: "/promotions/cupping.jpg",
+    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+    alt: "HomeSleepSalon Program Cupping"
+  },
+  {
+    src: "/promotions/comboset.jpg",
+    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+    alt: "HomeSleepSalon Program Comboset Head + Cupping"
+  },
+  {
+    src: "/promotions/headear.jpg",
+    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+    alt: "HomeSleepSalon Program Comboset Head + Ear"
+  },
+  {
+    src: "/promotions/headfoot.jpg",
+    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+    alt: "HomeSleepSalon Program Comboset Head + Foot"
+  },
+  {
     src: "/promotions/ear-aromatherapy.png",
     line: "https://line.me/R/ti/p/@408onese?text=ear%20aromatherapy%20spa%20service",
     whatsapp: "https://wa.me/66657479789?text=ear%20aromatherapy%20spa%20service",
@@ -142,6 +178,12 @@ export const ALL_PROMOTION = [
     line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
     whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
     alt: "HomeSleepSalon VIP Private Spa Experience"
+  },
+  {
+    src: "/promotions/vip-service.jpg",
+    line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
+    whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
+    alt: "HomeSleepSalon VIP Service Spa Ear + Spa + Face"
   },
   {
     src: "/promotions/voucher.jpg",
