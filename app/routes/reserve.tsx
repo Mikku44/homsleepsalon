@@ -86,6 +86,7 @@ export default function Reserve() {
     ${t('phone')}: ${data.phone}
     ${t('date')}: ${data.date}
     ${t('branch')}: ${data.branch}
+    ${t('guests')}: ${data.guests}
     ${t('time')}: ${data.time}
       `.trim()
 
