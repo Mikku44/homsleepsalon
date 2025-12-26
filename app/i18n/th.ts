@@ -54,7 +54,7 @@ export const th = {
     "toastErrorMessage": "ไม่สามารถส่งการจองได้ กรุณาลองใหม่อีกครั้ง",
     "newRequest": "คำสั่งจองใหม่",
     "name": "ชื่อ",
-    "phone": "เบอร์โทรศัพท์",
+    "phone": "เบอร์โทรศัพท์หรือ Whatsapp",
     "date": "วันที่",
     "time": "เวลา",
     "branch": "สาขา",

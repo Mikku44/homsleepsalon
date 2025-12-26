@@ -55,7 +55,7 @@ export const zh = {
         "toastErrorMessage": "发送预订失败。请再试一次。",
         "newRequest": "新预订请求",
         "name": "姓名",
-        "phone": "电话",
+        "phone": "电话 或 Whatsapp",
         "date": "日期",
         "time": "时间",
         "branch": "分店",

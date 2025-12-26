@@ -55,7 +55,7 @@ export const ko = {
   "toastErrorMessage": "예약 전송에 실패했습니다. 다시 시도해 주세요.",
   "newRequest": "새로운 예약 요청",
   "name": "이름",
-  "phone": "전화번호",
+  "phone": "전화번호 또는 Whatsapp",
   "date": "날짜",
   "time": "시간",
   "branch": "지점",

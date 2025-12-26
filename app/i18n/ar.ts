@@ -55,7 +55,7 @@ export const ar = {
         "toastErrorMessage": "فشل في إرسال حجزك. الرجاء المحاولة مرة أخرى.",
         "newRequest": "طلب حجز جديد",
         "name": "الاسم",
-        "phone": "الهاتف",
+        "phone": " الهاتف أو واتساب",
         "date": "التاريخ",
         "time": "الوقت",
         "branch": "الفرع",

@@ -55,7 +55,7 @@ export const ja = {
     "toastErrorMessage": "予約の送信に失敗しました。もう一度お試しください。",
     "newRequest": "新規予約リクエスト",
     "name": "氏名",
-    "phone": "電話番号",
+    "phone": "電話番号 またはWhatsapp",
     "date": "日付",
     "time": "時間",
     "branch": "支店",

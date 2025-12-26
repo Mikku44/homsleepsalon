@@ -41,6 +41,7 @@ export default function Reserve() {
   const {
     register,
     handleSubmit,
+     setValue, watch,
     formState: { errors, isSubmitting },
     reset
   } = useForm<ReserveFormData>({
@@ -65,6 +66,7 @@ export default function Reserve() {
   }
   const [submitted, setSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false);
+  
 
   const onSubmit = async (data: ReserveFormData) => {
     try {
@@ -280,21 +282,35 @@ export default function Reserve() {
             </div>
 
             {/* Guests */}
-            <div className='flex flex-col md:col-span-2'>
-              <label className='font-medium mb-1'>{t('guests')}</label>
-              <input
-                {...register('guests', { valueAsNumber: true })}
-                type='number'
-                min={1}
-                max={10}
-                className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
-              />
+            <div className="flex flex-col md:col-span-2">
+              <label className="font-medium mb-2">{t("guests")}</label>
+
+              <div className="grid grid-cols-4 gap-2 sm:grid-cols-8">
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+                  <button
+                    key={num}
+                    type="button"
+                    onClick={() => setValue("guests", num, { shouldValidate: true })}
+                    className={`
+          rounded-lg border px-3 py-2 text-center font-medium transition
+          ${watch("guests") === num
+                        ? "bg-[var(--secondary-color)] text-white border-[var(--primary-color)]"
+                        : "bg-white border-gray-300 hover:bg-gray-100"
+                      }
+        `}
+                  >
+                    {num}
+                  </button>
+                ))}
+              </div>
+
               {errors.guests && (
-                <p className='text-red-500 text-sm mt-1'>
+                <p className="text-red-500 text-sm mt-1">
                   {t(errors.guests.message as string)}
                 </p>
               )}
             </div>
+
             {/* Submit Button */}
             <div className='md:col-span-2'>
               <button

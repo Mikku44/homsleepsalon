@@ -61,7 +61,7 @@ Every corner of our salon is crafted to feel like home — a warm and peaceful s
     "toastErrorMessage": "Failed to send your reservation. Please try again.",
     "newRequest": "New Reservation Request",
     "name": "Name",
-    "phone": "Phone",
+    "phone": "Phone Number or Whatsapp",
     "date": "Date",
     "time": "Time",
     "branch": "Branch",

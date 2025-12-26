@@ -55,7 +55,7 @@ Mọi góc nhỏ của salon đều được tạo ra để mang lại cảm gi�
   "toastErrorMessage": "Không thể gửi đặt chỗ của bạn. Vui lòng thử lại.",
   "newRequest": "Yêu cầu đặt chỗ mới",
   "name": "Tên",
-  "phone": "Điện thoại",
+  "phone": "Điện thoại hoặc Whatsapp",
   "date": "Ngày",
   "time": "Giờ",
   "branch": "Chi nhánh",
