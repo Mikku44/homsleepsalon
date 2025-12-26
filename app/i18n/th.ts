@@ -52,7 +52,7 @@ export const th = {
     "toastSuccessMessage": "การจองของคุณถูกส่งแล้ว",
     "toastErrorTitle": "ผิดพลาด",
     "toastErrorMessage": "ไม่สามารถส่งการจองได้ กรุณาลองใหม่อีกครั้ง",
-    "newRequest": "คำขอจองใหม่",
+    "newRequest": "คำสั่งจองใหม่",
     "name": "ชื่อ",
     "phone": "เบอร์โทรศัพท์",
     "date": "วันที่",

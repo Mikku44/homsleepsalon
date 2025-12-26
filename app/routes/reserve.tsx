@@ -64,6 +64,7 @@ export default function Reserve() {
     }
   }
   const [submitted, setSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (data: ReserveFormData) => {
     try {
@@ -81,17 +82,41 @@ export default function Reserve() {
 
       const message = `
       *${t('newRequest')}*
-      ${t('name')}: ${data.name}
-      ${t('phone')}: ${data.phone}
-      ${t('date')}: ${data.date}
-      ${t('branch')}: ${data.branch}
-      ${t('time')}: ${data.time}
+    ${t('name')}: ${data.name}
+    ${t('phone')}: ${data.phone}
+    ${t('date')}: ${data.date}
+    ${t('branch')}: ${data.branch}
+    ${t('time')}: ${data.time}
       `.trim()
 
-      const encodedMessage = encodeURIComponent(message)
-      const phone = '66657479789'
-      const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`
-      window.open(whatsappUrl, '_blank');
+      // const encodedMessage = encodeURIComponent(message)
+      // const phone = '66657479789'
+      // const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`
+      // window.open(whatsappUrl, '_blank');
+
+      try {
+        const res = await fetch("/api/apply", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(message),
+        });
+
+        if (!res.ok) {
+          throw new Error("Submit failed");
+        }
+
+        const result = await res.json();
+        console.log("Success:", result);
+
+        toast("ส่งข้อมูลเรียบร้อยแล้ว");
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        toast("เกิดข้อผิดพลาด กรุณาลองใหม่");
+      } finally {
+        setIsLoading(false);
+      }
 
       toast(t('toastSuccessTitle'), t('toastSuccessMessage'))
       console.log('Reserve Data:', data)
