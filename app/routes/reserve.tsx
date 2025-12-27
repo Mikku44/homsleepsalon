@@ -41,7 +41,7 @@ export default function Reserve() {
   const {
     register,
     handleSubmit,
-     setValue, watch,
+    setValue, watch,
     formState: { errors, isSubmitting },
     reset
   } = useForm<ReserveFormData>({
@@ -66,7 +66,7 @@ export default function Reserve() {
   }
   const [submitted, setSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false);
-  
+
 
   const onSubmit = async (data: ReserveFormData) => {
     try {
@@ -82,20 +82,20 @@ export default function Reserve() {
         }
       )
 
-      const message = `
-      *${t('newRequest')}*
-    ${t('name')}: ${data.name}
-    ${t('phone')}: ${data.phone}
-    ${t('date')}: ${data.date}
-    ${t('branch')}: ${data.branch}
-    ${t('guests')}: ${data.guests}
-    ${t('time')}: ${data.time}
-      `.trim()
-
       // const encodedMessage = encodeURIComponent(message)
       // const phone = '66657479789'
       // const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`
       // window.open(whatsappUrl, '_blank');
+      const payload = {
+        title: t("newRequest"),
+        name: data.name,
+        phone: data.phone,
+        date: data.date,
+        time: data.time,
+        branch: data.branch,
+        guests: data.guests,
+
+      };
 
       try {
         const res = await fetch("/api/apply", {
@@ -103,12 +103,10 @@ export default function Reserve() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(message),
+          body: JSON.stringify(payload),
         });
 
-        if (!res.ok) {
-          throw new Error("Submit failed");
-        }
+        if (!res.ok) throw new Error("Submit failed");
 
         const result = await res.json();
         console.log("Success:", result);
@@ -120,6 +118,7 @@ export default function Reserve() {
       } finally {
         setIsLoading(false);
       }
+
 
       toast(t('toastSuccessTitle'), t('toastSuccessMessage'))
       console.log('Reserve Data:', data)
