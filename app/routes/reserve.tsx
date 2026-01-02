@@ -82,10 +82,20 @@ export default function Reserve() {
         }
       )
 
-      // const encodedMessage = encodeURIComponent(message)
-      // const phone = '66657479789'
-      // const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`
-      // window.open(whatsappUrl, '_blank');
+      const message = `
+      *${t('newRequest')}*
+    ${t('name')}: ${data.name}
+    ${t('phone')}: ${data.phone}
+    ${t('date')}: ${data.date}
+    ${t('branch')}: ${data.branch}
+    ${t('guests')}: ${data.guests}
+    ${t('time')}: ${data.time}
+      `.trim()
+
+      const encodedMessage = encodeURIComponent(message)
+      const phone = '66657479789'
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`
+      window.open(whatsappUrl, '_blank');
       const payload = {
         title: t("newRequest"),
         name: data.name,
