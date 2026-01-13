@@ -1,4 +1,7 @@
-export const BASE_URL = "https://homsleepsalon.vercel.app"
+import { FaSpa, FaHeadphonesAlt } from "react-icons/fa"
+import { AiFillProduct } from "react-icons/ai";
+
+export const BASE_URL = "https://homsleepsalon.com"
 
 export const SLIDE_UP = {
   initial: {
@@ -20,14 +23,29 @@ export const MENU = [
   {
     href: "/aboutus", label: "aboutus",
   },
-  // {
-  //   href: "/booking", label: "booking",
-  // },
+
   {
-    href: "/promotion", label: "promotion",
-  },
-  {
-    href: "/products", label: "products",
+    href: "/products", label: "products & promotions",
+    subMenu: [
+      {
+        href: "/head-spa",
+        label: "Head Spa",
+        desc: "Deep relaxation & scalp therapy",
+        icon: FaSpa,
+      },
+      {
+        href: "/ear-spa",
+        label: "Ear Spa",
+        desc: "Sensory calm & pressure relief",
+        icon: FaHeadphonesAlt,
+      },
+      {
+        href: "/products",
+        label: "products & promotions",
+        desc: "See all products & promotions",
+        icon: AiFillProduct ,
+      },
+    ],
   },
   {
     href: "/gallery", label: "gallery",
@@ -50,7 +68,7 @@ export const HOME_PROMOTION = [
     href: "/promotion#",
     alt: "HomeSleepSalon Vietnam spa promotion and special offers"
   },
-    {
+  {
     src: "/promotions/relaxing-hair.jpg",
     href: "https://line.me/R/ti/p/@408onese?text=relaxing hair",
     alt: "HomeSleepSalon relaxing hair"
@@ -61,7 +79,7 @@ export const HOME_PROMOTION = [
     href: "/promotion#",
     alt: "HomeSleepSalon ear aromatherapy spa service"
   },
-  
+
   {
     src: "/promotions/face-spa.png",
     href: "/promotion#",
@@ -84,13 +102,13 @@ export const HOME_PROMOTION = [
 
 export const ALL_SHORTS = [
   {
-    src : "eotEJOLbvi4",
+    src: "eotEJOLbvi4",
   },
   {
-    src : "T-0Ci2-UDRw",
+    src: "T-0Ci2-UDRw",
   },
   {
-    src : "miDmXFnDtAs",
+    src: "miDmXFnDtAs",
   },
 ]
 

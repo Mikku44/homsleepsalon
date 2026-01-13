@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-export default function FloatingSocialButtons () {
+export default function FloatingSocialButtons() {
   const [open, setOpen] = useState(false)
 
   const socials = [
@@ -116,7 +116,7 @@ export default function FloatingSocialButtons () {
     }
   ]
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className='fixed bottom-5 right-5  z-50 flex flex-col items-center'>
       {/* Buttons */}
@@ -147,36 +147,95 @@ export default function FloatingSocialButtons () {
 
       {/* Main toggle button */}
       <motion.button
-        whileTap={{ scale: 0.9 }}
         onClick={() => setOpen(!open)}
-        className='bg-[var(--secondary-color)] text-white p-4 border-2 border-white/30
-         rounded-full shadow-xl hover:shadow-2xl flex items-center justify-center'
+        initial={false}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.92 }}
+        className="
+    relative flex items-center gap-2
+    px-5 py-2.5
+    rounded-full
+    bg-[var(--secondary-color)]
+    text-white
+    border border-white/30
+    shadow-lg hover:shadow-2xl
+    overflow-hidden
+  "
       >
-        {open ? (
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='size-5'
-            viewBox='0 0 24 24'
-            fill='none'
-            stroke='currentColor'
-            strokeWidth='2'
-          >
-            <path d='M18 6L6 18M6 6l12 12' />
-          </svg>
-        ) : (
-          // <svg
-          //   xmlns='http://www.w3.org/2000/svg'
-          //   className='size-5'
-          //   viewBox='0 0 24 24'
-          //   fill='none'
-          //   stroke='currentColor'
-          //   strokeWidth='2'
-          // >
-          //   <path d='M4 12h16M12 4v16' />
-          // </svg>
-          t("contact")
+        {/* PULSE BACKGROUND */}
+        {!open && (
+          <motion.span
+            className="
+        absolute inset-0
+        rounded-full
+        bg-white/20
+        blur-md
+      "
+            animate={{
+              scale: [1, 1.35, 1],
+              opacity: [0.25, 0.05, 0.25],
+            }}
+            transition={{
+              duration: 2.8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
         )}
+
+        {/* Hover glow */}
+        <motion.span
+          className="absolute inset-0 bg-white/10"
+          initial={{ opacity: 0 }}
+          whileHover={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        />
+
+        {/* ICON */}
+        <motion.span
+          key={open ? "close-icon" : "open-icon"}
+          initial={{ rotate: -90, opacity: 0 }}
+          animate={{ rotate: 0, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+          className="relative z-10"
+        >
+          {open ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M4 12h16M12 4v16" />
+            </svg>
+          )}
+        </motion.span>
+
+        {/* TEXT */}
+        <motion.span
+          key={open ? "close-text" : "contact-text"}
+          initial={{ opacity: 0, x: -4 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.25 }}
+          className="relative z-10 text-sm font-medium"
+        >
+          {open ? t("close") : t("contact")}
+        </motion.span>
       </motion.button>
+
     </div>
   )
 }

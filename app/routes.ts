@@ -9,6 +9,8 @@ export default [
     route("/gallery", "routes/gallery.tsx"),
     route("/reserve", "routes/reserve.tsx"),
     route("/news", "routes/news.tsx"),
+    route("/head-spa", "routes/head-spa.tsx"),
+    route("/ear-spa", "routes/ear-spa.tsx"),
     route("/news/:id", "routes/newsDetail.tsx"),
 
 

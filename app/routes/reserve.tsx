@@ -341,7 +341,7 @@ export default function Reserve() {
                 target='_blank'
                 rel='noreferal'
                 to='https://lin.ee/5KgYgyx'
-                className=' border-2 bg-[var(--secondary-color)] p-2 rounded-sm flex justify-center'
+                className=' toggle'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -360,7 +360,7 @@ export default function Reserve() {
                 target='_blank'
                 rel='noreferal'
                 to='https://wa.me/66657479789'
-                className=' border-2 bg-[var(--secondary-color)] p-2 rounded-sm flex justify-center'
+                className=' toggle'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -380,7 +380,7 @@ export default function Reserve() {
                 target='_blank'
                 rel='noreferal'
                 to='tel:+66657479789'
-                className=' border-2 bg-[var(--secondary-color)] p-2 rounded-sm flex justify-center'
+                className=' toggle'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

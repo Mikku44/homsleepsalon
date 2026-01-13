@@ -101,6 +101,14 @@ body {
   @apply flex my-2 ml-5  rounded-xl max-w-[180px] border-white shadow px-2 backdrop-blur-md;
 }
 
+.input {
+  @apply border border-gray-300 bg-white rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)];
+}
+
+.toggle {
+  @apply border-2 bg-[var(--secondary-color)] p-2 rounded-sm flex justify-center;
+}
+
 .animated-slide-bg {
   position: relative;
   overflow: hidden;

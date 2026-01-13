@@ -44,7 +44,7 @@ export default function Aboutus () {
         {/* Text Content */}
         <div className='relative z-10 w-full px-5 md:px-0'>
           <div className='box-container text-center md:text-left max-w-3xl mx-auto md:mx-0'>
-            <motion.h2 className='md:text-6xl text-4xl text-[var(--primary-color)]  max-w-[450px] font-thin merriweather'>
+            <motion.h2 className={`md:text-6xl text-4xl text-[var(--primary-color)]  max-w-[450px] font-thin ${t('lang') != "th" && "merriweather"}`}>
               {t('aboutTitle')}
             </motion.h2>
             <motion.p className='text-base sm:text-lg  mx-auto md:mx-0 leading-relaxed max-w-[600px]'>

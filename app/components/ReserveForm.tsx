@@ -1,0 +1,255 @@
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
+import { useToast } from "~/components/Toast";
+
+// Zod schema
+const reserveSchema = z.object({
+  name: z.string().min(2, "validation_name"),
+  phone: z.string().regex(/^0\d{8,9}$/, "validation_phone"),
+  date: z.string().nonempty("validation_date"),
+  time: z.string().nonempty("validation_time"),
+  branch: z.string().nonempty("validation_branch"),
+  guests: z
+    .number({ error: "validation_guests_required" })
+    .min(1, "validation_guests_min")
+    .max(10, "validation_guests_max"),
+});
+
+type ReserveFormData = z.infer<typeof reserveSchema>;
+
+export function ReserveForm() {
+  const { t } = useTranslation();
+  const toast = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    watch,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<ReserveFormData>({
+    resolver: zodResolver(reserveSchema),
+    defaultValues: {
+      name: "",
+      phone: "",
+      date: "",
+      time: "",
+      branch: "",
+      guests: 1,
+    },
+  });
+
+  const onSubmit = async (data: ReserveFormData) => {
+    try {
+      setIsLoading(true);
+
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbx4f9KRNV7pPvg5G9quGIUx8SJVRJ9Jjo5WhDuzaTqBhffjH8UOVakCKgpZbRjvWcaL/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
+
+      const message = `
+*${t("newRequest")}*
+${t("name")}: ${data.name}
+${t("phone")}: ${data.phone}
+${t("date")}: ${data.date}
+${t("branch")}: ${data.branch}
+${t("guests")}: ${data.guests}
+${t("time")}: ${data.time}
+      `.trim();
+
+      window.open(
+        `https://wa.me/66657479789?text=${encodeURIComponent(message)}`,
+        "_blank"
+      );
+
+      await fetch("/api/apply", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, title: t("newRequest") }),
+      });
+
+      toast(t("toastSuccessTitle"), t("toastSuccessMessage"));
+      reset();
+    } catch (error) {
+      console.error(error);
+      toast(t("toastErrorTitle"), t("toastErrorMessage"));
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <section className="box-container  w-full flex items-center flex-col py-12">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+        {t("bookReservation")}
+      </h2>
+
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full"
+      >
+        {/* Name */}
+        <div className="flex flex-col">
+          <label className="font-medium mb-1">{t("name")}</label>
+          <input
+            {...register("name")}
+            placeholder={t("placeholder_name")}
+            className="input"
+          />
+          {errors.name && (
+            <p className="text-red-500 text-sm">
+              {t(errors.name.message as string)}
+            </p>
+          )}
+        </div>
+
+        {/* Phone */}
+        <div className="flex flex-col">
+          <label className="font-medium mb-1">{t("phone")}</label>
+          <input
+            {...register("phone")}
+            placeholder={t("placeholder_phone")}
+            className="input"
+          />
+          {errors.phone && (
+            <p className="text-red-500 text-sm">
+              {t(errors.phone.message as string)}
+            </p>
+          )}
+        </div>
+
+        {/* Date */}
+        <div className="flex flex-col">
+          <label className="font-medium mb-1">{t("date")}</label>
+          <input {...register("date")} type="date" className="input" />
+        </div>
+
+        {/* Time */}
+        <div className="flex flex-col">
+          <label className="font-medium mb-1">{t("time")}</label>
+          <input {...register("time")} type="time" className="input" />
+        </div>
+
+        {/* Branch */}
+        <div className="flex flex-col md:col-span-2">
+          <label className="font-medium mb-1">{t("branch")}</label>
+          <select {...register("branch")} className="input">
+            <option value="">{t("selectBranch")}</option>
+            <option value="sukhumvit22">{t("sukhumvit22")}</option>
+            <option value="sathorn-rama3">{t("sathornRama3")}</option>
+          </select>
+        </div>
+
+        {/* Guests */}
+        <div className="md:col-span-2">
+          <label className="font-medium mb-2">{t("guests")}</label>
+          <div className="grid grid-cols-4 sm:grid-cols-8 gap-2">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+              <button
+                key={num}
+                type="button"
+                onClick={() => setValue("guests", num)}
+                className={`
+          rounded-lg border px-3 py-2 text-center font-medium transition
+          ${watch("guests") === num
+                    ? "bg-[var(--secondary-color)] text-white border-[var(--primary-color)]"
+                    : "bg-white border-gray-300 hover:bg-gray-100"
+                  }
+        `}
+              >
+                {num}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Submit */}
+        <div className="md:col-span-2">
+          <button
+            disabled={isSubmitting || isLoading}
+            className="w-full bg-[var(--primary-color)] py-3 rounded font-medium"
+          >
+            {isSubmitting ? t("submitting") : t("reserveNow")}
+          </button>
+        </div>
+
+        {/* Alternative Contact */}
+        <div className='text-center w-full md:col-span-2'>
+          {t('Other way')}
+        </div>
+        <div className='flex gap-2 justify-center md:col-span-2'>
+          <Link
+            target='_blank'
+            rel='noreferal'
+            to='https://lin.ee/5KgYgyx'
+            className=' toggle'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='32'
+              height='32'
+              className='size-[28px] md:size-[32px] text-white'
+              viewBox='0 0 32 32'
+            >
+              <path
+                fill='currentColor'
+                d='M25.817 13.151a.842.842 0 1 1 0 1.683h-2.339v1.5h2.339a.84.84 0 1 1 0 1.678H22.64a.84.84 0 0 1-.837-.839v-6.36c0-.463.375-.843.837-.843h3.183a.842.842 0 0 1-.005 1.682h-2.339v1.5zm-5.134 4.021a.845.845 0 0 1-.844.838a.85.85 0 0 1-.683-.333l-3.255-4.427v3.921a.839.839 0 1 1-1.678 0v-6.36c0-.359.235-.681.573-.796a.8.8 0 0 1 .26-.043c.26 0 .5.141.661.339l3.281 4.437v-3.937c0-.463.375-.843.839-.843s.844.38.844.843zm-7.656 0a.843.843 0 0 1-.844.839a.84.84 0 0 1-.833-.839v-6.36c0-.463.375-.843.839-.843s.839.38.839.843zm-3.287.839H6.557a.846.846 0 0 1-.844-.839v-6.36c0-.463.38-.843.844-.843s.839.38.839.843v5.521H9.74a.839.839 0 1 1 0 1.678M32 13.749C32 6.588 24.817.76 16 .76S0 6.588 0 13.749c0 6.417 5.693 11.792 13.38 12.813c.521.109 1.229.344 1.412.787c.161.4.104 1.02.052 1.443l-.219 1.359c-.063.401-.323 1.579 1.396.86c1.724-.719 9.224-5.437 12.583-9.303C30.901 19.193 32 16.609 32 13.749'
+              />
+            </svg>
+          </Link>
+          <Link
+            target='_blank'
+            rel='noreferal'
+            to='https://wa.me/66657479789'
+            className=' toggle'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='32'
+              height='32'
+              className='size-[28px] md:size-[32px] text-white'
+              viewBox='0 0 32 32'
+            >
+              <path
+                fill='currentColor'
+                d='M23.328 19.177c-.401-.203-2.354-1.156-2.719-1.292c-.365-.13-.63-.198-.896.203c-.26.391-1.026 1.286-1.26 1.547s-.464.281-.859.104c-.401-.203-1.682-.62-3.203-1.984c-1.188-1.057-1.979-2.359-2.214-2.76c-.234-.396-.026-.62.172-.818c.182-.182.401-.458.604-.698c.193-.24.255-.401.396-.661c.13-.281.063-.5-.036-.698s-.896-2.161-1.229-2.943c-.318-.776-.651-.677-.896-.677c-.229-.021-.495-.021-.76-.021s-.698.099-1.063.479c-.365.401-1.396 1.359-1.396 3.297c0 1.943 1.427 3.823 1.625 4.104c.203.26 2.807 4.26 6.802 5.979c.953.401 1.693.641 2.271.839c.953.302 1.823.26 2.51.161c.76-.125 2.354-.964 2.688-1.901c.339-.943.339-1.724.24-1.901c-.099-.182-.359-.281-.76-.458zM16.083 29h-.021c-2.365 0-4.703-.641-6.745-1.839l-.479-.286l-5 1.302l1.344-4.865l-.323-.5a13.17 13.17 0 0 1-2.021-7.01c0-7.26 5.943-13.182 13.255-13.182c3.542 0 6.865 1.38 9.365 3.88a13.06 13.06 0 0 1 3.88 9.323C29.328 23.078 23.39 29 16.088 29zM27.359 4.599C24.317 1.661 20.317 0 16.062 0C7.286 0 .14 7.115.135 15.859c0 2.792.729 5.516 2.125 7.927L0 32l8.448-2.203a16.1 16.1 0 0 0 7.615 1.932h.005c8.781 0 15.927-7.115 15.932-15.865c0-4.234-1.651-8.219-4.661-11.214z'
+              />
+            </svg>
+          </Link>
+
+          <Link
+            target='_blank'
+            rel='noreferal'
+            to='tel:+66657479789'
+            className=' toggle'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='24'
+              height='24'
+              className='size-[28px] md:size-[32px] text-white'
+              viewBox='0 0 24 24'
+            >
+              <path
+                fill='currentColor'
+                d='M5 9.86a18.47 18.47 0 0 0 9.566 9.292l.68.303a3.5 3.5 0 0 0 4.33-1.247l.889-1.324a1 1 0 0 0-.203-1.335l-3.012-2.43a1 1 0 0 0-1.431.183l-.932 1.257a12.14 12.14 0 0 1-5.51-5.511l1.256-.932a1 1 0 0 0 .183-1.431l-2.43-3.012a1 1 0 0 0-1.335-.203l-1.333.894a3.5 3.5 0 0 0-1.237 4.355z'
+              />
+            </svg>
+          </Link>
+        </div>
+      </form>
+    </section>
+  );
+}

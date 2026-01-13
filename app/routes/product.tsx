@@ -5,8 +5,9 @@ import type { Route } from './+types/product'
 import 'react-photo-view/dist/react-photo-view.css'
 import { PhotoProvider, PhotoView } from 'react-photo-view'
 import HorizontalSwiper from '~/components/HorizontalSwiper'
+import { Link } from 'react-router'
 
-export function meta ({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
     {
       title: 'Homsleepsalon | Product'
@@ -39,7 +40,7 @@ export function meta ({}: Route.MetaArgs) {
   ]
 }
 
-export default function Product () {
+export default function Product() {
   const { t } = useTranslation()
 
   return (
@@ -53,7 +54,7 @@ export default function Product () {
                 {...SLIDE_UP}
                 className='header-1 mb-5 text-[var(--secondary-color)] font-bold'
               >
-                {t('product')}
+                {t('products & promotions')}
               </motion.h2>
               <motion.p
                 {...SLIDE_UP}
@@ -72,6 +73,96 @@ export default function Product () {
             />
           </div>
         </div>
+      </section>
+
+      {/* service */}
+
+      <section className='min-h-[600px] flex flex-col py-5 items-center bg-[var(--secondary-color)]'>
+        <div className=' box-container-md w-full items-center py-5' >
+          <motion.h2
+            {...SLIDE_UP}
+            className='header-1 mb-5 text-white font-bold'
+          >
+            {t('services')}
+          </motion.h2>
+        </div>
+
+        <div className="grid gap-16 box-container-md w-full px-4 md:px-0">
+          {[
+            {
+              src: '/images/service17.jpg',
+              title: 'Head Spa',
+              subtitle: 'RESTORATIVE RITUAL',
+              desc: 'An immersive experience designed to release cranial tension and nourish the scalp with organic Thai botanicals.',
+              price: 'From ฿1,200',
+              path: '/head-spa',
+            },
+            {
+              src: '/images/service15.jpg',
+              title: 'Ear Spa',
+              subtitle: 'ANCIENT THERAPY',
+              desc: 'A calming traditional practice focusing on gentle cleaning and pressure point massage for total mental clarity.',
+              price: 'From ฿800',
+              path: '/ear-spa',
+            },
+          ].map((item) => (
+            <Link
+              to={item.path}
+              key={item.title}
+              className="group relative grid md:grid-cols-2 overflow-hidden  gap-4"
+            >
+              {/* Image */}
+              <div className="relative aspect-square  rounded-3xl overflow-hidden">
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  className="absolute inset-0 w-full h-full object-cover scale-100
+                   group-hover:scale-105 transition-transform duration-[1200ms] ease-out"
+                />
+
+                {/* Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
+
+                {/* Price */}
+                <div className="absolute top-5 right-5">
+                  <span className="text-[11px] tracking-[0.25em] uppercase text-white/90">
+                    {item.price}
+                  </span>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="relative flex flex-col justify-center px-8 md:px-14 py-10 backdrop-blur-md bg-linear-60 to-orange-300 from-yellow-100 rounded-3xl">
+                {/* Subtitle */}
+                <span className="text-[10px] tracking-[0.45em] uppercase text-neutral-400 mb-3">
+                  {item.subtitle}
+                </span>
+
+                {/* Title */}
+                <h3 className="text-3xl md:text-4xl font-light tracking-tight text-neutral-800 mb-6 group-hover:italic transition-all duration-500">
+                  {item.title}
+                </h3>
+
+                {/* Divider */}
+                <div className="w-10 h-px bg-neutral-300 mb-6 group-hover:w-24 transition-all duration-700" />
+
+                {/* Description */}
+                <p className="max-w-md text-[14px] leading-relaxed text-neutral-500 font-light mb-10">
+                  {item.desc}
+                </p>
+
+                {/* CTA */}
+                <span className="inline-flex items-center gap-2 text-[11px] tracking-[0.3em] uppercase font-semibold text-neutral-800">
+                  {t('Explore Detail')}
+                  <span className="w-6 h-px bg-neutral-800 group-hover:w-10 transition-all duration-500" />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+
+        {/*  */}
       </section>
 
       {/* products section */}
@@ -105,7 +196,7 @@ export default function Product () {
         </PhotoProvider>
       </section>
 
-      
+
       {/* products section */}
       <section className='min-h-[600px] flex flex-col py-5 items-center bg-[var(--secondary-color)]'>
         <div className=' box-container-md w-full items-center py-5' >
