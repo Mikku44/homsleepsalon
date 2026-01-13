@@ -4,6 +4,7 @@ import { Clock, Star, Leaf, Coffee, Music } from 'lucide-react';
 import ImageCarousel from "~/components/ImageCarousel";
 import { ReserveForm } from "~/components/ReserveForm";
 import { BASE_URL } from "~/constant/app";
+import type { Route } from "./+types/ear-spa";
 
 export function meta({}: Route.MetaArgs) {
   return [

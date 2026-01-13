@@ -5,6 +5,7 @@ import { Clock, Star, Leaf, Coffee } from 'lucide-react';
 import ImageCarousel from "~/components/ImageCarousel";
 import { ReserveForm } from "~/components/ReserveForm";
 import { BASE_URL } from "~/constant/app";
+import type { Route } from "./+types/head-spa";
 
 
 
