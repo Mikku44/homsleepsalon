@@ -121,7 +121,7 @@ const EarSpaPage = () => {
             }}
             className="text-base md:text-lg text-white/60 font-light leading-relaxed max-w-3xl"
           >
-            {t("Our 1.45-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.")}
+            {t("Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.")}
           </motion.p>
         </section>
       </div>
@@ -172,7 +172,7 @@ const EarSpaPage = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-orange-300 tracking-widest text-xs uppercase mb-4 block">{t('The Experience')}</span>
-            <h3 className="text-4xl font-light max-w-[500px] mb-8">{t('Why our 1.45h Ritual?')}</h3>
+            <h3 className="text-4xl font-light max-w-[500px] mb-8">{t('Why our 1h Ritual?')}</h3>
             <div className="space-y-6">
               <div className="flex gap-4">
                 <Music className="text-orange-300 shrink-0" />

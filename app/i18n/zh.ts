@@ -129,7 +129,7 @@ export const zh = {
         "Signature Ear Spa": "招牌采耳水疗",
         "฿800": "800泰铢",
         "A deep auditory and sensory escape designed to quiet the world outside.": "一场深度的听觉与感官逃离，旨在让外界归于寂静。",
-        "Our 1.45-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "我们 1.45 小时的采耳水疗是一个全面的健康之旅。我们将精湛的护耳艺术与招牌 17 步头部按摩及治疗性声景相结合，提供全面的神经系统重置。",
+        "Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "我们 1 小时的采耳水疗是一个全面的健康之旅。我们将精湛的护耳艺术与招牌 17 步头部按摩及治疗性声景相结合，提供全面的神经系统重置。",
         "Relaxing Eye Mask": "放松眼罩",
         "Gently relaxes the eyes and nervous system using the salon’s signature calming technique.": "使用店内的招牌冷静技术，轻柔放松眼部和神经系统。",
         "Aromatic Sensory Awakening": "芳香感官觉醒",
@@ -161,7 +161,7 @@ export const zh = {
         "Relaxation Tea & Light Refreshments": "放松茶饮与精美茶点",
         "Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.": "享用店内招牌高级热茶与点心，结束整场仪式。",
         "The Experience": "体验价值",
-        "Why our 1.45h Ritual?": "为什么选择我们的 1.45 小时仪式？",
+        "Why our 1h Ritual?": "为什么选择我们的 1 小时仪式？",
         "Sound therapy combined with precise pressure point massage helps regulate the nervous system and improve sleep quality.": "声学疗法与精准穴位按摩相结合，有助于调节神经系统，改善睡眠质量。",
         "Our 17-step massage is specifically calibrated to address the root causes of tension for those suffering from Office Syndrome.": "我们的 17 步按摩经过专门校准，针对办公室综合征患者的张力根源进行改善。",
     }

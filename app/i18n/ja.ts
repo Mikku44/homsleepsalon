@@ -129,7 +129,7 @@ export const ja = {
     "Signature Ear Spa": "シグネチャー・イヤースパ",
     "฿800": "800バーツ",
     "A deep auditory and sensory escape designed to quiet the world outside.": "外界の騒音を忘れさせる、深い聴覚と感覚の逃避行。",
-    "Our 1.45-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "1.45時間のイヤースパは、総合的なウェルネスの旅です。耳のケアの繊細な技術と、独自の17ステップ・ヘッドマッサージ、癒しのサウンドを融合させ、神経をトータルにリセットします。",
+    "Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "1時間のイヤースパは、総合的なウェルネスの旅です。耳のケアの繊細な技術と、独自の17ステップ・ヘッドマッサージ、癒しのサウンドを融合させ、神経をトータルにリセットします。",
     "Relaxing Eye Mask": "リラックス・アイマスク",
     "Gently relaxes the eyes and nervous system using the salon’s signature calming technique.": "サロン独自の沈静技術で、目元と神経を優しくリラックスさせます。",
     "Aromatic Sensory Awakening": "アロマによる感覚の覚醒",
@@ -161,7 +161,7 @@ export const ja = {
     "Relaxation Tea & Light Refreshments": "リラクゼーションティー＆軽食",
     "Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.": "リチュアルの締めくくりに、サロン特製のプレミアム温茶と軽食をお楽しみください。",
     "The Experience": "体験の価値",
-    "Why our 1.45h Ritual?": "なぜ1.45時間のリチュアルなのか？",
+    "Why our 1h Ritual?": "なぜ1時間のリチュアルなのか？",
     "Sound therapy combined with precise pressure point massage helps regulate the nervous system and improve sleep quality.": "サウンドセラピーと的確なツボ押しを組み合わせることで、自律神経を整え、睡眠の質を向上させます。",
     "Our 17-step massage is specifically calibrated to address the root causes of tension for those suffering from Office Syndrome.": "17ステップのマッサージは、デスクワークによる疲れ（オフィスシンドローム）の根本的な原因にアプローチするよう特別に設計されています。",
   }

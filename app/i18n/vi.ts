@@ -130,7 +130,7 @@ Mọi góc nhỏ của salon đều được tạo ra để mang lại cảm gi�
         "Signature Ear Spa": "Ear Spa Hoàng Gia",
         "฿800": "800 ฿",
         "A deep auditory and sensory escape designed to quiet the world outside.": "Một chuyến trốn thoát thính giác và cảm giác sâu sắc để tĩnh lặng thế giới bên ngoài.",
-        "Our 1.45-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "Ear Spa kéo dài 1.45 giờ của chúng tôi là một hành trình chăm sóc sức khỏe toàn diện. Chúng tôi kết hợp nghệ thuật chăm sóc tai tinh tế với massage đầu 17 bước đặc trưng và không gian âm thanh trị liệu để tái tạo hệ thần kinh hoàn toàn.",
+        "Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "Ear Spa kéo dài 1 giờ của chúng tôi là một hành trình chăm sóc sức khỏe toàn diện. Chúng tôi kết hợp nghệ thuật chăm sóc tai tinh tế với massage đầu 17 bước đặc trưng và không gian âm thanh trị liệu để tái tạo hệ thần kinh hoàn toàn.",
         "Relaxing Eye Mask": "Mặt nạ mắt thư giãn",
         "Gently relaxes the eyes and nervous system using the salon’s signature calming technique.": "Thư giãn đôi mắt và hệ thần kinh một cách nhẹ nhàng bằng kỹ thuật đặc trưng của salon.",
         "Aromatic Sensory Awakening": "Đánh thức khứu giác",
@@ -162,7 +162,7 @@ Mọi góc nhỏ của salon đều được tạo ra để mang lại cảm gi�
         "Relaxation Tea & Light Refreshments": "Trà thư giãn & đồ ăn nhẹ",
         "Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.": "Thưởng thức trà nóng cao cấp đặc trưng cùng đồ ăn nhẹ để kết thúc nghi lễ.",
         "The Experience": "Trải nghiệm",
-        "Why our 1.45h Ritual?": "Tại sao lại là nghi lễ 1.45 giờ?",
+        "Why our 1h Ritual?": "Tại sao lại là nghi lễ 1 giờ?",
         "Sound therapy combined with precise pressure point massage helps regulate the nervous system and improve sleep quality.": "Trị liệu âm thanh kết hợp với massage ấn huyệt chính xác giúp điều hòa hệ thần kinh và cải thiện chất lượng giấc ngủ.",
         "Our 17-step massage is specifically calibrated to address the root causes of tension for those suffering from Office Syndrome.": "Massage 17 bước của chúng tôi được hiệu chuẩn đặc biệt để giải quyết các nguyên nhân gốc rễ gây căng thẳng cho những người bị hội chứng văn phòng.",
     }

@@ -129,7 +129,7 @@ export const ar = {
         "Signature Ear Spa": "سبا الأذن المميز",
         "฿800": "800 بات",
         "A deep auditory and sensory escape designed to quiet the world outside.": "هروب سمعي وحسي عميق مصمم لإسكات العالم الخارجي.",
-        "Our 1.45-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "سبا الأذن الذي يستغرق 1.45 ساعة هو رحلة عافية شاملة. نحن ندمج الفن الدقيق للعناية بالأذن مع تدليك الرأس المميز المكون من 17 خطوة والمناظر الصوتية العلاجية لتوفير إعادة ضبط عصبية كاملة.",
+        "Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "سبا الأذن الذي يستغرق 1 ساعة هو رحلة عافية شاملة. نحن ندمج الفن الدقيق للعناية بالأذن مع تدليك الرأس المميز المكون من 17 خطوة والمناظر الصوتية العلاجية لتوفير إعادة ضبط عصبية كاملة.",
         "Relaxing Eye Mask": "قناع العين المريح",
         "Gently relaxes the eyes and nervous system using the salon’s signature calming technique.": "يريح العينين والجهاز العصبي بلطف باستخدام تقنية التهدئة المميزة للصالون.",
         "Aromatic Sensory Awakening": "صحوة حسية عطرية",
@@ -161,7 +161,7 @@ export const ar = {
         "Relaxation Tea & Light Refreshments": "شاي الاسترخاء والوجبات الخفيفة",
         "Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.": "استمتع بشاي الصالون الساخن المميز مع وجبات خفيفة لختام الطقوس.",
         "The Experience": "التجربة",
-        "Why our 1.45h Ritual?": "لماذا طقوسنا التي تستغرق 1.45 ساعة؟",
+        "Why our 1h Ritual?": "لماذا طقوسنا التي تستغرق 1 ساعة؟",
         "Sound therapy combined with precise pressure point massage helps regulate the nervous system and improve sleep quality.": "يساعد العلاج الصوتي مع تدليك نقاط الضغط الدقيقة على تنظيم الجهاز العصبي وتحسين جودة النوم.",
         "Our 17-step massage is specifically calibrated to address the root causes of tension for those suffering from Office Syndrome.": "تم معايرة تدليكنا المكون من 17 خطوة خصيصاً لمعالجة الأسباب الجذرية للتوتر لأولئك الذين يعانون من متلازمة المكتب.",
     }

@@ -130,7 +130,7 @@ export const ko = {
     "Signature Ear Spa": "시그니처 이어 스파",
     "฿800": "800바트",
     "A deep auditory and sensory escape designed to quiet the world outside.": "외부 세계를 잠재우기 위해 고안된 깊은 청각적 및 감각적 탈출.",
-    "Our 1.45-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "1시간 45분간 진행되는 이어 스파는 종합적인 웰니스 여정입니다. 섬세한 귀 관리 예술과 시그니처 17단계 헤드 마사지, 치료적 사운드를 결합하여 완벽한 신경계 리셋을 제공합니다.",
+    "Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "1시간 45분간 진행되는 이어 스파는 종합적인 웰니스 여정입니다. 섬세한 귀 관리 예술과 시그니처 17단계 헤드 마사지, 치료적 사운드를 결합하여 완벽한 신경계 리셋을 제공합니다.",
     "Relaxing Eye Mask": "릴랙싱 아이 마스크",
     "Gently relaxes the eyes and nervous system using the salon’s signature calming technique.": "살롱 고유의 진정 기술을 사용하여 눈과 신경계를 부드럽게 이완시킵니다.",
     "Aromatic Sensory Awakening": "아로마 감각 깨우기",
@@ -162,7 +162,7 @@ export const ko = {
     "Relaxation Tea & Light Refreshments": "휴식 차 & 다과",
     "Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.": "살롱의 시그니처 프리미엄 핫티와 가벼운 간식으로 리추얼을 마무리하세요.",
     "The Experience": "경험",
-    "Why our 1.45h Ritual?": "왜 1.45시간 리추얼인가요?",
+    "Why our 1h Ritual?": "왜 1시간 리추얼인가요?",
     "Sound therapy combined with precise pressure point massage helps regulate the nervous system and improve sleep quality.": "사운드 테라피와 정밀한 지압 마사지가 결합되어 신경계를 조절하고 수면의 질을 개선합니다.",
     "Our 17-step massage is specifically calibrated to address the root causes of tension for those suffering from Office Syndrome.": "당사의 17단계 마사지는 오피스 증후군으로 고통받는 분들을 위해 긴장의 근본 원인을 해결하도록 특별히 조정되었습니다.",
 }
