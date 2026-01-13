@@ -1,15 +1,60 @@
-import { Link, useLocation } from 'react-router'
+import { Link, useLocation, useNavigation } from 'react-router'
 import { MENU } from '~/constant/app'
 import LangSelector from './LangSelector'
 import Drawer from './Drawer'
 import { useTranslation } from 'react-i18next';
+import { AnimatePresence, motion } from 'motion/react';
 
 
 export default function Navigator() {
   const { t } = useTranslation();
   const location = useLocation()
+
+  const navigation = useNavigation();
+  const isLoading = navigation.state === "loading";
   return (
     <header className='fixed  z-[99]  w-[95vw] mx-auto border-white/20 border left-[2vw] md:mt-5 mt-2 md:rounded-full bg-black/20 backdrop-blur-xl'>
+
+      {isLoading && (
+        <AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[999] flex items-end justify-center pointer-events-none"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 16 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="mb-6 flex items-center gap-3 rounded-full border border-zinc-200 bg-white/90 px-5 py-3 shadow-sm backdrop-blur"
+            >
+              {/* Dots */}
+              <div className="flex items-center gap-1">
+                {[0, 1, 2].map((i) => (
+                  <motion.span
+                    key={i}
+                    className="size-1.5 rounded-full bg-zinc-400"
+                    animate={{ opacity: [0.3, 1, 0.3] }}
+                    transition={{
+                      duration: 1,
+                      repeat: Infinity,
+                      delay: i * 0.15,
+                      ease: "easeInOut",
+                    }}
+                  />
+                ))}
+              </div>
+
+              <span className="text-sm font-medium tracking-wide text-zinc-600">
+                กำลังโหลด
+              </span>
+            </motion.div>
+          </motion.div>
+        </AnimatePresence>
+
+      )}
       <nav className='box-container py-2 flex justify-between w-full'>
         {/* logo */}
         <div className='md:w-[60px] w-[40px]'>

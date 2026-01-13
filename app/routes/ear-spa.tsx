@@ -91,9 +91,9 @@ const EarSpaPage = () => {
             {t('Signature Ear Spa')}
           </h1>
           <div className="flex items-center justify-center gap-6 text-white/90 text-[13px] tracking-widest uppercase">
-            <span className="flex items-center gap-2"><Clock size={16} /> 1.45 {t('Hours')}</span>
+            <span className="flex items-center gap-2"><Clock size={16} /> 1 {t('Hour')}</span>
             <span className="w-px h-4 bg-white/30" />
-            <span>{t('฿899')}</span>
+            <span>{t("FROM")} {t('฿999')}</span>
           </div>
         </div>
       </section>
