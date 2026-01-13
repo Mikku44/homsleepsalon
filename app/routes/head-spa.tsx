@@ -4,7 +4,48 @@ import { Link } from 'react-router';
 import { Clock, Star, Leaf, Coffee } from 'lucide-react';
 import ImageCarousel from "~/components/ImageCarousel";
 import { ReserveForm } from "~/components/ReserveForm";
-import { SLIDE_UP } from "~/constant/app";
+import { BASE_URL } from "~/constant/app";
+
+
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    {
+      title:
+        'Homsleepsalon | Head Spa & Relaxation Sukhumvit 22 & Sathorn Rama 3',
+    },
+    {
+      name: 'description',
+      content:
+        'Homsleepsalon สุขุมวิท 22 & สาทร รามา 3 บริการ Head Spa เวียดนาม ช่วยผ่อนคลายหนังศีรษะ คลายความตึงเครียด และฟื้นฟูสมดุลร่างกายและจิตใจ ใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์',
+    },
+    {
+      name: 'keywords',
+      content:
+        'Homsleepsalon, Head Spa, Head Spa เวียดนาม, สปาศีรษะ, สุขุมวิท 22, สาทร รามา 3, สปากรุงเทพ, ผ่อนคลาย',
+    },
+    {
+      property: 'og:title',
+      content:
+        'Homsleepsalon | Head Spa & Relaxation Sukhumvit 22 & Sathorn Rama 3',
+    },
+    {
+      property: 'og:description',
+      content:
+        'สัมผัสการผ่อนคลายลึกด้วย Head Spa เวียดนาม ที่ Homsleepsalon สุขุมวิท 22 และสาทร รามา 3',
+    },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: `${BASE_URL}/head-spa` },
+    { property: 'og:image', content: `${BASE_URL}/images/service17.jpg` },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    {
+      property: 'og:image:alt',
+      content: 'Homsleepsalon Head Spa & Relaxation',
+    },
+  ]
+}
+
 
 const HeadSpaPage = () => {
   const { t } = useTranslation();

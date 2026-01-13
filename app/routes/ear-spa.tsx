@@ -3,6 +3,46 @@ import { useTranslation } from 'react-i18next';
 import { Clock, Star, Leaf, Coffee, Music } from 'lucide-react';
 import ImageCarousel from "~/components/ImageCarousel";
 import { ReserveForm } from "~/components/ReserveForm";
+import { BASE_URL } from "~/constant/app";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    {
+      title:
+        'Homsleepsalon | Ear Spa & Relaxation Sukhumvit 22 & Sathorn Rama 3',
+    },
+    {
+      name: 'description',
+      content:
+        'Homsleepsalon สุขุมวิท 22 & สาทร รามา 3 บริการ Ear Spa เวียดนาม สปาหูแบบผ่อนคลาย ช่วยคลายความเครียด เพิ่มสมดุลร่างกายและจิตใจ ใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์',
+    },
+    {
+      name: 'keywords',
+      content:
+        'Homsleepsalon, Ear Spa, สปาหู, สปาหูเวียดนาม, สุขุมวิท 22, สาทร รามา 3, สปากรุงเทพ, ผ่อนคลาย',
+    },
+    {
+      property: 'og:title',
+      content:
+        'Homsleepsalon | Ear Spa & Relaxation Sukhumvit 22 & Sathorn Rama 3',
+    },
+    {
+      property: 'og:description',
+      content:
+        'สัมผัสการผ่อนคลายลึกถึงจิตใจด้วย Ear Spa เวียดนาม ที่ Homsleepsalon สุขุมวิท 22 และสาทร รามา 3',
+    },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: `${BASE_URL}/ear-spa` },
+    { property: 'og:image', content: `${BASE_URL}/images/service15.jpg` },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    {
+      property: 'og:image:alt',
+      content: 'Homsleepsalon Ear Spa & Relaxation',
+    },
+  ]
+}
+
 
 const EarSpaPage = () => {
   const { t } = useTranslation();
