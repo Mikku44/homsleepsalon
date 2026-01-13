@@ -164,7 +164,7 @@ Every corner of our salon is crafted to feel like home — a warm and peaceful s
         "Book Your Session Now": "Book Your Session Now",
         "Back to all services": "Back to all services",
 
-        "products & promotions": "products & promotions",
+        "products & promotions": "Products & promotions",
         "Ear Spa": "Ear Spa",
         "services": "services",
         "RESTORATIVE RITUAL": "RESTORATIVE RITUAL",

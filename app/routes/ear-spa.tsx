@@ -52,7 +52,7 @@ const EarSpaPage = () => {
           <div className="flex items-center justify-center gap-6 text-white/90 text-[13px] tracking-widest uppercase">
             <span className="flex items-center gap-2"><Clock size={16} /> 1.45 {t('Hours')}</span>
             <span className="w-px h-4 bg-white/30" />
-            <span>{t('฿800')}</span>
+            <span>{t('฿899')}</span>
           </div>
         </div>
       </section>

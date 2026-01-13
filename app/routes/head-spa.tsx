@@ -121,7 +121,7 @@ const HeadSpaPage = () => {
           <div className="flex items-center justify-center gap-6 text-white/90 text-[13px] tracking-widest uppercase">
             <span className="flex items-center gap-2"><Clock size={16} /> 1.15 {t('Hours')}</span>
             <span className="w-px h-4 bg-white/30" />
-            <span>{t('From ฿1,200')}</span>
+            <span>{t('From ฿1,290')}</span>
           </div>
         </div>
       </section>
