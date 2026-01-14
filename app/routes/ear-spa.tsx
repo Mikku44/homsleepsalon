@@ -6,31 +6,31 @@ import { ReserveForm } from "~/components/ReserveForm";
 import { BASE_URL } from "~/constant/app";
 import type { Route } from "./+types/ear-spa";
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
     {
       title:
-        'Homsleepsalon | Ear Spa & Relaxation Sukhumvit 22 & Sathorn Rama 3',
+        'Homsleepsalon | Ear Cleaning & Relaxation Sukhumvit 22 & Sathorn Rama 3',
     },
     {
       name: 'description',
       content:
-        'Homsleepsalon สุขุมวิท 22 & สาทร รามา 3 บริการ Ear Spa เวียดนาม สปาหูแบบผ่อนคลาย ช่วยคลายความเครียด เพิ่มสมดุลร่างกายและจิตใจ ใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์',
+        'Homsleepsalon สุขุมวิท 22 & สาทร รามา 3 บริการ Ear Cleaning เวียดนาม สปาหูแบบผ่อนคลาย ช่วยคลายความเครียด เพิ่มสมดุลร่างกายและจิตใจ ใจกลางกรุงเทพฯ ใกล้ BTS พร้อมพงษ์',
     },
     {
       name: 'keywords',
       content:
-        'Homsleepsalon, Ear Spa, สปาหู, สปาหูเวียดนาม, สุขุมวิท 22, สาทร รามา 3, สปากรุงเทพ, ผ่อนคลาย',
+        'Homsleepsalon, Ear Cleaning, สปาหู, สปาหูเวียดนาม, สุขุมวิท 22, สาทร รามา 3, สปากรุงเทพ, ผ่อนคลาย',
     },
     {
       property: 'og:title',
       content:
-        'Homsleepsalon | Ear Spa & Relaxation Sukhumvit 22 & Sathorn Rama 3',
+        'Homsleepsalon | Ear Cleaning & Relaxation Sukhumvit 22 & Sathorn Rama 3',
     },
     {
       property: 'og:description',
       content:
-        'สัมผัสการผ่อนคลายลึกถึงจิตใจด้วย Ear Spa เวียดนาม ที่ Homsleepsalon สุขุมวิท 22 และสาทร รามา 3',
+        'สัมผัสการผ่อนคลายลึกถึงจิตใจด้วย Ear Cleaning เวียดนาม ที่ Homsleepsalon สุขุมวิท 22 และสาทร รามา 3',
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: `${BASE_URL}/ear-spa` },
@@ -39,7 +39,7 @@ export function meta({}: Route.MetaArgs) {
     { property: 'og:image:height', content: '630' },
     {
       property: 'og:image:alt',
-      content: 'Homsleepsalon Ear Spa & Relaxation',
+      content: 'Homsleepsalon Ear Cleaning & Relaxation',
     },
   ]
 }
@@ -48,22 +48,19 @@ export function meta({}: Route.MetaArgs) {
 const EarSpaPage = () => {
   const { t } = useTranslation();
 
-  const ritualSteps = [
-    { id: 1, title: t('Relaxing Eye Mask'), desc: t('Gently relaxes the eyes and nervous system using the salon’s signature calming technique.') },
-    { id: 2, title: t('Aromatic Sensory Awakening'), desc: t('Opens the senses with organic aromas to induce deep relaxation.') },
-    { id: 3, title: t('Therapeutic Sound Relaxation'), desc: t('Soothing therapy music enhances mental calm and emotional balance.') },
-    { id: 4, title: t('Neck & Shoulder Oil Massage'), desc: t('Premium organic oil massage to relieve neck and shoulder tension and reduce office syndrome before cleansing.') },
-    { id: 5, title: t('Organic Shampoo Cleansing'), desc: t('Hair is gently cleansed twice using the salon’s premium organic shampoo for deep nourishment.') },
-    { id: 6, title: t('Signature Hair Spa Massage'), desc: t('Relaxing shampoo massage using the salon’s exclusive techniques.') },
-    { id: 7, title: t('Foam Spa Relaxation'), desc: t('A soft foam spa treatment to further calm the scalp and senses.') },
-    { id: 8, title: t('Organic Conditioner Treatment'), desc: t('Premium organic conditioner deeply nourishes hair, leaving it soft and fragrant.') },
-    { id: 9, title: t('17-Step Signature Head Massage'), desc: t('A therapeutic head massage designed to relieve migraines, headaches, and work-related fatigue.') },
-    { id: 10, title: t('Vietnamese Warm Water Curtain'), desc: t('A warm water therapy inspired by Vietnamese spa traditions for total relaxation.') },
-    { id: 11, title: t('Arm Relaxation Massage'), desc: t('Gentle arm massage performed in a reclining position.') },
-    { id: 12, title: t('Herbal Hot Compress'), desc: t('Warm herbal compress helps reduce muscle pain and tension.') },
-    { id: 13, title: t('Seated Neck & Shoulder Massage'), desc: t('Focused massage to release tension in the neck, shoulders, and upper back.') },
-    { id: 14, title: t('Hair Dry & Serum Care'), desc: t('Hair is gently dried and finished with nourishing serum.') },
-    { id: 15, title: t('Relaxation Tea & Light Refreshments'), desc: t('Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.') }
+  const earRitualSteps = [
+    { id: 1, title: t('Therapeutic Sound Healing'), desc: t('Awakens the senses and promotes mental clarity through soothing sound therapy.') },
+    { id: 2, title: t('Aromatic Sensory Awakening'), desc: t('Opening the senses with premium essential oils to induce immediate relaxation.') },
+    { id: 3, title: t('Lymphatic Head & Neck Massage'), desc: t('A specialized massage targeting lymph nodes and the back of the neck to improve circulation.') },
+    { id: 4, title: t('Professional Otoscope Examination'), desc: t('A high-precision visual inspection of the ear canal using advanced camera technology.') },
+    { id: 5, title: t('Deep Ear Canal Cleansing'), desc: t('Gentle and thorough irrigation to remove impurities from the inner ear.') },
+    { id: 6, title: t('Signature Ear Picking & Grooming'), desc: t('Expert ear picking and internal stimulation for a unique sense of relief.') },
+    { id: 7, title: t('Medicinal Ear Purifying'), desc: t('Application of specialized cleansing solutions to sanitize the ear canal.') },
+    { id: 8, title: t('Complete Inner & Outer Ear Care'), desc: t('Meticulous cleaning and buffing of both the internal canal and external ear structure.') },
+    { id: 9, title: t('Herbal Ear Candling Therapy'), desc: t('Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.') },
+    { id: 10, title: t('Post-Treatment Visual Verification'), desc: t('A final camera inspection to ensure total cleanliness and health of the ear canal.') },
+    { id: 11, title: t('Relaxing Cranial Massage'), desc: t('A soothing head massage to release any remaining tension and balance the nervous system.') },
+    { id: 12, title: t('Signature Tea & Refreshments'), desc: t('Conclude the ritual with the salon’s premium relaxation tea and light snacks.') }
   ];
 
   return (
@@ -88,10 +85,10 @@ const EarSpaPage = () => {
             {t('Deep Sensory Healing')}
           </span>
           <h1 className="text-5xl md:text-7xl font-light text-white tracking-tighter mb-6">
-            {t('Signature Ear Spa')}
+            {t('Signature Ear Cleaning')}
           </h1>
           <div className="flex items-center justify-center gap-6 text-white/90 text-[13px] tracking-widest uppercase">
-            <span className="flex items-center gap-2"><Clock size={16} /> 1 {t('Hour')}</span>
+            <span className="flex items-center gap-2"><Clock size={16} /> 60 {t('Minutes')}</span>
             <span className="w-px h-4 bg-white/30" />
             <span>{t("FROM")} {t('฿999')}</span>
           </div>
@@ -100,6 +97,8 @@ const EarSpaPage = () => {
 
       {/* Philosophy Section */}
       <div className="max-w-screen overflow-hidden bg-(--secondary-color)">
+
+
         <section className="relative  mx-auto flex flex-col items-center justify-center max-w-6xl h-[450px] py-24 px-6 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -121,15 +120,16 @@ const EarSpaPage = () => {
             }}
             className="text-base md:text-lg text-white/60 font-light leading-relaxed max-w-3xl"
           >
-            {t("Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.")}
+            {t("Our 1-hour Ear Cleaning is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.")}
           </motion.p>
         </section>
       </div>
 
       {/* The Ritual Steps Grid */}
       <section className="pb-24 px-6 mt-24 max-w-6xl mx-auto">
+        <img src="/promotions/ear-aromatherapy.png" className="mb-16 rounded-2xl max-h-[500px] mx-auto" alt="ear cleaning 999" />
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
-          {ritualSteps.map((step, index) => (
+          {earRitualSteps.map((step, index) => (
             <motion.div
               key={step.id}
               initial={{ opacity: 0, y: 24 }}
@@ -185,8 +185,8 @@ const EarSpaPage = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img src="/images/544340_0.jpg" alt="Ear Spa Detail" className="rounded-2xl h-64 w-full object-cover" />
-            <img src="/images/hom3/hom3 (17).jpg" alt="Ear Spa Detail" className="rounded-2xl h-64 w-full object-cover mt-8" />
+            <img src="/images/544340_0.jpg" alt="Ear Cleaning Detail" className="rounded-2xl h-64 w-full object-cover" />
+            <img src="/images/hom3/hom3 (17).jpg" alt="Ear Cleaning Detail" className="rounded-2xl h-64 w-full object-cover mt-8" />
           </div>
         </div>
       </section>
@@ -197,7 +197,7 @@ const EarSpaPage = () => {
           <img
             src="/images/544350_0.jpg"
             className="h-full w-full object-cover min-h-[400px]"
-            alt="Reserve Ear Spa"
+            alt="Reserve Ear Cleaning"
           />
         </div>
         <div className="md:w-1/2 p-8 md:p-12">

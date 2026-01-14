@@ -9,7 +9,7 @@ import type { Route } from "./+types/head-spa";
 
 
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
     {
       title:
@@ -131,6 +131,25 @@ const HeadSpaPage = () => {
   ];
 
 
+  const ritualSteps2 = [
+    { id: 1, title: t('Relaxing Eye Mask'), desc: t('Gently relaxes the eyes and nervous system using the salon’s signature calming technique.') },
+    { id: 2, title: t('Aromatic Sensory Awakening'), desc: t('Opens the senses with organic aromas to induce deep relaxation.') },
+    { id: 3, title: t('Therapeutic Sound Relaxation'), desc: t('Soothing therapy music enhances mental calm and emotional balance.') },
+    { id: 4, title: t('Neck & Shoulder Oil Massage'), desc: t('Premium organic oil massage to relieve neck and shoulder tension and reduce office syndrome before cleansing.') },
+    { id: 5, title: t('Organic Shampoo Cleansing'), desc: t('Hair is gently cleansed twice using the salon’s premium organic shampoo for deep nourishment.') },
+    { id: 6, title: t('Signature Hair Spa Massage'), desc: t('Relaxing shampoo massage using the salon’s exclusive techniques.') },
+    { id: 7, title: t('Foam Spa Relaxation'), desc: t('A soft foam spa treatment to further calm the scalp and senses.') },
+    { id: 8, title: t('Organic Conditioner Treatment'), desc: t('Premium organic conditioner deeply nourishes hair, leaving it soft and fragrant.') },
+    { id: 9, title: t('17-Step Signature Head Massage'), desc: t('A therapeutic head massage designed to relieve migraines, headaches, and work-related fatigue.') },
+    { id: 10, title: t('Vietnamese Warm Water Curtain'), desc: t('A warm water therapy inspired by Vietnamese spa traditions for total relaxation.') },
+    { id: 11, title: t('Arm Relaxation Massage'), desc: t('Gentle arm massage performed in a reclining position.') },
+    { id: 12, title: t('Herbal Hot Compress'), desc: t('Warm herbal compress helps reduce muscle pain and tension.') },
+    { id: 13, title: t('Seated Neck & Shoulder Massage'), desc: t('Focused massage to release tension in the neck, shoulders, and upper back.') },
+    { id: 14, title: t('Hair Dry & Serum Care'), desc: t('Hair is gently dried and finished with nourishing serum.') },
+    { id: 15, title: t('Relaxation Tea & Light Refreshments'), desc: t('Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.') }
+  ];
+
+
   return (
     <div className="min-h-screen bg-[#FCFAF7] text-neutral-800">
       {/* Hero Section */}
@@ -163,7 +182,7 @@ const HeadSpaPage = () => {
           <div className="flex items-center justify-center gap-6 text-white/90 text-[13px] tracking-widest uppercase">
             <span className="flex items-center gap-2"><Clock size={16} /> 1.45 {t('Hours')} / 1.15 {t('Hours')}</span>
             <span className="w-px h-4 bg-white/30" />
-            <span>{t('From ฿1,290') } / {t("฿ 899")}</span>
+            <span>{t('From ฿1,290')} / {t("฿ 899")}</span>
           </div>
         </div>
       </section>
@@ -298,8 +317,51 @@ const HeadSpaPage = () => {
 
       {/* The Ritual Steps - Visual Grid */}
       <section className="pb-24 px-6 mt-24 max-w-6xl mx-auto">
+        <img src="/images/service15.jpg" className="mb-16 rounded-2xl max-h-[500px] mx-auto" alt="head spa 899" />
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
           {ritualSteps.map((step, index) => (
+            <motion.div
+              key={step.id}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: index * 0.08, // subtle stagger
+              }}
+              whileHover={{ y: -4 }}
+              className="flex gap-6 items-start group"
+            >
+              {/* Number */}
+              <span
+                className="
+            text-3xl font-extralight text-orange-200
+            group-hover:text-orange-400 transition-colors duration-300
+          "
+              >
+                {step.id < 10 ? `0${step.id}` : step.id}
+              </span>
+
+              {/* Content */}
+              <div>
+                <h4 className="text-lg font-medium tracking-wide mb-2 uppercase text-neutral-800">
+                  {step.title}
+                </h4>
+                <p className="text-sm text-neutral-500 leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* retual 2 */}
+      <section className="pb-24 px-6 mt-24 max-w-6xl mx-auto">
+        <img src="/images/service17.jpg" className="mb-16 rounded-2xl max-h-[500px] mx-auto" alt="head spa 1290" />
+        <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
+          {ritualSteps2.map((step, index) => (
             <motion.div
               key={step.id}
               initial={{ opacity: 0, y: 24 }}
@@ -373,7 +435,7 @@ const HeadSpaPage = () => {
           <img
             src="/images/544350_0.jpg"
             className="h-full w-full object-cover min-h-[400px]"
-            alt="Reserve Ear Spa"
+            alt="Reserve Ear Cleaning"
           />
         </div>
         <div className="md:w-1/2 p-8 md:p-12">

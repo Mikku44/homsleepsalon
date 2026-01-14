@@ -35,7 +35,7 @@ export const MENU = [
       },
       {
         href: "/ear-spa",
-        label: "Ear Spa",
+        label: "Ear Cleaning",
         desc: "Sensory calm & pressure relief",
         icon: FaHeadphonesAlt,
       },

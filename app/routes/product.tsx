@@ -99,7 +99,7 @@ export default function Product() {
             },
             {
               src: '/images/service15.jpg',
-              title: 'Ear Spa',
+              title: 'Ear Cleaning',
               subtitle: 'ANCIENT THERAPY',
               desc: 'A calming traditional practice focusing on gentle cleaning and pressure point massage for total mental clarity.',
               price: 'From ฿800',

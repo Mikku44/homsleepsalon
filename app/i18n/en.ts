@@ -41,7 +41,7 @@ Every corner of our salon is crafted to feel like home — a warm and peaceful s
         "Book Your Reservation": "Book Your Reservation",
 
         "homeTitle": "What is Homsleepsalon?",
-        "homeDes": `At Homsleepsalon, we believe true relaxation starts with taking care of yourself. Here, you can experience our signature Vietnamese Head Spa that helps release stress and improve your sleep, along with ear spa, facial spa, and nail care — all done with care and attention in every detail.
+        "homeDes": `At Homsleepsalon, we believe true relaxation starts with taking care of yourself. Here, you can experience our signature Vietnamese Head Spa that helps release stress and improve your sleep, along with Ear Cleaning, facial spa, and nail care — all done with care and attention in every detail.
         We’ve created a cozy, home-like atmosphere where you can escape the city rush, unwind, and feel completely at ease. With locations in Sukhumvit and Sathorn–Rama 3, it’s easy to find us right in the heart of Bangkok. Whether you come alone or with a friend, you’ll always leave refreshed, recharged, and smiling.`,
         "homeTitle2": "Experience Vietnamese Style Relaxing hair wash",
         "homeDes2": `Enjoy the calming sensation of our Vietnamese-style relaxing hair wash — a unique head spa ritual that combines gentle scalp massage, soothing techniques, and aromatic care to release tension, refresh your mind, and leave you feeling deeply relaxed.`,
@@ -80,11 +80,11 @@ Every corner of our salon is crafted to feel like home — a warm and peaceful s
         "sukhumvit22": "Sukhumvit 22",
         "sathornRama3": "Sathorn Rama 3",
         "Deep Sensory Healing": "Deep Sensory Healing",
-        "Signature Ear Spa": "Signature Ear Spa",
+        "Signature Ear Cleaning": "Signature Ear Cleaning",
         "Hours": "Hours",
         "฿800": "฿800",
         "A deep auditory and sensory escape designed to quiet the world outside.": "A deep auditory and sensory escape designed to quiet the world outside.",
-        "Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "Our 1-hour Ear Spa is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.",
+        "Our 1-hour Ear Cleaning is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.": "Our 1-hour Ear Cleaning is a comprehensive wellness journey. We integrate the delicate art of ear care with our 17-step signature head massage and therapeutic soundscapes to provide a total neurological reset.",
         "Relaxing Eye Mask": "Relaxing Eye Mask",
         "Gently relaxes the eyes and nervous system using the salon’s signature calming technique.": "Gently relaxes the eyes and nervous system using the salon’s signature calming technique.",
         "Aromatic Sensory Awakening": "Aromatic Sensory Awakening",
@@ -165,14 +165,35 @@ Every corner of our salon is crafted to feel like home — a warm and peaceful s
         "Back to all services": "Back to all services",
 
         "products & promotions": "Products & promotions",
-        "Ear Spa": "Ear Spa",
+        "Ear Cleaning": "Ear Cleaning",
         "services": "services",
         "RESTORATIVE RITUAL": "RESTORATIVE RITUAL",
         "An immersive experience designed to release cranial tension and nourish the scalp with organic Thai botanicals.": "An immersive experience designed to release cranial tension and nourish the scalp with organic Thai botanicals.",
         "ANCIENT THERAPY": "ANCIENT THERAPY",
-        "A calming traditional practice focusing on gentle cleaning and pressure point massage for total mental clarity.": "A calming traditional practice focusing on gentle cleaning and pressure point massage for total mental clarity."
-
-
+        "A calming traditional practice focusing on gentle cleaning and pressure point massage for total mental clarity.": "A calming traditional practice focusing on gentle cleaning and pressure point massage for total mental clarity.",
+        "Therapeutic Sound Healing": "Therapeutic Sound Healing",
+        "Lymphatic Head & Neck Massage": "Lymphatic Head & Neck Massage",
+        "Professional Otoscope Examination": "Professional Otoscope Examination",
+        "Deep Ear Canal Cleansing": "Deep Ear Canal Cleansing",
+        "Signature Ear Picking & Grooming": "Signature Ear Picking & Grooming",
+        "Medicinal Ear Purifying": "Medicinal Ear Purifying",
+        "Complete Inner & Outer Ear Care": "Complete Inner & Outer Ear Care",
+        "Herbal Ear Candling Therapy": "Herbal Ear Candling Therapy",
+        "Post-Treatment Visual Verification": "Post-Treatment Visual Verification",
+        "Relaxing Cranial Massage": "Relaxing Cranial Massage",
+        "Signature Tea & Refreshments": "Signature Tea & Refreshments",
+        "Awakens the senses and promotes mental clarity through soothing sound therapy.": "Awakens the senses and promotes mental clarity through soothing sound therapy.",
+        "Opening the senses with premium essential oils to induce immediate relaxation.": "Opening the senses with premium essential oils to induce immediate relaxation.",
+        "A specialized massage targeting lymph nodes and the back of the neck to improve circulation.": "A specialized massage targeting lymph nodes and the back of the neck to improve circulation.",
+        "A high-precision visual inspection of the ear canal using advanced camera technology.": "A high-precision visual inspection of the ear canal using advanced camera technology.",
+        "Gentle and thorough irrigation to remove impurities from the inner ear.": "Gentle and thorough irrigation to remove impurities from the inner ear.",
+        "Expert ear picking and internal stimulation for a unique sense of relief.": "Expert ear picking and internal stimulation for a unique sense of relief.",
+        "Application of specialized cleansing solutions to sanitize the ear canal.": "Application of specialized cleansing solutions to sanitize the ear canal.",
+        "Meticulous cleaning and buffing of both the internal canal and external ear structure.": "Meticulous cleaning and buffing of both the internal canal and external ear structure.",
+        "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.": "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.",
+        "A final camera inspection to ensure total cleanliness and health of the ear canal.": "A final camera inspection to ensure total cleanliness and health of the ear canal.",
+        "A soothing head massage to release any remaining tension and balance the nervous system.": "A soothing head massage to release any remaining tension and balance the nervous system.",
+"Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "Conclude the ritual with the salon’s premium relaxation tea and light snacks."
     },
 
 
