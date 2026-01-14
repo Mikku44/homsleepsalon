@@ -98,7 +98,7 @@ export default function Product() {
               path: '/head-spa',
             },
             {
-              src: '/images/service15.jpg',
+              src: '/promotions/ear-aromatherapy.png',
               title: 'Ear Cleaning',
               subtitle: 'ANCIENT THERAPY',
               desc: 'A calming traditional practice focusing on gentle cleaning and pressure point massage for total mental clarity.',
