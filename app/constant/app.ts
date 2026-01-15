@@ -1,4 +1,4 @@
-import { FaSpa, FaHeadphonesAlt } from "react-icons/fa"
+import { FaSpa, FaHeadphonesAlt, FaTags } from "react-icons/fa"
 import { AiFillProduct } from "react-icons/ai";
 
 export const BASE_URL = "https://homsleepsalon.com"
@@ -29,21 +29,27 @@ export const MENU = [
     subMenu: [
       {
         href: "/head-spa",
-        label: "Head Spa",
+        label: "Head Spa & Promotions",
         desc: "Deep relaxation & scalp therapy",
         icon: FaSpa,
       },
       {
         href: "/ear-spa",
-        label: "Ear Cleaning",
+        label: "Ear Cleaning & Promotion",
         desc: "Sensory calm & pressure relief",
         icon: FaHeadphonesAlt,
+      },
+      {
+        href: "/promotion",
+        label: "Other Promotions",
+        desc: "Special offers, seasonal deals & exclusive packages",
+        icon: FaTags,
       },
       {
         href: "/products",
         label: "products & promotions",
         desc: "See all products & promotions",
-        icon: AiFillProduct ,
+        icon: AiFillProduct,
       },
     ],
   },
@@ -113,36 +119,21 @@ export const ALL_SHORTS = [
 ]
 
 export const ALL_PROMOTION = [
-  {
-    src: "/promotions/vietnam-banner.png",
-    line: "https://line.me/R/ti/p/@408onese?text=Vietnam%20spa%20promotion%20and%20special%20offers",
-    whatsapp: "https://wa.me/66657479789?text=Vietnam%20spa%20promotion%20and%20special%20offers",
-    alt: "HomeSleepSalon Vietnam spa promotion and special offers"
-  },
-  {
-    src: "/promotions/relaxing-hair.jpg",
-    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
-    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
-    alt: "HomeSleepSalon relaxing hair"
-  },
-  {
-    src: "/promotions/15steps.jpg",
-    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
-    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
-    alt: "HomeSleepSalon 15 Steps Hair wash"
-  },
-  {
-    src: "/promotions/17steps.jpg",
-    line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
-    whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
-    alt: "HomeSleepSalon 17 Steps Hair wash"
-  },
+  //TODO
   {
     src: "/promotions/cupping.jpg",
     line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
     whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
     alt: "HomeSleepSalon Program Cupping"
   },
+  {
+    src: "/promotions/face-spa.png",
+    line: "https://line.me/R/ti/p/@408onese?text=facial%20spa%20and%20skin%20care%20treatment",
+    whatsapp: "https://wa.me/66657479789?text=facial%20spa%20and%20skin%20care%20treatment",
+    alt: "HomeSleepSalon facial spa and skin care treatment"
+  },
+
+
   {
     src: "/promotions/comboset.jpg",
     line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
@@ -161,54 +152,80 @@ export const ALL_PROMOTION = [
     whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
     alt: "HomeSleepSalon Program Comboset Head + Foot"
   },
-  {
-    src: "/promotions/ear-aromatherapy.png",
-    line: "https://line.me/R/ti/p/@408onese?text=ear%20aromatherapy%20spa%20service",
-    whatsapp: "https://wa.me/66657479789?text=ear%20aromatherapy%20spa%20service",
-    alt: "HomeSleepSalon ear aromatherapy spa service"
-  },
-  {
-    src: "/promotions/face-spa.png",
-    line: "https://line.me/R/ti/p/@408onese?text=facial%20spa%20and%20skin%20care%20treatment",
-    whatsapp: "https://wa.me/66657479789?text=facial%20spa%20and%20skin%20care%20treatment",
-    alt: "HomeSleepSalon facial spa and skin care treatment"
-  },
-  {
-    src: "/promotions/nail.png",
-    line: "https://line.me/R/ti/p/@408onese?text=nail%20spa%20paraffin",
-    whatsapp: "https://wa.me/66657479789?text=nail%20spa%20paraffin",
-    alt: "HomeSleepSalon nail spa paraffin"
-  },
-  {
-    src: "/promotions/body-scrub.png",
-    line: "https://line.me/R/ti/p/@408onese?text=body%20scrub%20and%20aroma%20therapy%20spa%20treatment",
-    whatsapp: "https://wa.me/66657479789?text=body%20scrub%20and%20aroma%20therapy%20spa%20treatment",
-    alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
-  },
-  {
-    src: "/promotions/foot-spa.png",
-    line: "https://line.me/R/ti/p/@408onese?text=foot%20spa%20and%20massage%20service",
-    whatsapp: "https://wa.me/66657479789?text=foot%20spa%20and%20massage%20service",
-    alt: "HomeSleepSalon foot spa and massage service"
-  },
-  {
-    src: "/promotions/vip-promo.png",
-    line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
-    whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
-    alt: "HomeSleepSalon VIP Private Spa Experience"
-  },
+
   {
     src: "/promotions/vip-service.jpg",
     line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
     whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
     alt: "HomeSleepSalon VIP Service Spa Ear + Spa + Face"
   },
-  {
-    src: "/promotions/voucher.jpg",
-    line: "https://line.me/R/ti/p/@408onese?text=voucher",
-    whatsapp: "https://wa.me/66657479789?text=voucher",
-    alt: "HomeSleepSalon voucher"
-  },
+
+  // 
+  // {
+  //   src: "/promotions/vietnam-banner.png",
+  //   line: "https://line.me/R/ti/p/@408onese?text=Vietnam%20spa%20promotion%20and%20special%20offers",
+  //   whatsapp: "https://wa.me/66657479789?text=Vietnam%20spa%20promotion%20and%20special%20offers",
+  //   alt: "HomeSleepSalon Vietnam spa promotion and special offers"
+  // },
+  // {
+  //   src: "/promotions/relaxing-hair.jpg",
+  //   line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+  //   whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+  //   alt: "HomeSleepSalon relaxing hair"
+  // },
+  // {
+  //   src: "/promotions/15steps.jpg",
+  //   line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+  //   whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+  //   alt: "HomeSleepSalon 15 Steps Hair wash"
+  // },
+  // {
+  //   src: "/promotions/17steps.jpg",
+  //   line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+  //   whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+  //   alt: "HomeSleepSalon 17 Steps Hair wash"
+  // },
+
+
+  // {
+  //   src: "/promotions/ear-aromatherapy.png",
+  //   line: "https://line.me/R/ti/p/@408onese?text=ear%20aromatherapy%20spa%20service",
+  //   whatsapp: "https://wa.me/66657479789?text=ear%20aromatherapy%20spa%20service",
+  //   alt: "HomeSleepSalon ear aromatherapy spa service"
+  // },
+
+
+  // {
+  //   src: "/promotions/nail.png",
+  //   line: "https://line.me/R/ti/p/@408onese?text=nail%20spa%20paraffin",
+  //   whatsapp: "https://wa.me/66657479789?text=nail%20spa%20paraffin",
+  //   alt: "HomeSleepSalon nail spa paraffin"
+  // },
+  // {
+  //   src: "/promotions/body-scrub.png",
+  //   line: "https://line.me/R/ti/p/@408onese?text=body%20scrub%20and%20aroma%20therapy%20spa%20treatment",
+  //   whatsapp: "https://wa.me/66657479789?text=body%20scrub%20and%20aroma%20therapy%20spa%20treatment",
+  //   alt: "HomeSleepSalon body scrub and aroma therapy spa treatment"
+  // },
+  // {
+  //   src: "/promotions/foot-spa.png",
+  //   line: "https://line.me/R/ti/p/@408onese?text=foot%20spa%20and%20massage%20service",
+  //   whatsapp: "https://wa.me/66657479789?text=foot%20spa%20and%20massage%20service",
+  //   alt: "HomeSleepSalon foot spa and massage service"
+  // },
+  // {
+  //   src: "/promotions/vip-promo.png",
+  //   line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
+  //   whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
+  //   alt: "HomeSleepSalon VIP Private Spa Experience"
+  // },
+
+  // {
+  //   src: "/promotions/voucher.jpg",
+  //   line: "https://line.me/R/ti/p/@408onese?text=voucher",
+  //   whatsapp: "https://wa.me/66657479789?text=voucher",
+  //   alt: "HomeSleepSalon voucher"
+  // },
 ];
 
 export const HOME_GALLERY = [

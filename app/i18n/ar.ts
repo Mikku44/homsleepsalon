@@ -186,6 +186,13 @@ export const ar = {
         "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.": "استخدام شموع الأعشاب التقليدية لسحب الرطوبة وتقليل الروائح وتخفيف احتقان الأذن.",
         "A final camera inspection to ensure total cleanliness and health of the ear canal.": "فحص نهائي بالكاميرا لضمان النظافة التامة وصحة قناة الأذن.",
         "A soothing head massage to release any remaining tension and balance the nervous system.": "تدليك مهدئ للرأس للتخلص من أي توتر متبقي وموازنة الجهاز العصبي.",
-"Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "اختتم الطقوس مع شاي الاسترخاء الفاخر الخاص بالصالون والوجبات الخفيفة."
+        "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "اختتم الطقوس مع شاي الاسترخاء الفاخر الخاص بالصالون والوجبات الخفيفة.",
+        "Head Spa & Promotions": "سبا الرأس والعروض",
+        "Deep relaxation & scalp therapy": "استرخاء عميق وعلاج لفروة الرأس",
+        "Ear Cleaning & Promotion": "تنظيف الأذن والعرض",
+        "Sensory calm & pressure relief": "هدوء حسي وتخفيف الضغط",
+        "Other Promotions": "عروض أخرى",
+        "Special offers, seasonal deals & exclusive packages": "عروض خاصة وصفقات موسمية وباقات حصرية",
+        "See all products & promotions": "شاهد جميع المنتجات والعروض"
     }
 }

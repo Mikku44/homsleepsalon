@@ -90,11 +90,11 @@ export default function Product() {
         <div className="grid gap-16 box-container-md w-full px-4 md:px-0">
           {[
             {
-              src: '/images/service17.jpg',
+              src: '/images/ser15.jpg',
               title: 'Head Spa',
               subtitle: 'RESTORATIVE RITUAL',
               desc: 'An immersive experience designed to release cranial tension and nourish the scalp with organic Thai botanicals.',
-              price: 'From ฿1,200',
+              price: 'From ฿899',
               path: '/head-spa',
             },
             {
@@ -105,6 +105,15 @@ export default function Product() {
               price: 'From ฿800',
               path: '/ear-spa',
             },
+            {
+              src: '/promotions/cupping.jpg',
+              title: 'Special Promotions',
+              subtitle: 'EXCLUSIVE OFFERS',
+              desc: 'Carefully curated seasonal offers and limited-time packages crafted for exceptional value and indulgence.',
+              price: 'Limited Time',
+              path: '/promotion',
+            },
+
           ].map((item) => (
             <Link
               to={item.path}

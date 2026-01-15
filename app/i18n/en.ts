@@ -193,7 +193,14 @@ Every corner of our salon is crafted to feel like home — a warm and peaceful s
         "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.": "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.",
         "A final camera inspection to ensure total cleanliness and health of the ear canal.": "A final camera inspection to ensure total cleanliness and health of the ear canal.",
         "A soothing head massage to release any remaining tension and balance the nervous system.": "A soothing head massage to release any remaining tension and balance the nervous system.",
-"Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "Conclude the ritual with the salon’s premium relaxation tea and light snacks."
+        "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "Conclude the ritual with the salon’s premium relaxation tea and light snacks.",
+        "Head Spa & Promotions": "Head Spa & Promotions",
+        "Deep relaxation & scalp therapy": "Deep relaxation & scalp therapy",
+        "Ear Cleaning & Promotion": "Ear Cleaning & Promotion",
+        "Sensory calm & pressure relief": "Sensory calm & pressure relief",
+        "Other Promotions": "Other Promotions",
+        "Special offers, seasonal deals & exclusive packages": "Special offers, seasonal deals & exclusive packages",
+        "See all products & promotions": "See all products & promotions"
     },
 
 

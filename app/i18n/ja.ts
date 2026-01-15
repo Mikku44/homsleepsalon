@@ -186,6 +186,13 @@ export const ja = {
     "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.": "湿気や臭いを除去し、耳の詰まりを解消する伝統的な和漢耳燭。",
     "A final camera inspection to ensure total cleanliness and health of the ear canal.": "耳道の清潔さと健康状態を確認するための最終カメラ検査。",
     "A soothing head massage to release any remaining tension and balance the nervous system.": "緊張を解きほぐし、自律神経を整える心地よいヘッドマッサージ。",
-    "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "サロン特製のリラクゼーションティーと軽食で、儀式を締めくくります。"
+    "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "サロン特製のリラクゼーションティーと軽食で、儀式を締めくくります。",
+    "Head Spa & Promotions": "ヘッドスパ＆プロモーション",
+    "Deep relaxation & scalp therapy": "深いリラクゼーションと頭皮テラピー",
+    "Ear Cleaning & Promotion": "イヤークリーニング＆プロモーション",
+    "Sensory calm & pressure relief": "感覚の静寂と圧力の解放",
+    "Other Promotions": "その他のプロモーション",
+    "Special offers, seasonal deals & exclusive packages": "特別オファー、季節限定ディール、限定パッケージ",
+    "See all products & promotions": "すべての製品とプロモーションを見る"
   }
 }

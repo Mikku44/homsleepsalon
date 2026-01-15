@@ -186,6 +186,13 @@ export const ko = {
         "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.": "습기와 냄새를 추출하고 귀의 울림을 완화하는 전통 허벌 이어 캔들.",
         "A final camera inspection to ensure total cleanliness and health of the ear canal.": "귀 내부의 완전한 청결과 건강을 보장하기 위한 최종 카메라 검사.",
         "A soothing head massage to release any remaining tension and balance the nervous system.": "남은 긴장을 풀고 신경계의 균형을 맞추는 부드러운 머리 마사지.",
-        "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "살롱의 프리미엄 휴식 차와 가벼운 다과로 의식을 마무리합니다."
+        "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "살롱의 프리미엄 휴식 차와 가벼운 다과로 의식을 마무리합니다.",
+        "Head Spa & Promotions": "헤드 스파 & 프로모션",
+        "Deep relaxation & scalp therapy": "깊은 이완 및 두피 테라피",
+        "Ear Cleaning & Promotion": "이어 클리닝 & 프로모션",
+        "Sensory calm & pressure relief": "감각적 평온 및 압력 완화",
+        "Other Promotions": "기타 프로모션",
+        "Special offers, seasonal deals & exclusive packages": "특별 혜택, 시즌별 딜 및 독점 패키지",
+        "See all products & promotions": "모든 제품 및 프로모션 보기"
     },
 }

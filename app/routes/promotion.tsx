@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import PromotionCard from '~/components/PromotionCard'
 import PromotionModal from '~/components/Promo'
+import { ReserveForm } from '~/components/ReserveForm'
 
 
 export function meta({ }: Route.MetaArgs) {
@@ -46,17 +47,17 @@ export default function Promotion() {
 
   return (
     <main>
-      <PromotionModal
+      {/* <PromotionModal
         title="Special Promotion!"
         description="Get extra max 50% for your first top-up."
         imageUrl="/promotions/recharge-gift.jpg"
         ctaText="recharge gift"
         ctaLink="/reserve"
-      />
+      /> */}
 
 
       <section className='md:h-screen md:max-h-[600px] overflow-hidden h-auto bg-[var(--secondary-color)] flex items-center pt-10 md:py-10'>
-        <div className=' w-full grid md:grid-cols-2 gap-8 items-center pt-10'>
+        <div className=' w-full grid md:grid-cols-2 gap-8 items-center pt-10 '>
           {/* Text */}
           <div className='box-container'>
             <div className='text-center md:text-left'>
@@ -113,6 +114,23 @@ export default function Promotion() {
             </div>
 
           ))}
+        </div>
+      </section>
+
+
+      {/* Reserve Form Section */}
+      <section className="max-w-6xl mx-auto my-24 bg-white rounded-3xl 
+      md:px-0 px-4
+      overflow-hidden shadow-2xl flex flex-col md:flex-row">
+        <div className="md:w-1/2">
+          <img
+            src="/images/544350_0.jpg"
+            className="h-full w-full object-cover min-h-[400px]"
+            alt="Reserve Ear Cleaning"
+          />
+        </div>
+        <div className="md:w-1/2 p-8 md:p-12 ">
+          <ReserveForm />
         </div>
       </section>
     </main >

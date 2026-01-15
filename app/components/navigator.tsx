@@ -116,7 +116,7 @@ export default function Navigator() {
                                 <div
                                   className="
                           flex items-center justify-center
-                          size-10 rounded-full
+                          size-10 min-w-10 rounded-full
                           bg-white/25
                           text-white
                           group-hover/item:scale-110

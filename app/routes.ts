@@ -11,6 +11,7 @@ export default [
     route("/news", "routes/news.tsx"),
     route("/head-spa", "routes/head-spa.tsx"),
     route("/ear-spa", "routes/ear-spa.tsx"),
+    // route("/promotions", "routes/promotion.tsx"),
     route("/news/:id", "routes/newsDetail.tsx"),
 
 

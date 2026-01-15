@@ -222,7 +222,7 @@ export default function Reserve() {
               <input
                 {...register('name')}
                 placeholder={t('placeholder_name')}
-                className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
+                className='input'
               />
               {errors.name && (
                 <p className='text-red-500 text-sm mt-1'>
@@ -236,7 +236,7 @@ export default function Reserve() {
               <input
                 {...register('phone')}
                 placeholder={t('placeholder_phone')}
-                className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
+                className='input'
               />
               {errors.phone && (
                 <p className='text-red-500 text-sm mt-1'>
@@ -250,7 +250,7 @@ export default function Reserve() {
               <input
                 {...register('date')}
                 type='date'
-                className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
+                className='input'
               />
               {errors.date && (
                 <p className='text-red-500 text-sm mt-1'>
@@ -264,7 +264,7 @@ export default function Reserve() {
               <input
                 {...register('time')}
                 type='time'
-                className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
+                className='input'
               />
               {errors.time && (
                 <p className='text-red-500 text-sm mt-1'>
@@ -277,7 +277,7 @@ export default function Reserve() {
               <label className='font-medium mb-1'>{t('branch')}</label>
               <select
                 {...register('branch')}
-                className='border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]'
+                className='input'
               >
                 <option value=''>-- {t('selectBranch')} --</option>
                 <option value='sukhumvit22'>{t('sukhumvit22')}</option>

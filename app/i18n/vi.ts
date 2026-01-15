@@ -177,18 +177,24 @@ Mọi góc nhỏ của salon đều được tạo ra để mang lại cảm gi�
         "Relaxing Cranial Massage": "Massage Đầu Thư Giãn",
         "Signature Tea & Refreshments": "Trà Thư Giãn & Quà Tặng Kèm",
         "Awakens the senses and promotes mental clarity through soothing sound therapy.": "Đánh thức các giác quan và tăng cường sự minh mẫn thông qua trị liệu âm thanh.",
-    "Opening the senses with premium essential oils to induce immediate relaxation.": "Kích thích khứu giác bằng tinh dầu cao cấp để thư giãn ngay lập tức.",
-    "A specialized massage targeting lymph nodes and the back of the neck to improve circulation.": "Massage chuyên sâu vào các hạch bạch huyết và gáy để cải thiện lưu thông máu.",
-    "A high-precision visual inspection of the ear canal using advanced camera technology.": "Kiểm tra trực quan ống tai với độ chính xác cao bằng công nghệ camera tiên tiến.",
-    "Gentle and thorough irrigation to remove impurities from the inner ear.": "Vệ sinh nhẹ nhàng và kỹ lưỡng để loại bỏ tạp chất trong tai.",
-    "Expert ear picking and internal stimulation for a unique sense of relief.": "Kỹ thuật lấy ráy tai chuyên nghiệp mang lại cảm giác nhẹ nhõm độc đáo.",
-    "Application of specialized cleansing solutions to sanitize the ear canal.": "Sử dụng các dung dịch làm sạch chuyên dụng để sát trùng ống tai.",
-    "Meticulous cleaning and buffing of both the internal canal and external ear structure.": "Làm sạch và chăm sóc tỉ mỉ cả bên trong ống tai và vành tai ngoài.",
-    "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.": "Liệu pháp nến thảo dược truyền thống giúp hút ẩm, khử mùi và giảm ù tai.",
-    "A final camera inspection to ensure total cleanliness and health of the ear canal.": "Soi camera lần cuối để đảm bảo tai hoàn toàn sạch sẽ và khỏe mạnh.",
-    "A soothing head massage to release any remaining tension and balance the nervous system.": "Massage đầu nhẹ nhàng để xua tan căng thẳng và cân bằng hệ thần kinh.",
-    "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "Kết thúc liệu trình với trà thư giãn cao cấp và đồ ăn nhẹ của salon."
-  
+        "Opening the senses with premium essential oils to induce immediate relaxation.": "Kích thích khứu giác bằng tinh dầu cao cấp để thư giãn ngay lập tức.",
+        "A specialized massage targeting lymph nodes and the back of the neck to improve circulation.": "Massage chuyên sâu vào các hạch bạch huyết và gáy để cải thiện lưu thông máu.",
+        "A high-precision visual inspection of the ear canal using advanced camera technology.": "Kiểm tra trực quan ống tai với độ chính xác cao bằng công nghệ camera tiên tiến.",
+        "Gentle and thorough irrigation to remove impurities from the inner ear.": "Vệ sinh nhẹ nhàng và kỹ lưỡng để loại bỏ tạp chất trong tai.",
+        "Expert ear picking and internal stimulation for a unique sense of relief.": "Kỹ thuật lấy ráy tai chuyên nghiệp mang lại cảm giác nhẹ nhõm độc đáo.",
+        "Application of specialized cleansing solutions to sanitize the ear canal.": "Sử dụng các dung dịch làm sạch chuyên dụng để sát trùng ống tai.",
+        "Meticulous cleaning and buffing of both the internal canal and external ear structure.": "Làm sạch và chăm sóc tỉ mỉ cả bên trong ống tai và vành tai ngoài.",
+        "Traditional herbal candles used to extract moisture, reduce odors, and relieve ear congestion.": "Liệu pháp nến thảo dược truyền thống giúp hút ẩm, khử mùi và giảm ù tai.",
+        "A final camera inspection to ensure total cleanliness and health of the ear canal.": "Soi camera lần cuối để đảm bảo tai hoàn toàn sạch sẽ và khỏe mạnh.",
+        "A soothing head massage to release any remaining tension and balance the nervous system.": "Massage đầu nhẹ nhàng để xua tan căng thẳng và cân bằng hệ thần kinh.",
+        "Conclude the ritual with the salon’s premium relaxation tea and light snacks.": "Kết thúc liệu trình với trà thư giãn cao cấp và đồ ăn nhẹ của salon.",
+        "Head Spa & Promotions": "Gội đầu dưỡng sinh & Khuyến mãi",
+        "Deep relaxation & scalp therapy": "Thư giãn sâu & Trị liệu da đầu",
+        "Ear Cleaning & Promotion": "Ráy tai hoàng gia & Khuyến mãi",
+        "Sensory calm & pressure relief": "Bình an cảm giác & Giải tỏa áp lực",
+        "Other Promotions": "Khuyến mãi khác",
+        "Special offers, seasonal deals & exclusive packages": "Ưu đãi đặc biệt, giao dịch theo mùa & gói độc quyền",
+        "See all products & promotions": "Xem tất cả sản phẩm & khuyến mãi"
 
     }
 }

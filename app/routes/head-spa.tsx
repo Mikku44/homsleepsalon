@@ -37,7 +37,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: `${BASE_URL}/head-spa` },
-    { property: 'og:image', content: `${BASE_URL}/images/service17.jpg` },
+    { property: 'og:image', content: `${BASE_URL}/images/ser17.jpg` },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     {
@@ -180,9 +180,9 @@ const HeadSpaPage = () => {
             {t('Head Spa')}
           </h1>
           <div className="flex items-center justify-center gap-6 text-white/90 text-[13px] tracking-widest uppercase">
-            <span className="flex items-center gap-2"><Clock size={16} /> 1.45 {t('Hours')} / 1.15 {t('Hours')}</span>
+            <span className="flex items-center gap-2"><Clock size={16} /> 1.15 {t('Hours')} / 1.45 {t('Hours')}</span>
             <span className="w-px h-4 bg-white/30" />
-            <span>{t('From ฿1,290')} / {t("฿ 899")}</span>
+            <span>{t('From ฿899')} / {t("฿ 1,290")}</span>
           </div>
         </div>
       </section>
@@ -317,7 +317,7 @@ const HeadSpaPage = () => {
 
       {/* The Ritual Steps - Visual Grid */}
       <section className="pb-24 px-6 mt-24 max-w-6xl mx-auto">
-        <img src="/images/service15.jpg" className="mb-16 rounded-2xl max-h-[500px] mx-auto" alt="head spa 899" />
+        <img src="/images/ser15.jpg" className="mb-16 rounded-2xl max-h-[500px] mx-auto" alt="head spa 899" />
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
           {ritualSteps.map((step, index) => (
             <motion.div
@@ -359,7 +359,7 @@ const HeadSpaPage = () => {
 
       {/* retual 2 */}
       <section className="pb-24 px-6 mt-24 max-w-6xl mx-auto">
-        <img src="/images/service17.jpg" className="mb-16 rounded-2xl max-h-[500px] mx-auto" alt="head spa 1290" />
+        <img src="/images/ser17.jpg" className="mb-16 rounded-2xl max-h-[500px] mx-auto" alt="head spa 1290" />
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
           {ritualSteps2.map((step, index) => (
             <motion.div

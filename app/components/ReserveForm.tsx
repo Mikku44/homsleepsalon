@@ -98,7 +98,7 @@ ${t("time")}: ${data.time}
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full items-end"
       >
         {/* Name */}
         <div className="flex flex-col">
