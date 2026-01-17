@@ -4,8 +4,9 @@ import { Link } from 'react-router';
 import { Clock, Star, Leaf, Coffee } from 'lucide-react';
 import ImageCarousel from "~/components/ImageCarousel";
 import { ReserveForm } from "~/components/ReserveForm";
-import { BASE_URL } from "~/constant/app";
+import { ALL_PROMOTION, BASE_URL } from "~/constant/app";
 import type { Route } from "./+types/head-spa";
+import PromotionCard from "~/components/PromotionCard";
 
 
 
@@ -148,6 +149,33 @@ const HeadSpaPage = () => {
     { id: 14, title: t('Hair Dry & Serum Care'), desc: t('Hair is gently dried and finished with nourishing serum.') },
     { id: 15, title: t('Relaxation Tea & Light Refreshments'), desc: t('Enjoy the salon’s signature premium hot tea with light snacks to conclude the ritual.') }
   ];
+
+  const HEAD_PROMO = [
+    {
+      src: "/promotions/headear.jpg",
+      line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+      whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+      alt: "HomeSleepSalon Program Comboset Head + Ear"
+    },
+    {
+      src: "/promotions/headfoot.jpg",
+      line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+      whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+      alt: "HomeSleepSalon Program Comboset Head + Foot"
+    },
+    {
+      src: "/promotions/comboset.jpg",
+      line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+      whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+      alt: "HomeSleepSalon Program Comboset Head + Cupping"
+    },
+    {
+      src: "/promotions/vip-service.jpg",
+      line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
+      whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
+      alt: "HomeSleepSalon VIP Service Spa Ear + Spa + Face"
+    },
+  ]
 
 
   return (
@@ -427,6 +455,29 @@ const HeadSpaPage = () => {
       </section>
 
       {/* Call to Action */}
+
+      <div className="py-24 bg-amber-100">
+        <section className="
+        min-h-[500px] md:px-40 px-5
+        overflow-hidden flex flex-col ">
+          <h3 className="text-3xl mb-5">{t("promotion")}</h3>
+          <div className="grid md:grid-cols-3  gap-5 ">
+            {HEAD_PROMO?.map((item, index) => (
+              <div className="">
+                <PromotionCard
+                  key={item.alt + index}
+                  src={item.src}
+                  href={item.line}
+                  whatsApp={item.whatsapp}
+                  className='w-full h-full max-w-[500px]'
+                  alt={`${item.alt} promotion`}
+                />
+              </div>
+            ))}
+          </div>
+
+        </section>
+      </div>
 
 
       {/* reserve form */}

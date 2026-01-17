@@ -5,6 +5,7 @@ import ImageCarousel from "~/components/ImageCarousel";
 import { ReserveForm } from "~/components/ReserveForm";
 import { BASE_URL } from "~/constant/app";
 import type { Route } from "./+types/ear-spa";
+import PromotionCard from "~/components/PromotionCard";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -62,6 +63,22 @@ const EarSpaPage = () => {
     { id: 11, title: t('Relaxing Cranial Massage'), desc: t('A soothing head massage to release any remaining tension and balance the nervous system.') },
     { id: 12, title: t('Signature Tea & Refreshments'), desc: t('Conclude the ritual with the salon’s premium relaxation tea and light snacks.') }
   ];
+
+
+  const EAR_PROMO = [
+    {
+      src: "/promotions/comboset.jpg",
+      line: "https://line.me/R/ti/p/@408onese?text=relaxing%20hair",
+      whatsapp: "https://wa.me/66657479789?text=relaxing%20hair",
+      alt: "HomeSleepSalon Program Comboset Head + Cupping"
+    },
+    {
+      src: "/promotions/vip-service.jpg",
+      line: "https://line.me/R/ti/p/@408onese?text=VIP%20Private%20Spa%20Experience",
+      whatsapp: "https://wa.me/66657479789?text=VIP%20Private%20Spa%20Experience",
+      alt: "HomeSleepSalon VIP Service Spa Ear + Spa + Face"
+    },
+  ]
 
   return (
     <div className="min-h-screen bg-[#FCFAF7] text-neutral-800">
@@ -190,6 +207,29 @@ const EarSpaPage = () => {
           </div>
         </div>
       </section>
+
+      <div className="py-24 bg-amber-100">
+        <section className="
+        min-h-[500px] md:px-40 px-5
+        overflow-hidden flex flex-col ">
+          <h3 className="text-3xl mb-5">{t("promotion")}</h3>
+          <div className="flex md:flex-row flex-col gap-5 ">
+            {EAR_PROMO?.map((item, index) => (
+              <div className="">
+                <PromotionCard
+                  key={item.alt + index}
+                  src={item.src}
+                  href={item.line}
+                  whatsApp={item.whatsapp}
+                  className='w-full h-full max-w-[500px]'
+                  alt={`${item.alt} promotion`}
+                />
+              </div>
+            ))}
+          </div>
+
+        </section>
+      </div>
 
       {/* Reserve Form Section */}
       <section className="max-w-6xl mx-auto my-24 bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
